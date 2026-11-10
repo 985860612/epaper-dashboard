@@ -1,0 +1,7 @@
+{"event":"status","version":"epaper-dashboard-0.1.0","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794120285,"phase":"closed","ap":false,"freeHeap":175308,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":36241,"displayError":""}
+DISPLAY_BUSY elapsed_ms=5001 BUSY=1
+DISPLAY_BUSY elapsed_ms=10002 BUSY=1
+DISPLAY_BUSY elapsed_ms=15004 BUSY=1
+DISPLAY_BUSY elapsed_ms=20006 BUSY=1
+_Update_Full : 20407000
+DISPLAY_DONE elapsed_ms=21677 BUSY=1 free_heap=177144

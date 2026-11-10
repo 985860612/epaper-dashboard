@@ -1,0 +1,24 @@
+SOURCE_PARTITIONS_CONFIG_VERIFIED
+d from 0x0014f000 to 0x0014ffff...
+Compressed 4096 bytes to 2542...
+
+Writing at 0x0014f000 [                              ]   0.0% 0/2542 bytes... 
+
+Writing at 0x00150000 [==============================] 100.0% 2542/2542 bytes... 
+Wrote 4096 bytes (2542 compressed) at 0x0014f000 in 0.0 seconds (1112.7 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...
+New upload port: /dev/cu.usbmodem11101 (serial)
+
+START epaper-dashboard-0.5.5
+stock_preview_10min
+{"event":"status","version":"epaper-dashboard-0.5.5","ip":"","clockReady":true,"lastNtpSync":0,"phase":"closed","ap":false,"freeHeap":177740,"cpuMHz":80,"wifiPowerSave":2,"idlePollMs":20,"sleepCount":0,"sleepTotalMs":0,"configSeconds":600,"powerError":"","weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":0,"displayError":""}
+STOCK_FETCH ok=1 points=242 free_heap=176940
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+DISPLAY_DONE kind=full view=stock elapsed_ms=20917 full=1 partial=0 BUSY=0
+STOCK_LAYOUT_AND_PARTIAL_VERIFIED; CONFIG_UNCHANGED; PREVIEW_ON_SCREEN; CONFIG_WINDOW_CLOSED

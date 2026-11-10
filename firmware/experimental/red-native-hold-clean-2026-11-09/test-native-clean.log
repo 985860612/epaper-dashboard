@@ -1,0 +1,1 @@
+PASS: 788/721 frames; bounded native WHITE cleanup only; RED cleanup phase held, unchanged forming stages; unknown profiles rejected; red-forming groups preserved; hold-source and target-mask bounds, conservative rejection and normal red/white/black RAM polarity

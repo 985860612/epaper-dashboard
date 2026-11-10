@@ -1,0 +1,31 @@
+{
+  "version": "epaper-dashboard-0.5.11",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "minutePartialMs": 18588,
+  "applicationProgramBytes": 1310233,
+  "applicationBinaryBytes": 1310480,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "545f475602325ec7160938ea649d58ddfe6a7a25eae61e13c6595bcbf3583121",
+    "boot.log": "f64cdc32376cf2ccaf25556f67a3498d5dff19109f165743a4769bedcc115da1",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "6c30f83f1485620a456518323528efefafbebf003951302acc4e6426226ca5bd",
+    "device-check.log": "3fd9010723145222fa51593314537ed427bff6e6687adc6475f5f0862aadf9ad",
+    "epaper_dashboard.ino.bin": "9b144d3481c16613b3ffe2e554d4943e712bd2df2238537851030665b3384993",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "41d8c27b402b280f2ae0e7def062854c35a06ec73ec81d1b54d37d9ed2d328e7",
+    "layout-check.json": "f386c209cd3cfc9cf4da874e960514a4d7f49caa5bfc6161df82dae2ab640a8e",
+    "regression-tests.log": "70a13058e1fceabb1c1394ec9d534699dd12e2b72fc958e2c5d015d040a7084f",
+    "source.zip": "df64857d470d35f2765c67df73f86ae9201b01b0f35805fd87bb7f16fc59ca87",
+    "stock-preview.png": "5dbd317cb751f9918bbb85edcae2409a23018ddd67cf4a316b2d4b8bcb1cc1ca",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "de90050f758416a76c47417ca4485f11ec407e68fbaec0ce1dbc920af6fcf796",
+    "verification.json": "9b6cdf7b078a2a1c599371456532f043e7366cc391236e0875203beb78b20b58"
+  }
+}

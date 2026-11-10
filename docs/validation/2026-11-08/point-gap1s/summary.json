@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "expectedPoints": 242,
+  "observedFrames": 242,
+  "singlePointEachFrame": true,
+  "headerUnchanged": true,
+  "fullRefreshCount": 1,
+  "partialRefreshCount": 242,
+  "lastFrameElapsedMs": 1023,
+  "displayError": "",
+  "minCompletionIntervalSeconds": 0.0023614589881617576,
+  "maxCompletionIntervalSeconds": 15.932440957985818,
+  "meanCompletionIntervalSeconds": 2.168522631742748,
+  "visualConfirmation": "pending",
+  "observedDeviceFrameMsMin": 1021,
+  "observedDeviceFrameMsMax": 5848,
+  "frameDurationCount": 242,
+  "hostCadenceCaveat": "HTTP轮询超时会延迟串口读取；hostMonotonic是读取时间，不能当作精确的面板刷新完成时间。",
+  "serialMonitorClosedAtEnd": true
+}

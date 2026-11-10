@@ -1,0 +1,25 @@
+{
+  "before": {
+    "status_baseline": 69,
+    "date_baseline": 93,
+    "delta_baseline": 120,
+    "date_to_delta_pixels": 27,
+    "summary_row": false,
+    "chart_top": 160,
+    "chart_bottom": 284,
+    "chart_height": 124
+  },
+  "after": {
+    "status_baseline": 69,
+    "date_baseline": 93,
+    "delta_baseline": 120,
+    "date_to_delta_pixels": 27,
+    "summary_row": false,
+    "chart_top": 136,
+    "chart_bottom": 284,
+    "chart_height": 148
+  },
+  "data_source": "保存的2026-11-06历史快照，展示全部242点",
+  "price": 29.91,
+  "preview_is_hardware_validation": false
+}

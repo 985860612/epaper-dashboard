@@ -1,0 +1,15 @@
+SERIAL_CLOSED
+VIEW_READY big_calendar 2026-11-08 22:57:03 full 1 partial 2
+VIEW_READY month_weather 2026-11-08 22:57:24 full 2 partial 2
+VIEW_READY almanac 2026-11-08 22:57:46 full 3 partial 2
+VIEW_READY minimal_clock 2026-11-08 22:58:11 full 4 partial 3
+VIEW_READY overview 2026-11-08 22:58:35 full 5 partial 3
+VIEW_READY big_calendar 2026-11-08 22:58:57 full 6 partial 3
+VIEW_READY almanac 2026-11-08 22:59:21 full 7 partial 4
+FIXED_HOLD_BEGIN
+FIXED_HOLD_PASSED
+VIEW_READY big_calendar 2026-11-08 23:00:57 full 8 partial 5
+AUTOMATIC_ROTATION_WAIT
+VIEW_READY month_weather 2026-11-08 23:02:21 full 9 partial 7
+VIEW_READY month_weather 2026-11-08 23:02:22 full 9 partial 7
+PASS {"version": "epaper-dashboard-0.3.0", "allFiveViewsPassed": ["month_weather", "almanac", "minimal_clock", "overview", "big_calendar"], "fixedModeHeldBeyondConfiguredInterval": true, "fixedNextRejected": true, "automaticRotationAt60SecondsObserved": true, "finalDefaultSeconds": 600, "finalMode": "rotate", "tradingPriority": "preserved, native boundary tests; no live trading at night", "settingsPreserved": true, "serialMonitorClosedThroughoutRuntimeTest": true, "physicalScreenConfirmation": "pending", "fullRefreshCount": 9, "partialRefreshCount": 7, "weatherError": "", "stockError": ""}

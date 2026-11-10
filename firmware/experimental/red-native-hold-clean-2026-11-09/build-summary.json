@@ -1,0 +1,15 @@
+{
+  "version": "red-native-hold-clean",
+  "applicationSha256": "6ad251da0e4e94b6c495ee6f351c5cb7175563fbdac2af3659a9dc46396d14a4",
+  "partitionUnchanged": true,
+  "profiles": [
+    "A8",
+    "A4"
+  ],
+  "candidateFrames": [
+    788,
+    721
+  ],
+  "change": "bounded WHITE-only group1 cleaning; native TP and voltage/end parameters retained; RED/hold group1 source zero",
+  "triggerLimit": 1
+}

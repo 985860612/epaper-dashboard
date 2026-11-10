@@ -1,0 +1,10 @@
+{
+  "version": "red-unaltered-native-control",
+  "applicationSha256": "734786dff9dcec065082cf00d81bd00f070e981b859434a16d0b136d03080436",
+  "partitionUnchanged": true,
+  "waveform": "unaltered native 227-byte control",
+  "nominalDriveMs": 19880,
+  "redTargetCode": "11",
+  "fullRefreshControl": true,
+  "triggerLimit": 1
+}

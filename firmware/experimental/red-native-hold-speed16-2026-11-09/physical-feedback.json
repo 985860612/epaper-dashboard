@@ -1,0 +1,11 @@
+{
+  "userFeedback": "基本上能接受了 红色为什么闪了好多次",
+  "colorQuality": "basically acceptable per user",
+  "flashing": "red flashed multiple times",
+  "flashingRegion": "awaiting clarification: changing center vs static right/background",
+  "measuredUpdateMs": 16829,
+  "baselineUpdateMs": 20404,
+  "speedupPercent": 17.52,
+  "deviceState": "sleeping one-shot image; retain until region feedback",
+  "automaticRepeats": false
+}

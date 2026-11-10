@@ -1,0 +1,9 @@
+{
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "port": "/dev/cu.usbmodem2101",
+  "partition_unchanged": true,
+  "lut_unchanged": true,
+  "app_sha256": "ad47573c4c106fe973fdb697d5c0039e3569cfa03123745399f9cc95a295159d",
+  "tests": "PASS: session boundaries, lunch compression, holidays/year expiry, and volume-weighted price",
+  "layout_preview": "stock-spacing-comparison.png"
+}

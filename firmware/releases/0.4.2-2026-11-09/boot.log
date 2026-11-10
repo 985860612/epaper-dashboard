@@ -1,0 +1,12 @@
+{"event":"status","version":"epaper-dashboard-0.4.2","ip":"","clockReady":true,"lastNtpSync":0,"phase":"trading","ap":false,"freeHeap":179068,"weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":0,"displayError":""}
+WIFI_CONNECTED ip=192.168.31.196
+WEATHER_FETCH ok=1 free_heap=179352
+STOCK_FETCH ok=1 points=189 free_heap=179356
+DISPLAY_BUSY elapsed_ms=5001 BUSY=1
+DISPLAY_BUSY elapsed_ms=10003 BUSY=1
+DISPLAY_BUSY elapsed_ms=15005 BUSY=1
+DISPLAY_BUSY elapsed_ms=20007 BUSY=1
+DISPLAY_BUSY elapsed_ms=25009 BUSY=1
+_Update_Full : 27641999
+RED_PROFILE ready=1 nominal_ms=14420 tail=A4
+DISPLAY_DONE kind=full view=stock elapsed_ms=28022 full=1 partial=0 BUSY=0

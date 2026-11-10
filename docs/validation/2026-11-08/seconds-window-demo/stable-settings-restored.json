@@ -1,0 +1,6 @@
+{
+  "view": "clock",
+  "partialEnabled": false,
+  "refreshMode": "color_full",
+  "refreshSeconds": 120
+}

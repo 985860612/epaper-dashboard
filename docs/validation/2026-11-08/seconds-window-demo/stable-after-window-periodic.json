@@ -1,0 +1,65 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:14:42",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:14:52",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:15:03",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:15:13",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:15:23",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:15:33",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:15:43",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 3,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  }
+]

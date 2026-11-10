@@ -1,0 +1,72 @@
+{
+  "chinese": "local/fonts/FangZhengJingXiHei-1.ttf",
+  "latin": "/System/Library/Fonts/Supplemental/Arial.ttf",
+  "weight": "Regular",
+  "cacheBytes": 32768,
+  "blockGlyphs": 512,
+  "roles": [
+    {
+      "name": "Axis",
+      "size": 16,
+      "scope": "numbers"
+    },
+    {
+      "name": "Dense",
+      "size": 18,
+      "scope": "full"
+    },
+    {
+      "name": "Body",
+      "size": 20,
+      "scope": "ui"
+    },
+    {
+      "name": "Title",
+      "size": 24,
+      "scope": "titles"
+    },
+    {
+      "name": "StockName",
+      "size": 24,
+      "scope": "custom",
+      "characters": "长江电力0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZshz*.- …",
+      "weight": "Regular",
+      "strokeWidth": 0,
+      "chineseFont": "/System/Library/AssetsV2/com_apple_MobileAsset_Font8/86ba2c91f017a3749571a82f2c6d890ac7ffb2fb.asset/AssetData/PingFang.ttc",
+      "chineseIndex": 3,
+      "chineseFace": [
+        "PingFang SC",
+        "Regular"
+      ]
+    },
+    {
+      "name": "Value",
+      "size": 48,
+      "scope": "clock"
+    },
+    {
+      "name": "Price",
+      "size": 48,
+      "scope": "custom",
+      "characters": "0123456789.- ",
+      "weight": "Bold"
+    },
+    {
+      "name": "CompactDate",
+      "size": 80,
+      "scope": "digits"
+    },
+    {
+      "name": "Clock",
+      "size": 112,
+      "scope": "clock"
+    },
+    {
+      "name": "Day",
+      "size": 164,
+      "scope": "digits"
+    }
+  ],
+  "latinBold": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+  "compressionIterations": 15
+}

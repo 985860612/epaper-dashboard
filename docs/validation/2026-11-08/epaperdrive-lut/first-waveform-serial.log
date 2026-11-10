@@ -1,0 +1,16 @@
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20409999
+DISPLAY_DONE kind=full elapsed_ms=20763 ready_busy=0 sleep_busy=0 full=1 partial=0 free_heap=148616
+{"event":"status","version":"epaper-dashboard-0.1.9-ssd1619-lut","ip":"192.168.31.196","clockReady":true,"lastNtpSync":0,"phase":"closed","ap":false,"freeHeap":178284,"weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":25807,"displayError":""}
+NTP_SYNC_OK interval_ms=3600000
+WEATHER_FETCH ok=1 free_heap=179184
+{"event":"partial_probe_queued"}
+WATCH_START seconds_only=1 x=272 y=80 width=96 height=72 frames=6 lut=ssd1619_dke42
+DISPLAY_BUSY elapsed_ms=5001 BUSY=1
+Busy Timeout!
+SSD1619_CUSTOM_PARTIAL : 8002091
+LUT_WINDOW_DONE x=272 y=80 w=96 h=72 bytes=70 update=C7 elapsed_ms=8003 BUSY=1
+PARTIAL_FAILED region=seconds elapsed_ms=8010 BUSY=1

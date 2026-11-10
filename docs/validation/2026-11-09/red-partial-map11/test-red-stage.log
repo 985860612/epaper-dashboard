@@ -1,0 +1,1 @@
+PASS: red11 target/erase/hold mapping and 200-byte-only BW change; actual native readback, 174-frame native-three-repeat candidate, unchanged native source, disabled groups, voltage/frame/layout/timing/drive-budget rejection

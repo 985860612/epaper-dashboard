@@ -1,0 +1,7 @@
+{
+  "nativeMatchesTrial2": true,
+  "candidateMatchesTrial2": true,
+  "onlyDriveDataChange": "center R/BW 10 -> 11; 200 BW bytes changed, R plane unchanged",
+  "nominalFrames": 174,
+  "nominalMs": 3480
+}

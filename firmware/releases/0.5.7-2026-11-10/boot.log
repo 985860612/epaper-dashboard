@@ -1,0 +1,15 @@
+START epaper-dashboard-0.5.7
+POWER_CPU requested_mhz=80 actual_mhz=80 applied=1
+POWER_WIFI requested=max_modem applied=1
+{"event":"power_awake"}
+{"event":"status","version":"epaper-dashboard-0.5.7","ip":"","clockReady":true,"lastNtpSync":0,"phase":"trading","ap":false,"freeHeap":177416,"cpuMHz":80,"wifiPowerSave":2,"idlePollMs":20,"sleepCount":0,"sleepTotalMs":0,"configSeconds":600,"powerError":"","weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":0,"displayError":""}
+WIFI_CONNECTED ip=192.168.31.196
+WEATHER_FETCH ok=1 free_heap=176520
+STOCK_FETCH ok=1 points=73 free_heap=176924
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20409999
+RED_PROFILE ready=1 nominal_ms=15760 tail=A8
+DISPLAY_DONE kind=full view=stock elapsed_ms=20930 full=1 partial=0 BUSY=0

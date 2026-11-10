@@ -1,0 +1,9 @@
+{
+  "version": "red-native-stage4-map11",
+  "applicationSha256": "c1a7e6b0c1a31c6030aa2c5f2c7455b2991d0809e9a63e00c073a7001ac1040b",
+  "partitionUnchanged": true,
+  "nativeRepeats": 3,
+  "nominalDriveMs": 3480,
+  "redTargetCode": "11",
+  "triggerLimit": 1
+}

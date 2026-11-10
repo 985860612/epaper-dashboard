@@ -1,0 +1,9 @@
+{
+  "version": "red-native-hold-speed16",
+  "applicationSha256": "4d7f3bb777ff10bdcfc352fd3ac92bb4867b7605555a6ee8ce3e4344a490d11c",
+  "partitionUnchanged": true,
+  "nominalFrames": 818,
+  "nominalMs": 16360,
+  "change": "skip prep groups2/3 only; native red-forming groups4/5/6 unchanged",
+  "triggerLimit": 1
+}

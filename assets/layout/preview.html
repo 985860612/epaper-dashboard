@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>横屏墨水屏 · 时间天气与自选股</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eee;color:#111;font:15px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:880px;margin:48px auto;padding:24px}h1{font-size:24px;margin:0 0 12px}p{line-height:1.8}nav{display:flex;gap:8px;margin:24px 0 16px}button{padding:9px 18px;border:1px solid #111;background:white;cursor:pointer;font:inherit}button[aria-pressed=true]{background:#111;color:white}.screen{width:min(100%,800px);aspect-ratio:4/3;background:white;border:1px solid #aaa}.screen img{width:100%;height:100%;display:block}.note{font-size:13px;color:#444}table{width:100%;border-collapse:collapse;background:white;margin-top:20px}td{padding:10px 14px;border-bottom:1px solid #ddd}td:first-child{white-space:nowrap}a{color:inherit}
+</style>
+<main>
+<h1>时间 · 天气 · 自选股</h1>
+<p>400 × 300 横屏，黑白红。天气位置：北京顺义。以下时间为版式示例，分时线与行情数字为模拟数据，天气与真实行情尚未接入。</p>
+<nav><button type="button" aria-pressed="false" data-mode="clock">日常：时间天气</button><button type="button" aria-pressed="true" data-mode="stock">开市：长江电力</button></nav>
+<div class="screen"><img id="screen" src="stock.svg" alt="股票模式：长江电力当日分时线，模拟数据"></div>
+<p class="note">按参考图使用当日分时走势：黑色价格折线、红色成交均价线、昨收虚线，左右分别标注价格与涨跌幅。初始关注长江电力，后续支持添加自选股。横轴覆盖 09:30–11:30、13:00–15:00，午间压缩，不连接不同交易日；未来时段留白。图中示例为 14:30，现价 29.91、涨跌额 +0.63、涨幅 +2.15%、均价 29.71 沿用用户参考图，仅用于说明版式，曲线为模拟数据，未接入真实行情。均价线使用模拟成交量加权计算，正式实现应使用行情源提供的成交均价或按其成交金额、成交量口径计算。09:15 起显示集合竞价价格与状态，09:30 起展示当天正式交易分时。字体和曲线按屏幕像素绘制。</p>
+<table aria-label="北京时间自动切换规则">
+<tr><td>09:15–09:25</td><td>股票页 · 集合竞价</td></tr>
+<tr><td>09:25–09:30</td><td>股票页 · 待开盘</td></tr>
+<tr><td>09:30–11:30</td><td>股票页 · 交易中</td></tr>
+<tr><td>11:30–13:00</td><td>时间天气页</td></tr>
+<tr><td>13:00–15:00</td><td>股票页 · 交易中（14:57 起标注收盘竞价）</td></tr>
+<tr><td>其余时间／休市日</td><td>时间天气页；按交易日历判断周末、节假日和休市安排</td></tr>
+</table>
+<p class="note">“下次开市”应由交易日历计算；这里仅为版式示意。股票页时间表示最近一次屏幕刷新时间，行情更新时间独立显示。三色屏完整刷新约需 20 秒，后续实现需按屏幕能力设置刷新间隔。</p>
+<p class="note">交易时间依据：<a href="https://www.sse.com.cn/lawandrules/sselawsrules2025/stocks/exchange/c/c_20260424_10816482.shtml">上海证券交易所交易规则（2026年修订）</a>。天气位置：北京顺义。</p>
+</main>
+<script>
+const img=document.querySelector('#screen');
+document.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{
+const stock=button.dataset.mode==='stock';img.src=stock?'stock.svg':'clock-weather.svg';img.alt=stock?'股票模式：长江电力当日分时线，模拟数据':'日常模式：大字时间和天气';
+document.querySelectorAll('button').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+}));
+</script></html>

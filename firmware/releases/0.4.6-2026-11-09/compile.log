@@ -1,0 +1,4 @@
+lto-wrapper: warning: using serial compilation of 4 LTRANS jobs
+lto-wrapper: note: see the '-flto' option documentation for more information
+Sketch uses 1289837 bytes (98%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 88928 bytes (27%) of dynamic memory, leaving 238752 bytes for local variables. Maximum is 327680 bytes.

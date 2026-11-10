@@ -1,0 +1,29 @@
+{
+  "fontPx": 20,
+  "rows": 7,
+  "fonts": [
+    "CardText20",
+    "TestArial20",
+    "TestSemi20",
+    "TestRou20",
+    "TestNoto20",
+    "TestJing20",
+    "TestJingXi20"
+  ],
+  "sampleGlyphsCovered": true,
+  "sampleBoundsInsidePanel": true,
+  "sampleColumnsSeparated": true,
+  "previewTime": "12:34 placeholder",
+  "userFontMissing": {
+    "FangZhengJingHei-1.metadata": [
+      "顺",
+      "义"
+    ],
+    "FangZhengJingXiHei-1.metadata": [],
+    "GenJyuuGothic-Medium-2.metadata": [
+      "顺",
+      "义"
+    ],
+    "NotoSansCJK-Regular-1.metadata": []
+  }
+}

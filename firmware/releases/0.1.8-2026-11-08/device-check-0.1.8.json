@@ -1,0 +1,20 @@
+{
+  "status": {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 18:00:26",
+    "lastNtpSync": "2026-11-08 17:59:40",
+    "ntpIntervalSeconds": 3600,
+    "rendering": false,
+    "displayError": "",
+    "lastFrameElapsedMs": 20651,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "weatherError": ""
+  },
+  "config": {
+    "view": "clock",
+    "partialEnabled": false,
+    "refreshMode": "color_full"
+  },
+  "weatherValid": true
+}

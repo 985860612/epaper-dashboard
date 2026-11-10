@@ -1,0 +1,19 @@
+{
+  "status": {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 19:13:13",
+    "rendering": true,
+    "displayError": "",
+    "lastFrameElapsedMs": 20645,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastNtpSync": "2026-11-08 19:12:43",
+    "weatherValid": true
+  },
+  "config": {
+    "view": "clock",
+    "partialEnabled": false,
+    "refreshMode": "color_full",
+    "refreshSeconds": 120
+  }
+}

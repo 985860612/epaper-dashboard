@@ -1,0 +1,32 @@
+[
+  {
+    "key": "01-big-calendar",
+    "name": "大字日历",
+    "description": "远距离看日期，红色大字成为页面中心。",
+    "needs": "日期、星期、时间、单城天气"
+  },
+  {
+    "key": "02-month-weather",
+    "name": "月历天气",
+    "description": "整月安排与今天并列，适合常驻桌面。",
+    "needs": "日期、星期、时间、月历、单城天气"
+  },
+  {
+    "key": "03-almanac",
+    "name": "黄历",
+    "description": "农历与传统黄历分区，宜忌一眼可辨。",
+    "needs": "农历按Asia/Shanghai的Intl Chinese日历换算；宜忌仅为排版示例，未接入当天黄历数据。"
+  },
+  {
+    "key": "04-minimal-clock",
+    "name": "极简时钟",
+    "description": "时间占主视觉，天气集中在底部。",
+    "needs": "北京时间、星期、单城天气；可沿用现有数据"
+  },
+  {
+    "key": "05-daily-overview",
+    "name": "今日总览",
+    "description": "日期、时间、天气与一只股票集中展示。",
+    "needs": "价格示例沿用11月6日历史数值，曲线为版式示意；未接入新页面"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "version": "red-native-stage4-native3",
+  "applicationSha256": "ac92a00638bfaa65c5a53b1e4b3e3a7dae960571ba9c7212ad678dac71d09031",
+  "partitionUnchanged": true,
+  "nativeRepeats": 3,
+  "nominalFrames": 174,
+  "nominalDriveMs": 3480,
+  "triggerLimit": 1
+}

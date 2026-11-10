@@ -1,0 +1,24 @@
+WEATHER_FETCH ok=1 free_heap=175836
+DISPLAY_BUSY elapsed_ms=5001 BUSY=1
+DISPLAY_BUSY elapsed_ms=10003 BUSY=1
+DISPLAY_BUSY elapsed_ms=15005 BUSY=1
+DISPLAY_BUSY elapsed_ms=20007 BUSY=1
+_Update_Full : 20408001
+DISPLAY_DONE kind=full elapsed_ms=20682 ready_busy=0 sleep_busy=0 full=2 partial=0 free_heap=145760
+HOST_PROBE_SENT
+{"event":"partial_probe_queued"}
+SSD1619_OTP_MODE2_LOAD : 6
+OTP_MODE2_LOAD elapsed_ms=1 BUSY=0
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+SSD1619_OTP_MODE2_DISPLAY : 17642001
+OTP_MODE2_DISPLAY elapsed_ms=17644 BUSY=0
+PARTIAL_FAILED region=clock elapsed_ms=17662 BUSY=0
+DISPLAY_DONE kind=partial elapsed_ms=17663 ready_busy=0 sleep_busy=0 full=2 partial=0 free_heap=145324
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20409999
+DISPLAY_DONE kind=full elapsed_ms=20527 ready_busy=0 sleep_busy=1 full=3 partial=0 free_heap=145324

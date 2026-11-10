@@ -1,0 +1,30 @@
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20409999
+DISPLAY_DONE kind=full elapsed_ms=20763 ready_busy=0 sleep_busy=0 full=1 partial=0 free_heap=148556
+NTP_SYNC_OK interval_ms=3600000
+WEATHER_FETCH ok=1 free_heap=176564
+HOST_SECONDS_WINDOW_TRIGGERED
+{"event":"partial_probe_queued"}
+WATCH_START seconds_only=1 x=272 y=80 width=96 height=72 frames=3
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+BW_SECONDS_WINDOW : 17648000
+SECONDS_WINDOW_DONE x=272 y=80 w=96 h=72 elapsed_ms=17649 BUSY=0
+PARTIAL_DONE region=seconds elapsed_ms=17655 ready_busy=0
+DISPLAY_DONE kind=partial elapsed_ms=17661 ready_busy=0 sleep_busy=0 full=1 partial=1 free_heap=147992
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+BW_SECONDS_WINDOW : 17646000
+SECONDS_WINDOW_DONE x=272 y=80 w=96 h=72 elapsed_ms=17647 BUSY=0
+PARTIAL_DONE region=seconds elapsed_ms=17653 ready_busy=0
+DISPLAY_DONE kind=partial elapsed_ms=17659 ready_busy=0 sleep_busy=0 full=1 partial=2 free_heap=146676
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+BW_SECONDS_WINDOW : 17646000
+SECONDS_WINDOW_DONE x=272 y=80 w=96 h=72 elapsed_ms=17647 BUSY=0
+PARTIAL_DONE region=seconds elapsed_ms=17653 ready_busy=0
+WATCH_PAUSED frames=3 waiting_for_observer_feedback
+DISPLAY_DONE kind=partial elapsed_ms=17659 ready_busy=0 sleep_busy=0 full=1 partial=3 free_heap=144216

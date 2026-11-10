@@ -1,0 +1,10 @@
+{
+  "version": "epaper-dashboard-0.1.9-lowbias",
+  "fontsUnchanged": true,
+  "lutSameAsConfirmedBaseline": true,
+  "temporaryVcom": "08 (-0.2V)",
+  "restoreVcom": "read actual native 0x33 byte232; baseline was 50 (-2.0V)",
+  "nativeGateSourceAndEndParametersPreserved": true,
+  "partitionSameAsConfirmedBaseline": true,
+  "appSha256": "64adba2fc8beba75ed69101e18d09a01ca5e810323b288e00f9248ca6bece28f"
+}

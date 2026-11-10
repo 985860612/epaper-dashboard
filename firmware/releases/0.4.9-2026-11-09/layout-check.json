@@ -1,0 +1,22 @@
+{
+  "fontPx": 20,
+  "rows": 5,
+  "fonts": [
+    "CardText20",
+    "TestArial20",
+    "TestSemi20",
+    "TestRou20",
+    "TestNoto20"
+  ],
+  "sampleGlyphsCovered": true,
+  "sampleBoundsInsidePanel": true,
+  "sampleColumnsSeparated": true,
+  "previewTime": "12:34 placeholder",
+  "userFontMissing": {
+    "Gen Jyuu Gothic Medium": [
+      "顺",
+      "义"
+    ],
+    "Noto Sans CJK Regular": []
+  }
+}

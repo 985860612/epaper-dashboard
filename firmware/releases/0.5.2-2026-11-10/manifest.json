@@ -1,0 +1,33 @@
+{
+  "version": "epaper-dashboard-0.5.2",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "stockMinutePartialMs": 955,
+  "applicationProgramBytes": 1309525,
+  "applicationBinaryBytes": 1309776,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "b260297f2c988ea6335e92f9ca194e16950955745cadef3161922c6ac80774e6",
+    "boot.log": "bc3b619c16285da0fcef7dff4874e81efcdff7edca5578fbb4f4730e83bc2384",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "123793c1b4eafd4ba984c6b946743c59862389c8132aebb946d3fba765173cb3",
+    "device-check.log": "4bc78036d6aa8a0e1be1f3788badf6c36ac56e8bc9173b85c545f8587b4a8ac9",
+    "epaper_dashboard.ino.bin": "db6c8e7a7be2f5b2d66ee09658978bb8054bb1a1dab77e7d18620fe4eccad324",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "f1496d7e60204c19fe394e8b31a31eb1b5dbaf12b4cbdfaa3671a79761f6cfdc",
+    "layout-check.json": "ab9d1eb38749248ff6c18e138ce3d37d9f379b7ed1f8706050f4c256fd3be48e",
+    "layout-preview.png": "54f7b054aab58424037d07ad95c347ddf3cfc84b4097b652f228d984b508034e",
+    "regression-tests.log": "7d05443990b68bc5115245f81dd4bae45da1c43002d1f08f9e67ab00c6583dd3",
+    "source.zip": "3432ad32e6194f475cf65658b8e35614d76bf8363e068a7b7c925110e77b5a98",
+    "stock-preview.png": "777b9a82c58dc1f16db315c37fffbc5319a48353bd79251d8e1903de3d87aad0",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "7b57fa19500fbb77c2638b6567393e9b8c6fa384be994d2b8f377a2195027c3c",
+    "verification.json": "83a1a51727956e90aa2d955aae324ac34891a739264c3bd82c9c0d21084aca23",
+    "web-tests.log": "71202eec76856f84a890b03b5b182cac39d8c19a1442d03c744a5956c60c39ce"
+  }
+}

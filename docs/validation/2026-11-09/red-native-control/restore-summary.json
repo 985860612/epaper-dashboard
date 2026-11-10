@@ -1,0 +1,23 @@
+{
+  "version": "epaper-dashboard-0.3.2",
+  "time": "2026-11-09 09:36:02",
+  "displayedView": "stock",
+  "phase": "trading",
+  "displayError": "",
+  "weatherError": "",
+  "stockError": "",
+  "fullRefreshCount": 1,
+  "lastFrameKind": "partial",
+  "lastFrameElapsedMs": 939,
+  "configUnchanged": true,
+  "loopProgress": [
+    4227,
+    5610
+  ],
+  "uptimeProgress": [
+    39473,
+    44600
+  ],
+  "physicalRestoration": "pending user confirmation",
+  "nativeControlVisual": "pending user confirmation; restored after observation opportunity; no automatic retry"
+}

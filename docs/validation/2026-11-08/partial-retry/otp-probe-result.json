@@ -1,0 +1,36 @@
+{
+  "version": "epaper-dashboard-0.1.9-otp-probe",
+  "ip": "192.168.31.196",
+  "time": "2026-11-08 18:28:23",
+  "lastNtpSync": "2026-11-08 18:26:59",
+  "ntpIntervalSeconds": 3600,
+  "phase": "closed",
+  "rendering": false,
+  "weatherError": "",
+  "stockError": "",
+  "displayError": "",
+  "freeHeap": 173144,
+  "lastFrameKind": "full",
+  "lastFrameElapsedMs": 20527,
+  "partialStatus": "unsupported_or_timeout",
+  "fullRefreshCount": 3,
+  "partialRefreshCount": 0,
+  "weather": {
+    "valid": true,
+    "text": "\u591a\u4e91",
+    "temp": 7,
+    "observedAt": "2026-11-08T18:05+08:00",
+    "receivedAt": 1794133641
+  },
+  "stock": {
+    "valid": false,
+    "symbol": "",
+    "name": "",
+    "price": 0,
+    "previous": 0,
+    "stamp": "",
+    "minuteDate": "",
+    "receivedAt": 0,
+    "points": []
+  }
+}

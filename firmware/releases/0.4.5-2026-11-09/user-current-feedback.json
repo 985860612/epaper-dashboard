@@ -1,0 +1,11 @@
+{
+  "source": "user external meter report",
+  "userText": "还要40ma左右",
+  "supplyVolts": 5,
+  "measurementScope": "whole device at USB input",
+  "beforeApproxMilliAmps": 50,
+  "afterApproxMilliAmps": 40,
+  "approxReductionPercent": 20,
+  "independentlyMeasuredByAgent": false,
+  "nextStep": "clarify whether always-on web availability is required"
+}

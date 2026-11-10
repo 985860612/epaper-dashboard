@@ -1,0 +1,51 @@
+{"event":"status","version":"epaper-dashboard-0.1.9-point-replay","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794142485,"phase":"closed","ap":false,"freeHeap":175708,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":28279,"displayError":""}
+{"event":"partial_probe_queued"}
+WATCH_START stock_replay=1 frames=242 points_per_frame=1 gap_ms=0
+CUSTOM_LUT_POWER_ON : 91998
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=1 visible=1/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=1 free_heap=145068
+CUSTOM_LUT_POWER_ON : 91998
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=2 visible=2/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=2 free_heap=145068
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=3 visible=3/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=3 free_heap=145068
+CUSTOM_LUT_POWER_ON : 91998
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=4 visible=4/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=4 free_heap=145068
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=5 visible=5/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=5 free_heap=144808
+CUSTOM_LUT_POWER_ON : 91998
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=6 visible=6/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=6 free_heap=144804
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=7 visible=7/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=7 free_heap=144804
+CUSTOM_LUT_POWER_ON : 91998
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=8 visible=8/242 header=9e055cda
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=8 free_heap=144804

@@ -1,0 +1,21 @@
+{
+  "version": "epaper-dashboard-0.1.9-lowbias2",
+  "result": "Initial full refresh exceeded 90s; zero successful full/partial cycles. Low-bias branch was not reached.",
+  "restoredImage": "epaper-dashboard-0.1.9-lut227",
+  "restoreUploadVerified": true,
+  "restoreImageSha256": "7d7d137769c80b6f69a1c0c93157a0b4d73713700ccf4eebd51b2de9aa091774",
+  "reason": "Reported full cycle 353ms, abnormally short versus known ~20s; physical whole-device power cycle requested.",
+  "restoredDisplayVerifiedBeforePowerCycle": false,
+  "afterUserPowerCycle": {
+    "fullElapsedMs": 20765,
+    "fullCount": 1,
+    "partialCount": 6,
+    "partialElapsedMsRange": [
+      932,
+      935
+    ],
+    "displayError": "",
+    "rendering": false
+  },
+  "restoredDisplayVerified": true
+}

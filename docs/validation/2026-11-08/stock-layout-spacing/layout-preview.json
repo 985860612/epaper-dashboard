@@ -1,0 +1,19 @@
+{
+  "before": {
+    "status_baseline": 69,
+    "date_baseline": 89,
+    "delta_baseline": 110,
+    "date_to_delta_pixels": 21,
+    "summary_row": true
+  },
+  "after": {
+    "status_baseline": 69,
+    "date_baseline": 93,
+    "delta_baseline": 120,
+    "date_to_delta_pixels": 27,
+    "summary_row": false
+  },
+  "data_source": "保存的2026-11-06历史快照，展示前61/242点",
+  "price": 29.67,
+  "preview_is_hardware_validation": false
+}

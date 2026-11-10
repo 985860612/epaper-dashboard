@@ -1,0 +1,9 @@
+{
+  "version": "red-native-complete-hold",
+  "applicationSha256": "5757dccfd9bd6e27e7b4ed69a5c3376821f1d0332c4b0915aa8fe30eb59c7ceb",
+  "partitionUnchanged": true,
+  "waveform": "complete native VCOM/RED/WHITE with only LUTB source levels zeroed",
+  "nominalDriveMs": 19880,
+  "redTargetCode": "11",
+  "triggerLimit": 1
+}

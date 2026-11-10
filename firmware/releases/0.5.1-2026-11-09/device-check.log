@@ -1,0 +1,10 @@
+{"case": "big_calendar", "displayedView": "big_calendar", "fullRefreshCount": 2, "partialRefreshCount": 2, "lastFrameKind": "partial", "lastFrameElapsedMs": 942, "loopCount": 1675}
+{"case": "month_weather", "displayedView": "month_weather", "fullRefreshCount": 3, "partialRefreshCount": 2, "lastFrameKind": "full", "lastFrameElapsedMs": 20786, "loopCount": 1716}
+{"case": "almanac", "displayedView": "almanac", "fullRefreshCount": 4, "partialRefreshCount": 3, "lastFrameKind": "partial", "lastFrameElapsedMs": 974, "loopCount": 1771}
+{"case": "minimal_clock", "displayedView": "minimal_clock", "fullRefreshCount": 5, "partialRefreshCount": 3, "lastFrameKind": "full", "lastFrameElapsedMs": 20786, "loopCount": 1835}
+{"case": "overview", "displayedView": "overview", "fullRefreshCount": 6, "partialRefreshCount": 3, "lastFrameKind": "full", "lastFrameElapsedMs": 20784, "loopCount": 1849}
+{"case": "stock", "displayedView": "stock", "fullRefreshCount": 7, "partialRefreshCount": 3, "lastFrameKind": "full", "lastFrameElapsedMs": 20787, "loopCount": 1865}
+{"case": "stock_minute_partial", "displayedView": "stock", "fullRefreshCount": 7, "partialRefreshCount": 4, "lastFrameKind": "partial", "lastFrameElapsedMs": 1033, "loopCount": 3490}
+{"case": "restored_clock", "displayedView": "minimal_clock", "fullRefreshCount": 8, "partialRefreshCount": 4, "lastFrameKind": "full", "lastFrameElapsedMs": 20785, "loopCount": 3509}
+{"case": "minimal_clock_minute_partial", "displayedView": "minimal_clock", "fullRefreshCount": 8, "partialRefreshCount": 5, "lastFrameKind": "partial", "lastFrameElapsedMs": 983, "loopCount": 4943}
+ALL_SIX_PAGES_AND_MINUTE_PARTIALS_VERIFIED; ORIGINAL_CONFIG_RESTORED; SLEEP_WINDOW_CLOSED

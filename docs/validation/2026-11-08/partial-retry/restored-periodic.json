@@ -1,0 +1,38 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 18:42:11",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20647
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 18:42:21",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20647
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 18:42:32",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20647
+  },
+  {
+    "version": "epaper-dashboard-0.1.8",
+    "time": "2026-11-08 18:42:42",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20567
+  }
+]

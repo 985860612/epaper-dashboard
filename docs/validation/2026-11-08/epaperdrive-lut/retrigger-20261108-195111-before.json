@@ -1,0 +1,36 @@
+{
+  "version": "epaper-dashboard-0.1.9-lut227",
+  "ip": "192.168.31.196",
+  "time": "2026-11-08 19:51:11",
+  "lastNtpSync": "2026-11-08 19:48:28",
+  "ntpIntervalSeconds": 3600,
+  "phase": "closed",
+  "rendering": false,
+  "weatherError": "",
+  "stockError": "",
+  "displayError": "",
+  "freeHeap": 175584,
+  "lastFrameKind": "partial",
+  "lastFrameElapsedMs": 933,
+  "partialStatus": "custom_lut_busy_passed_visual_pending",
+  "fullRefreshCount": 1,
+  "partialRefreshCount": 6,
+  "weather": {
+    "valid": true,
+    "text": "多云",
+    "temp": 4,
+    "observedAt": "2026-11-08T19:37+08:00",
+    "receivedAt": 1794138511
+  },
+  "stock": {
+    "valid": false,
+    "symbol": "",
+    "name": "",
+    "price": 0,
+    "previous": 0,
+    "stamp": "",
+    "minuteDate": "",
+    "receivedAt": 0,
+    "points": []
+  }
+}

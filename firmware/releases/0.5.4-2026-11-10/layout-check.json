@@ -1,0 +1,15 @@
+{
+  "pageSource": "firmware/epaper_dashboard/page_draw.h and cards_draw.h",
+  "exampleData": true,
+  "normalPages": 6,
+  "fontProofPages": 1,
+  "allGlyphsDecoded": true,
+  "glyphBoundsAndTextOverlap": "passed",
+  "timeWeatherPartialWindows": "passed",
+  "monthFixtures": "all 36 months 2026–2028; first and last days",
+  "inputFixtures": "long cities, long names, extreme numbers, missing data, UTF-8 fitting",
+  "family": "FangZhengJingXiHei + Arial Regular; Price Arial Bold",
+  "waveformChanges": false,
+  "stockAxisPx": 20,
+  "stockNameWeight": "Regular"
+}

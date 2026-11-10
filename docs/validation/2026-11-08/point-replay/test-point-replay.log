@@ -1,0 +1,1 @@
+PASS: exactly one new point each frame for 1..245 points; empty initial canvas, no skips or out-of-bounds, full final coverage

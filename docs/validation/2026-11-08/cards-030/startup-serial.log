@@ -1,0 +1,5 @@
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=280 y=0 w=120 h=48 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=time elapsed_ms=925
+DISPLAY_DONE kind=partial view=clock elapsed_ms=930 full=1 partial=2 BUSY=0

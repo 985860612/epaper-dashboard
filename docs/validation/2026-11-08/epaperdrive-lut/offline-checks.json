@@ -1,0 +1,22 @@
+{
+  "lutBytes": 70,
+  "matchesUpstream": true,
+  "sha256": "713f59d91a98aeab3c6e3346e3e6b7a081ed061cf0230c56264cccceeb54ca71",
+  "unchangedPixelWaveformsZero": true,
+  "fontsUnchanged": [
+    "font_data.h",
+    "native_text.h",
+    "generated_styles.h",
+    "styled_text.h"
+  ],
+  "nativeVoltagesPreserved": true,
+  "otpProgramming": false,
+  "window": [
+    272,
+    80,
+    96,
+    72
+  ],
+  "maxFrames": 6,
+  "gapMs": 3000
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:12",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20765,
+    "partialStatus": "history_replay_ready",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:15",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20765,
+    "partialStatus": "history_replay_ready",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:19",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20765,
+    "partialStatus": "history_replay_ready",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:22",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20765,
+    "partialStatus": "history_replay_ready",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:25",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 1,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:28",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 2,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:31",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 3,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:35",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 3,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:38",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 4,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:41",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 5,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:44",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 5,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:47",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 6,
+    "lastFrameElapsedMs": 1025,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:50",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 7,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:53",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 8,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:41:57",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 9,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:42:00",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 9,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:42:03",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 10,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:42:06",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 11,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-stock-replay",
+    "time": "2026-11-08 20:42:09",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 12,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  }
+]

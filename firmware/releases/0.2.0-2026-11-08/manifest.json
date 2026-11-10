@@ -1,0 +1,76 @@
+{
+  "version": "epaper-dashboard-0.2.0",
+  "date": "2026-11-08",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "applicationBytes": 1282537,
+  "staticRamBytes": 88208,
+  "partition": "default 4 MB unchanged; no erase",
+  "applicationSha256": "0f088e7cd808890d998fe79f5ec85f0c66799c444e6bd32da445d5cf3428abd9",
+  "sources": {
+    "firmware/epaper_dashboard/screen.cpp": "f1eab1f0b90892aed1db0ae01617a24f996f5dc2f80c0ffbe2559717ae58d1db",
+    "firmware/epaper_dashboard/font_data.h": "aec86f59e9847ac2bb729e8483f58026cd28792d1c946229a02ea66218ea9106",
+    "firmware/epaper_dashboard/native_text.h": "195739da4e05adaa113a13b74bcf158bda3d69da321451fcfa320420f1ed562d",
+    "firmware/epaper_dashboard/web.cpp": "0d7543fcf157ffaffdf2e8ba5c63df28c314e9e3867f857a80b075d40158d81b",
+    "firmware/epaper_dashboard/app.h": "eaf2a1fe312e043f10bb57f2becd1465caf73aae221918d7249f08126d76ff56",
+    "firmware/epaper_dashboard/net.cpp": "795a2c1d40ffa8737df032328f9be9a66aca49a92de639512f2a5b356e9a9820",
+    "firmware/epaper_dashboard/web_page.h": "6d73a5218e99631c82214564ab2db2804fc5897a9f282f443889964b91f677f8",
+    "firmware/epaper_dashboard/epaper_dashboard.ino": "0b13f2a6869f0bc808bb067ff3b030288c65e6e2eddadbe12927305ea4189c6a",
+    "firmware/epaper_dashboard/styled_text.h": "b6221b955176aa48b6ba85edce509d8fb2d39806865b46485ddf9e8c1d1864df",
+    "firmware/epaper_dashboard/web_gzip.h": "9395b98cd493a02ab33090d824aaf9b6a9219b13090cae80a26646950b3235e2",
+    "firmware/epaper_dashboard/trust_roots.h": "63efa298b54a0f3a538d1e22da786a7d1991979fc46b1bb8fae2f90045f82c86",
+    "firmware/epaper_dashboard/market_clock.h": "6929083d0a6038283ecadde5b04f025532087fd9e9d6a9a6fe1fd5e9995a4442",
+    "firmware/epaper_dashboard/frame_canvas.h": "599c7676510bad1bc5ca8d286dd25cc5ceeb21d5db8b3e3d53fb7951903619be",
+    "firmware/epaper_dashboard/generated_styles.h": "eca6821e20f1396f9ba14c1cddbab2abab36919d46fed2124842cceac235860c",
+    "firmware/epaper_dashboard/settings.cpp": "baf7ec3f94b7dabd616247e6e00e3e791d8854babdee4eedc97c984764a8f204",
+    "tools/provision.py": "7f7ada11b8a8a005923f7a3e2fc76df5b226443ca16d30710c30760bfdfb6ef4",
+    "tools/build_fonts.py": "da990092a58555d22d1dc42fa8c2fdcfb8b52d9cde83be94df68fa59a44975a1",
+    "tests/test_market.cpp": "f4d72cef497d7642bae925b51628cdbe86e0a7f9f67aea58c5d239e580457355",
+    "licenses/EPaperDrive-LICENSE-AGPL-3.0.txt": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+  },
+  "changes": [
+    "firmware/epaper_dashboard/screen.cpp",
+    "firmware/epaper_dashboard/web.cpp",
+    "firmware/epaper_dashboard/app.h",
+    "firmware/epaper_dashboard/net.cpp",
+    "firmware/epaper_dashboard/epaper_dashboard.ino",
+    "tests/test_market.cpp",
+    "tools/build_page_gallery.py"
+  ],
+  "driver": "accepted 227-byte waveform and voltages unchanged",
+  "configurationChange": {
+    "view": "auto",
+    "refreshMode": "bw_partial",
+    "partialEnabled": true
+  },
+  "credentials": "NVS preserved; no secrets in archives",
+  "validation": {
+    "version": "epaper-dashboard-0.2.0",
+    "configuredView": "auto",
+    "displayedView": "clock",
+    "weekdayExpected": "Sunday clock",
+    "weatherValid": true,
+    "weatherError": "",
+    "displayError": "",
+    "ntpIntervalSeconds": 3600,
+    "loopProgress": [
+      1878,
+      26890
+    ],
+    "screenChecks": [
+      9,
+      85
+    ],
+    "partialProgress": [
+      1,
+      2
+    ],
+    "displayedTime": [
+      "2026-11-08 21:54:14",
+      "2026-11-08 21:55:00"
+    ],
+    "serialClosedSeconds": 76.23064345799503,
+    "settingsPreserved": true,
+    "liveTradingVerified": false,
+    "physicalScreenConfirmation": "pending"
+  }
+}

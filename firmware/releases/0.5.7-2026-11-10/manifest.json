@@ -1,0 +1,31 @@
+{
+  "version": "epaper-dashboard-0.5.7",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "minutePartialMs": 2017,
+  "applicationProgramBytes": 1310117,
+  "applicationBinaryBytes": 1310368,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "ce699a555dca39ebe421863036f3a9d93596e76786203134ac634b0a1c5f6b74",
+    "boot.log": "0936c2d79eb919027dcfa29480969f94f11615f18d0c90d9e2536651e5b68c70",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "207b053cbea5c934543fe7c5e4103bc04dc8947b4ec8d5c7ce12a44ad3078d1c",
+    "device-check.log": "94b6e08c5b71808e89e617d18fc3d77d163f1e752e80869957c5346b30fe3874",
+    "epaper_dashboard.ino.bin": "00fedf1ab07c439d8cacb1b1226133304875261445130ee31b3bb28b3b8b9ae9",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "41d8c27b402b280f2ae0e7def062854c35a06ec73ec81d1b54d37d9ed2d328e7",
+    "layout-check.json": "f386c209cd3cfc9cf4da874e960514a4d7f49caa5bfc6161df82dae2ab640a8e",
+    "regression-tests.log": "70a13058e1fceabb1c1394ec9d534699dd12e2b72fc958e2c5d015d040a7084f",
+    "source.zip": "efe5e520d7152b779c0f2d33adcc664e91c301c9f76828e081121d2a7130596c",
+    "stock-preview.png": "a4d9994f8e479747761b83c6bf3d0b0882fcb8dad447b6590130a1ecb23d7a18",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "8ab81ff036b1492f765f58b6643357646b1d14cd1e4e5accb1656724fe7c2702",
+    "verification.json": "afdb4cf2f5fcad1e9870234f86c9d937c46c96ad7815377178d7005f8f884ea6"
+  }
+}

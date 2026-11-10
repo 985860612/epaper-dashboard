@@ -1,0 +1,9 @@
+{
+  "fiveOptions": true,
+  "defaultMinutes": 10,
+  "fixedCardSave": "passed",
+  "rotationMinutesToSeconds": "passed",
+  "blankSecretsPreserved": true,
+  "mobileOverflow": "none",
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{"event":"status","version":"epaper-dashboard-0.1.9-stock-replay","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794141576,"phase":"closed","ap":false,"freeHeap":175688,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":29874,"displayError":""}
+{"event":"partial_probe_queued"}
+WATCH_START stock_replay=1 x=0 y=40 width=400 height=260 frames=12
+CUSTOM_LUT_POWER_ON : 92003
+LONG_LUT_CUSTOM_PARTIAL : 822003
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=1 visible=22/242 header=90511492
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=1 free_heap=144284
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 821996
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=2 visible=42/242 header=90511492
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=2 free_heap=144024

@@ -1,0 +1,85 @@
+{
+  "fontPx": [
+    18,
+    18,
+    24,
+    24
+  ],
+  "largeFontPx": 40,
+  "largeSamplesSameInk": "black",
+  "largeSample": "29.78 placeholder",
+  "rows": 4,
+  "fonts": [
+    "TestArialRegular18",
+    "TestArialBold18",
+    "TestArialRegular24",
+    "TestArialBold24"
+  ],
+  "selectedChinese": "FangZhengJingXiHei-1.ttf",
+  "sampleGlyphsCovered": true,
+  "sampleBoundsInsidePanel": true,
+  "sampleColumnsSeparated": true,
+  "previewTime": "12:34 placeholder",
+  "digitAdvancePixels": {
+    "TestArialRegular18": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "TestArialBold18": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "TestArialRegular24": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "TestArialBold24": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ]
+  },
+  "userFontMissing": {
+    "FangZhengJingHei-1.metadata": [
+      "顺",
+      "义"
+    ],
+    "FangZhengJingXiHei-1.metadata": [],
+    "GenJyuuGothic-Medium-2.metadata": [
+      "顺",
+      "义"
+    ],
+    "NotoSansCJK-Regular-1.metadata": []
+  }
+}

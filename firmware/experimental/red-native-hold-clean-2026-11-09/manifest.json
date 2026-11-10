@@ -1,0 +1,30 @@
+{
+  "version": "red-native-hold-clean",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "applicationSha256": "6ad251da0e4e94b6c495ee6f351c5cb7175563fbdac2af3659a9dc46396d14a4",
+  "observedProfile": "A4",
+  "measuredUpdateMs": 14862,
+  "visualAcceptance": "可以接受了",
+  "productionIntegration": false,
+  "partitionUnchanged": true,
+  "nvsUnchanged": true,
+  "files": {
+    "README.md": "0da99a433f3601e7bd496213e071fec2e61902dcd98f8b8ff3f6071a3167c849",
+    "baseline.log": "c5ec7ca1d13fbf5e6dbdf317599eba6e2e4441752858cedcfb2b9ac85de58ffd",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build-summary.json": "dec75ac293c3a0f132ffa37433de5212a76773213f43f063febb9408583afa55",
+    "build.options.json": "8e6dc28b11bd0e64b270ae49e6d7d82051220659161cbebc4bfc055f175eec4a",
+    "candidate227.bin": "13d0dfc021140242be26c6ef8a099c055f45abea88f7ebaf49fd3521e025476d",
+    "compile.log": "91c6f64f09cd8334390f87ec6e0e0bc76a89194762ff7d481f8832242f12073c",
+    "flash_args": "5b2b8e15d392506d676ffae2d37be24a5c267019f6a174f6727d45f7019e4523",
+    "native233.bin": "d73a8a5024ac769db7c2496843e1bf95e9e9d0564ed81c35a6a752e8898cfb36",
+    "physical-feedback.json": "9da25304cf36aaa16dad03f5185b18750c6b53409424a25c628ad6026ba12478",
+    "probe.log": "409de08955ccf9ce7e5467c95b6d6291df51ec4f9bd314b38d64f81023c3372e",
+    "red_hold_clean.ino.bin": "6ad251da0e4e94b6c495ee6f351c5cb7175563fbdac2af3659a9dc46396d14a4",
+    "red_hold_clean.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "red_hold_clean.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "source.zip": "5ba9d35764bd1dfc42a0f92342d839930c6aae1709e7b691e7266b36dee1dde7",
+    "test-native-clean.log": "d55340293b3733ba229bf73cdfa0ec3644403997828f5baeebde7b433db78867",
+    "upload-probe.log": "2c5d54f309ff946d6f1da713712e537a3ac1548644a53f7dc89c86da54c3fcc8"
+  }
+}

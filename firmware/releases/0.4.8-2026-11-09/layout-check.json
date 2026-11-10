@@ -1,0 +1,45 @@
+{
+  "calendarSmallFontPx": 20,
+  "largeTypographyUnchanged": true,
+  "visibleBoundsInsidePanel": true,
+  "fieldsDoNotOverlap": true,
+  "boxes": {
+    "month": [
+      34,
+      19,
+      153,
+      37
+    ],
+    "clock": [
+      323,
+      20,
+      381,
+      37
+    ],
+    "weekday": [
+      324,
+      59,
+      381,
+      78
+    ],
+    "day": [
+      115,
+      96,
+      283,
+      216
+    ],
+    "weather": [
+      65,
+      258,
+      203,
+      276
+    ],
+    "range": [
+      275,
+      259,
+      381,
+      277
+    ]
+  },
+  "preview": "values from user photograph; not live data"
+}

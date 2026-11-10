@@ -1,0 +1,18 @@
+{
+  "cards": [
+    "大字日历",
+    "月历天气",
+    "黄历",
+    "极简时钟",
+    "今日总览"
+  ],
+  "count": 5,
+  "calendarTimeAdded": true,
+  "selectionAndZoomAllPages": "passed",
+  "svgAndPngDownload": "passed",
+  "textOverflow": [],
+  "mobileOverflow": "none",
+  "browserErrors": [],
+  "lunarComputed": "2026丙午年九月三十星期日",
+  "almanacYiJi": "explicit example only"
+}

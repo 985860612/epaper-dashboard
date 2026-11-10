@@ -1,0 +1,15 @@
+{
+  "view": "clock",
+  "refreshMode": "color_full",
+  "partialEnabled": false,
+  "refreshSeconds": 120,
+  "rotationSeconds": 300,
+  "city": "北京顺义",
+  "location": "101010400",
+  "stocks": [
+    "sh600900"
+  ],
+  "calendarYear": 2026,
+  "apiKeyConfigured": true,
+  "wifiPasswordConfigured": true
+}

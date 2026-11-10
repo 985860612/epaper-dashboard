@@ -1,0 +1,31 @@
+{
+  "version": "epaper-dashboard-0.5.6",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "minutePartialMs": 18587,
+  "applicationProgramBytes": 1309777,
+  "applicationBinaryBytes": 1310016,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "a4eb3791196b6cc05e0a3885cfe2a39b1ec62453a8b647a3ac69f4be20013325",
+    "boot.log": "e1ed26fcaefc40db929d8df8b2dba880a2a8977420475524e2b96ec48b8a41f3",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "7cbc7663059f0bf5e9823a95dbb054ecebda1b81bca51bf423050be1bf5a69ed",
+    "device-check-initial.log": "cff453fd68fd037c19ef8d5e737a6376248d23e7ee333f02f4b50422a646d75f",
+    "epaper_dashboard.ino.bin": "c7502059350e359a91a99ee961d3ab88c0eefaffad083cfc3b52cc544daf60a7",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "41d8c27b402b280f2ae0e7def062854c35a06ec73ec81d1b54d37d9ed2d328e7",
+    "layout-check.json": "f386c209cd3cfc9cf4da874e960514a4d7f49caa5bfc6161df82dae2ab640a8e",
+    "regression-tests.log": "70a13058e1fceabb1c1394ec9d534699dd12e2b72fc958e2c5d015d040a7084f",
+    "source.zip": "64c4eabc6c9545b8914e85b4eb62df5b65ff8c8f5fe5e1b7acb8fe2fff594c61",
+    "stock-preview.png": "57d14a1301f07c3d0777b974968c41bdc0ead200b41f6814304b60d5f7284520",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "55bc0206496b5f7a79301676d57186c83f1559b34427811fcb0a2d48dbf549f7",
+    "verification.json": "c08e81c223d6e9cb89906a703c8a1d95b2641f196091240267f1a999fe07cdb5"
+  }
+}

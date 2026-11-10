@@ -1,0 +1,7 @@
+{
+  "version": "epaper-dashboard-0.4.5",
+  "cpuMHz": 80,
+  "wifiPowerSave": 2,
+  "idlePollMs": 20,
+  "displayError": ""
+}

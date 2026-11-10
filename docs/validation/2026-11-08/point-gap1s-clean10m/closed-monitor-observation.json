@@ -1,0 +1,42 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+    "time": "2026-11-08 21:26:12",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 7,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+    "time": "2026-11-08 21:26:15",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 9,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+    "time": "2026-11-08 21:26:18",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 10,
+    "lastFrameElapsedMs": 1024,
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+    "time": "2026-11-08 21:26:22",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 12,
+    "lastFrameElapsedMs": 1023,
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  }
+]

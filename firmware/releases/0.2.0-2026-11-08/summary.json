@@ -1,0 +1,30 @@
+{
+  "version": "epaper-dashboard-0.2.0",
+  "configuredView": "auto",
+  "displayedView": "clock",
+  "weekdayExpected": "Sunday clock",
+  "weatherValid": true,
+  "weatherError": "",
+  "displayError": "",
+  "ntpIntervalSeconds": 3600,
+  "loopProgress": [
+    1878,
+    26890
+  ],
+  "screenChecks": [
+    9,
+    85
+  ],
+  "partialProgress": [
+    1,
+    2
+  ],
+  "displayedTime": [
+    "2026-11-08 21:54:14",
+    "2026-11-08 21:55:00"
+  ],
+  "serialClosedSeconds": 76.23064345799503,
+  "settingsPreserved": true,
+  "liveTradingVerified": false,
+  "physicalScreenConfirmation": "pending"
+}

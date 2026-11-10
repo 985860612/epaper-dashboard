@@ -1,0 +1,117 @@
+{
+  "families": {
+    "chinese": [
+      "FZXHGB_YS",
+      "Regular"
+    ],
+    "latin": [
+      "Arial",
+      "Regular"
+    ]
+  },
+  "roles": [
+    {
+      "role": "Axis",
+      "px": 16,
+      "glyphs": 20,
+      "compressedBytes": 256,
+      "digitAdvance": 9,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "Dense",
+      "px": 18,
+      "glyphs": 3871,
+      "compressedBytes": 92496,
+      "digitAdvance": 10,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "Body",
+      "px": 20,
+      "glyphs": 442,
+      "compressedBytes": 10809,
+      "digitAdvance": 11,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "Title",
+      "px": 24,
+      "glyphs": 127,
+      "compressedBytes": 2416,
+      "digitAdvance": 13,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "StockName",
+      "px": 24,
+      "glyphs": 48,
+      "compressedBytes": 939,
+      "digitAdvance": 13,
+      "weight": "Bold",
+      "chineseStrokePx": 1
+    },
+    {
+      "role": "Value",
+      "px": 48,
+      "glyphs": 13,
+      "compressedBytes": 500,
+      "digitAdvance": 27,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "Price",
+      "px": 48,
+      "glyphs": 13,
+      "compressedBytes": 470,
+      "digitAdvance": 27,
+      "weight": "Bold",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "CompactDate",
+      "px": 80,
+      "glyphs": 10,
+      "compressedBytes": 883,
+      "digitAdvance": 45,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "Clock",
+      "px": 112,
+      "glyphs": 13,
+      "compressedBytes": 1339,
+      "digitAdvance": 62,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    },
+    {
+      "role": "Day",
+      "px": 164,
+      "glyphs": 10,
+      "compressedBytes": 2121,
+      "digitAdvance": 91,
+      "weight": "Regular",
+      "chineseStrokePx": 0
+    }
+  ],
+  "maxBlockBytes": 23069,
+  "cacheBytes": 32768,
+  "missingGlyphs": [],
+  "explicitAliases": {
+    "・": "·"
+  },
+  "retainedCommonHanCount": 3769,
+  "nonUiLegacySymbolsOmitted": 676,
+  "sourceSha256": {
+    "chinese": "00bd31d84b71e5456afa898aa3918ae871816ec4d67c39c62d057ace1d16ffa3",
+    "latin": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+    "latinBold": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+  }
+}

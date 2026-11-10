@@ -1,0 +1,7 @@
+{
+  "feedback": "还是会全屏闪",
+  "result": "seconds-only software window did not isolate the physical update",
+  "stopped": "WATCH_STOPPED",
+  "windowRequestsAtStop": 5,
+  "restoredFirmware": "0.1.8"
+}

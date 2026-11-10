@@ -1,0 +1,82 @@
+{
+  "families": {
+    "chinese": [
+      "FZXHGB_YS",
+      "Regular"
+    ],
+    "latin": [
+      "Arial",
+      "Regular"
+    ]
+  },
+  "roles": [
+    {
+      "role": "Axis",
+      "px": 16,
+      "glyphs": 20,
+      "compressedBytes": 256,
+      "digitAdvance": 9
+    },
+    {
+      "role": "Dense",
+      "px": 18,
+      "glyphs": 3871,
+      "compressedBytes": 92499,
+      "digitAdvance": 10
+    },
+    {
+      "role": "Body",
+      "px": 20,
+      "glyphs": 445,
+      "compressedBytes": 10892,
+      "digitAdvance": 11
+    },
+    {
+      "role": "Title",
+      "px": 24,
+      "glyphs": 162,
+      "compressedBytes": 3432,
+      "digitAdvance": 13
+    },
+    {
+      "role": "Value",
+      "px": 48,
+      "glyphs": 20,
+      "compressedBytes": 823,
+      "digitAdvance": 27
+    },
+    {
+      "role": "CompactDate",
+      "px": 80,
+      "glyphs": 10,
+      "compressedBytes": 883,
+      "digitAdvance": 45
+    },
+    {
+      "role": "Clock",
+      "px": 112,
+      "glyphs": 13,
+      "compressedBytes": 1339,
+      "digitAdvance": 62
+    },
+    {
+      "role": "Day",
+      "px": 164,
+      "glyphs": 10,
+      "compressedBytes": 2121,
+      "digitAdvance": 91
+    }
+  ],
+  "maxBlockBytes": 23098,
+  "cacheBytes": 32768,
+  "missingGlyphs": [],
+  "explicitAliases": {
+    "・": "·"
+  },
+  "retainedCommonHanCount": 3769,
+  "nonUiLegacySymbolsOmitted": 676,
+  "sourceSha256": {
+    "chinese": "00bd31d84b71e5456afa898aa3918ae871816ec4d67c39c62d057ace1d16ffa3",
+    "latin": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  }
+}

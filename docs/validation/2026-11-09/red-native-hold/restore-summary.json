@@ -1,0 +1,24 @@
+{
+  "version": "epaper-dashboard-0.3.2",
+  "time": "2026-11-09 09:59:35",
+  "displayedView": "stock",
+  "phase": "trading",
+  "displayError": "",
+  "weatherError": "",
+  "stockError": "",
+  "fullRefreshCount": 1,
+  "lastFrameKind": "partial",
+  "lastFrameElapsedMs": 1963,
+  "configUnchanged": true,
+  "loopProgress": [
+    7604,
+    9304
+  ],
+  "uptimeProgress": [
+    50237,
+    55355
+  ],
+  "physicalRestoration": "pending user confirmation",
+  "redHoldVisual": "accepted by user: perfect, only a little slow; one-shot 20404ms",
+  "stockIntegration": false
+}

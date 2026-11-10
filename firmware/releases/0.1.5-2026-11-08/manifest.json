@@ -1,0 +1,33 @@
+{
+  "version": "epaper-dashboard-0.1.5",
+  "date": "2026-11-08",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "core": "3.3.11",
+  "partition": "default 4MB, unchanged",
+  "sources": {
+    "firmware/epaper_dashboard/app.h": "cafb44052b7587f6d1f55656266cc29a39a7fe64f3bae5fa595a293d88a000a1",
+    "firmware/epaper_dashboard/epaper_dashboard.ino": "90fbde6fc78cac147fd24ccd54be1a4dc58a8069f2e4ccd39eb2af4542503061",
+    "firmware/epaper_dashboard/font_data.h": "236e23578057bb54ba7f063d9d532f301588293c5a357cf2e0a75f1da2c66bee",
+    "firmware/epaper_dashboard/frame_canvas.h": "599c7676510bad1bc5ca8d286dd25cc5ceeb21d5db8b3e3d53fb7951903619be",
+    "firmware/epaper_dashboard/generated_styles.h": "5945201491a812a4e7bbc849fa26a3aa4b25d1c278b67ff0d3ffe02814b2fad1",
+    "firmware/epaper_dashboard/market_clock.h": "6929083d0a6038283ecadde5b04f025532087fd9e9d6a9a6fe1fd5e9995a4442",
+    "firmware/epaper_dashboard/native_text.h": "195739da4e05adaa113a13b74bcf158bda3d69da321451fcfa320420f1ed562d",
+    "firmware/epaper_dashboard/net.cpp": "a8f5b40204e1d06beaa9e825166c9cb2962bc1a4e2a8c9e3eac2629d2bd03852",
+    "firmware/epaper_dashboard/screen.cpp": "dea8a311058fae5a9ca18b7f8783c4a0c4d1cbd5c2d68c965fc0d6e52de93621",
+    "firmware/epaper_dashboard/settings.cpp": "baf7ec3f94b7dabd616247e6e00e3e791d8854babdee4eedc97c984764a8f204",
+    "firmware/epaper_dashboard/styled_text.h": "b6221b955176aa48b6ba85edce509d8fb2d39806865b46485ddf9e8c1d1864df",
+    "firmware/epaper_dashboard/trust_roots.h": "63efa298b54a0f3a538d1e22da786a7d1991979fc46b1bb8fae2f90045f82c86",
+    "firmware/epaper_dashboard/web.cpp": "c6ca984db6356ccb02fff1e1bcb774432a45cf2ace29c5b36799a0957b4e8a9f",
+    "firmware/epaper_dashboard/web_gzip.h": "9395b98cd493a02ab33090d824aaf9b6a9219b13090cae80a26646950b3235e2",
+    "firmware/epaper_dashboard/web_page.h": "6d73a5218e99631c82214564ab2db2804fc5897a9f282f443889964b91f677f8"
+  },
+  "binaries": {
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "epaper_dashboard.ino.bin": "20e5f86c6f1859147b83d46cbca83d240f24891f1459109fde0837841c2d2f91",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+  },
+  "refresh": "current HINK uses full color refresh; incompatible BW partial path disabled after measured 8009ms timeout",
+  "credentials": "USB-provisioned NVS, no embedded credentials",
+  "validation": "docs/validation.md"
+}

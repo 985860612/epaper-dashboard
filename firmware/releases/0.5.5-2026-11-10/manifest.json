@@ -1,0 +1,32 @@
+{
+  "version": "epaper-dashboard-0.5.5",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "stockMinutePartialMs": 954,
+  "applicationProgramBytes": 1309781,
+  "applicationBinaryBytes": 1310032,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "1c785ec710ef8fb955db7075a89fa24741825391d1396da2407c72ac27a4a111",
+    "boot.log": "931d2ec2694dd5096cb89d8808927e8f5042b668fdc3fce3bb2388cde4f9ff6d",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "18e95376104f85a41d93e78186b93beebdbcfb270a218435db2cf5ea3146a528",
+    "device-check.log": "5188790fe1baacebe9544cae2c68b58b233b27ece1f7af783e0b4627529d438d",
+    "epaper_dashboard.ino.bin": "c42642e901ae6e017c48c81c61f4ff1ec63b396a6d32af4976796247f3e6db06",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "41d8c27b402b280f2ae0e7def062854c35a06ec73ec81d1b54d37d9ed2d328e7",
+    "font-verification.json": "7d014bae7783a79abb30fd2a4709d2ea85ef1916292cead53ed4ee3b7c46d26c",
+    "layout-check.json": "f386c209cd3cfc9cf4da874e960514a4d7f49caa5bfc6161df82dae2ab640a8e",
+    "regression-tests.log": "e50966afb6e04db72b3183a528d3fe69f9696e445f088909e92091b937c56c48",
+    "source.zip": "b2ed008fcd6f6723b7973e2f87ba4ec06f60170f997ca62ef1bc454894fa7932",
+    "stock-preview.png": "bb177dbb853e116c7926ea9a2affb5578766fa6fc0135a69dd396302573d37ff",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "cad5804b0a43cf50d7a3559eb80ffc3366f99f6dd84d4190267c2ffaf2d8865f",
+    "verification.json": "40980a670f148b8f37aaf77e0baa874a63987f56676f9e98be3d8af809685545"
+  }
+}

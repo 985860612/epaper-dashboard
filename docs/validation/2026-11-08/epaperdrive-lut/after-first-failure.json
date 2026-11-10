@@ -1,0 +1,12 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-ssd1619-lut",
+    "time": "2026-11-08 19:39:11",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 2,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20538,
+    "partialStatus": "unsupported_or_timeout"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "version": "0.1.1",
+  "date": "2026-11-08",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "source": {
+    "firmware/epaper_dashboard/app.h": "00a9d8bfb99c18a7c9622f1cdaa64b4d554750cb649c0092965a7a2d8c91722c",
+    "firmware/epaper_dashboard/epaper_dashboard.ino": "88b4cdb4d65b686d289c0dcf11d35227bc32a95a9f3dc019c5621de2720bfe14",
+    "firmware/epaper_dashboard/font_data.h": "f7c70d334842e43591a20516f233dcdd904ff3cbafb304fb936ccf80fae85008",
+    "firmware/epaper_dashboard/market_clock.h": "6929083d0a6038283ecadde5b04f025532087fd9e9d6a9a6fe1fd5e9995a4442",
+    "firmware/epaper_dashboard/native_text.h": "375948432911b1436d15db7f6f6f8a2ab87286db366b5851188fd87e5aa3a30e",
+    "firmware/epaper_dashboard/net.cpp": "a8f5b40204e1d06beaa9e825166c9cb2962bc1a4e2a8c9e3eac2629d2bd03852",
+    "firmware/epaper_dashboard/screen.cpp": "a8d49c523f198cb77c1d463cac34a591bfdb316a2b4f63819bff90f15a02c910",
+    "firmware/epaper_dashboard/settings.cpp": "3a2424e4f0b3a4b2a818b1c79dd0b06393b79e509cc8d7bb31606798d7976b37",
+    "firmware/epaper_dashboard/trust_roots.h": "63efa298b54a0f3a538d1e22da786a7d1991979fc46b1bb8fae2f90045f82c86",
+    "firmware/epaper_dashboard/web.cpp": "dfad04d2c3782e3d6ac689fbc16c5747c9180af97d3282825747dddd963b563a",
+    "firmware/epaper_dashboard/web_gzip.h": "7d88d4b75d9fb49a15a0ffea8ff002541ec6ee9b50d7d44ae2e7eec0c2d19d71",
+    "firmware/epaper_dashboard/web_page.h": "a6a205cb9143a23fd536dd156d20a185325954b88ecc37746a09d4fe62f0c8fa"
+  },
+  "observed": "Upload verified; DISPLAY_DONE 21826ms ready_busy=0; user requested pixel-style font next."
+}

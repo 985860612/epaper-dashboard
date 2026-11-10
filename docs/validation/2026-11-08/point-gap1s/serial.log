@@ -1,0 +1,1465 @@
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20007 BUSY=1
+_Update_Full : 20410999
+STOCK_REPLAY_FRAME step=0 visible=0/242 header=87570599
+DISPLAY_DONE kind=full elapsed_ms=20764 ready_busy=0 sleep_busy=0 full=1 partial=0 free_heap=145020
+NTP_SYNC_OK interval_ms=3600000
+WEATHER_FETCH ok=1 free_heap=175256
+STOCK_FETCH ok=1 points=242 free_heap=175252
+{"event":"partial_probe_queued"}
+WATCH_START stock_replay=1 frames=242 points_per_frame=1 gap_ms=1000
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=1 visible=1/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=1 free_heap=144744
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=2 visible=2/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=2 free_heap=144736
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=3 visible=3/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=3 free_heap=144428
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822009
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=4 visible=4/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=4 free_heap=144476
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=5 visible=5/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=5 free_heap=144476
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=6 visible=6/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=6 free_heap=144176
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=7 visible=7/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=7 free_heap=144224
+CUSTOM_LUT_POWER_ON : 91994
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=8 visible=8/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=8 free_heap=143960
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=9 visible=9/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=9 free_heap=143960
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=10 visible=10/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=10 free_heap=143652
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=11 visible=11/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=11 free_heap=143704
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=12 visible=12/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=12 free_heap=143704
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=13 visible=13/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=13 free_heap=143432
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=14 visible=14/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=14 free_heap=143376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=15 visible=15/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=15 free_heap=143176
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822021
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=16 visible=16/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=16 free_heap=143188
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=17 visible=17/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=17 free_heap=143188
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=18 visible=18/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=18 free_heap=142868
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=19 visible=19/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=19 free_heap=142928
+CUSTOM_LUT_POWER_ON : 92999
+LONG_LUT_CUSTOM_PARTIAL : 822009
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=20 visible=20/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1025 ready_busy=0 sleep_busy=0 full=1 partial=20 free_heap=142644
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=21 visible=21/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=21 free_heap=142644
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 846014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=848 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=995 ready_busy=0
+STOCK_REPLAY_FRAME step=22 visible=22/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1047 ready_busy=0 sleep_busy=0 full=1 partial=22 free_heap=141752
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=23 visible=23/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=23 free_heap=142384
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=24 visible=24/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=24 free_heap=142384
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=25 visible=25/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=25 free_heap=142080
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=26 visible=26/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=26 free_heap=142128
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 823011
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=27 visible=27/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=27 free_heap=141868
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=28 visible=28/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=28 free_heap=141880
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=29 visible=29/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=29 free_heap=141820
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=30 visible=30/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=30 free_heap=141620
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821998
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=31 visible=31/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=31 free_heap=141620
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=32 visible=32/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=32 free_heap=141360
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=33 visible=33/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=33 free_heap=141156
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=34 visible=34/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=34 free_heap=141360
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=35 visible=35/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=35 free_heap=141356
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=36 visible=36/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=36 free_heap=141360
+CUSTOM_LUT_POWER_ON : 997012
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1876 ready_busy=0
+STOCK_REPLAY_FRAME step=37 visible=37/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1928 ready_busy=0 sleep_busy=0 full=1 partial=37 free_heap=141360
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=38 visible=38/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=38 free_heap=141292
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822010
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=39 visible=39/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=39 free_heap=141336
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=40 visible=40/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=40 free_heap=141348
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 1142017
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=1144 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1291 ready_busy=0
+STOCK_REPLAY_FRAME step=41 visible=41/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1343 ready_busy=0 sleep_busy=0 full=1 partial=41 free_heap=141312
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=42 visible=42/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=42 free_heap=141348
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=43 visible=43/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=43 free_heap=141380
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=44 visible=44/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=44 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=45 visible=45/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=45 free_heap=141332
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=46 visible=46/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=46 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=47 visible=47/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=47 free_heap=141388
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=48 visible=48/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=48 free_heap=141388
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=49 visible=49/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=49 free_heap=141340
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=50 visible=50/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=50 free_heap=141388
+CUSTOM_LUT_POWER_ON : 187012
+LONG_LUT_CUSTOM_PARTIAL : 822003
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1066 ready_busy=0
+STOCK_REPLAY_FRAME step=51 visible=51/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1118 ready_busy=0 sleep_busy=0 full=1 partial=51 free_heap=141388
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=52 visible=52/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=52 free_heap=141388
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=53 visible=53/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=53 free_heap=141040
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=54 visible=54/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=54 free_heap=141396
+CUSTOM_LUT_POWER_ON : 92006
+LONG_LUT_CUSTOM_PARTIAL : 822010
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=55 visible=55/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=55 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=56 visible=56/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=56 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=57 visible=57/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=57 free_heap=141332
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=58 visible=58/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=58 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92004
+LONG_LUT_CUSTOM_PARTIAL : 821996
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=59 visible=59/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=59 free_heap=141384
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=60 visible=60/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=60 free_heap=141388
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=61 visible=61/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=61 free_heap=141336
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=62 visible=62/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=62 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92010
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=63 visible=63/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=63 free_heap=141380
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=64 visible=64/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=64 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822004
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=65 visible=65/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=65 free_heap=141340
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=66 visible=66/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=66 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=67 visible=67/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=67 free_heap=141388
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=68 visible=68/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=68 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=69 visible=69/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=69 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=70 visible=70/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=70 free_heap=141384
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=71 visible=71/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=71 free_heap=141384
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=72 visible=72/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=72 free_heap=141384
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=73 visible=73/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=73 free_heap=141332
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=74 visible=74/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=74 free_heap=141380
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=75 visible=75/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=75 free_heap=141380
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=76 visible=76/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=76 free_heap=141380
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=77 visible=77/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=77 free_heap=141332
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=78 visible=78/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=78 free_heap=141372
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=79 visible=79/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=79 free_heap=141360
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=80 visible=80/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=80 free_heap=141384
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=81 visible=81/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=81 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=82 visible=82/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=82 free_heap=141336
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=83 visible=83/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=83 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92009
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=84 visible=84/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=84 free_heap=141420
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=85 visible=85/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=85 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=86 visible=86/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=86 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=87 visible=87/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=87 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=88 visible=88/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=88 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=89 visible=89/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=89 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=90 visible=90/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=90 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=91 visible=91/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=91 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=92 visible=92/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=92 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=93 visible=93/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=93 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=94 visible=94/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=94 free_heap=138656
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=95 visible=95/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=95 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=96 visible=96/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=96 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=97 visible=97/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=97 free_heap=141368
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=98 visible=98/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=98 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=99 visible=99/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=99 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822005
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=100 visible=100/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=100 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=101 visible=101/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=101 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=102 visible=102/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=102 free_heap=141416
+CUSTOM_LUT_POWER_ON : 91997
+LONG_LUT_CUSTOM_PARTIAL : 822002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=103 visible=103/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=103 free_heap=141416
+CUSTOM_LUT_POWER_ON : 91999
+DISPLAY_BUSY elapsed_ms=5796 BUSY=0
+LONG_LUT_CUSTOM_PARTIAL : 5647005
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=5649 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=5796 ready_busy=0
+STOCK_REPLAY_FRAME step=104 visible=104/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=5848 ready_busy=0 sleep_busy=0 full=1 partial=104 free_heap=138652
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=105 visible=105/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=105 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=106 visible=106/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=106 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=107 visible=107/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=107 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=108 visible=108/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=108 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=109 visible=109/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=109 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=110 visible=110/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=110 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=111 visible=111/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=111 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=112 visible=112/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=112 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=113 visible=113/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=113 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822005
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=114 visible=114/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=114 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=115 visible=115/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=115 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=116 visible=116/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=116 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=117 visible=117/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=117 free_heap=141348
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822011
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=118 visible=118/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=118 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=119 visible=119/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=119 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=120 visible=120/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=120 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=121 visible=121/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=121 free_heap=141216
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=122 visible=122/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=122 free_heap=141420
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=123 visible=123/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=123 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=124 visible=124/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=124 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=125 visible=125/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=125 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=126 visible=126/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=126 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=127 visible=127/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=127 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=128 visible=128/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=128 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=129 visible=129/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=129 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821997
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=130 visible=130/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=130 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=131 visible=131/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=131 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=132 visible=132/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=132 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=133 visible=133/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=133 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=134 visible=134/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=134 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=135 visible=135/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=135 free_heap=141424
+CUSTOM_LUT_POWER_ON : 160013
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1039 ready_busy=0
+STOCK_REPLAY_FRAME step=136 visible=136/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1090 ready_busy=0 sleep_busy=0 full=1 partial=136 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=137 visible=137/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=137 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=138 visible=138/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=138 free_heap=141368
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821997
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=139 visible=139/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=139 free_heap=141404
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=140 visible=140/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=140 free_heap=141404
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=141 visible=141/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=141 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=142 visible=142/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=142 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 2608014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=2610 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=2757 ready_busy=0
+STOCK_REPLAY_FRAME step=143 visible=143/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=2809 ready_busy=0 sleep_busy=0 full=1 partial=143 free_heap=136316
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=144 visible=144/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=144 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822012
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=145 visible=145/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=145 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=146 visible=146/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=146 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=147 visible=147/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=147 free_heap=141360
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=148 visible=148/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=148 free_heap=141400
+CUSTOM_LUT_POWER_ON : 92003
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=149 visible=149/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=149 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=150 visible=150/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=150 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=151 visible=151/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=151 free_heap=141344
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 2526001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=2528 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=2676 ready_busy=0
+STOCK_REPLAY_FRAME step=152 visible=152/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=2727 ready_busy=0 sleep_busy=0 full=1 partial=152 free_heap=141344
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=153 visible=153/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=153 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 1449014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=1451 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1598 ready_busy=0
+STOCK_REPLAY_FRAME step=154 visible=154/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1650 ready_busy=0 sleep_busy=0 full=1 partial=154 free_heap=136320
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=155 visible=155/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=155 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=156 visible=156/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=156 free_heap=141360
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=157 visible=157/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=157 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92002
+LONG_LUT_CUSTOM_PARTIAL : 1233014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=1235 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1382 ready_busy=0
+STOCK_REPLAY_FRAME step=158 visible=158/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1433 ready_busy=0 sleep_busy=0 full=1 partial=158 free_heap=136304
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=159 visible=159/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=159 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=160 visible=160/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=160 free_heap=141208
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=161 visible=161/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=161 free_heap=136296
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=970 ready_busy=0
+STOCK_REPLAY_FRAME step=162 visible=162/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1021 ready_busy=0 sleep_busy=0 full=1 partial=162 free_heap=136344
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=163 visible=163/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=163 free_heap=131296
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=164 visible=164/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=164 free_heap=136344
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=165 visible=165/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=165 free_heap=136192
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 1531014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=1533 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1680 ready_busy=0
+STOCK_REPLAY_FRAME step=166 visible=166/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1731 ready_busy=0 sleep_busy=0 full=1 partial=166 free_heap=136360
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=167 visible=167/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=167 free_heap=141260
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=168 visible=168/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=168 free_heap=141268
+CUSTOM_LUT_POWER_ON : 1321027
+LONG_LUT_CUSTOM_PARTIAL : 824001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=2203 ready_busy=0
+STOCK_REPLAY_FRAME step=169 visible=169/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=2254 ready_busy=0 sleep_busy=0 full=1 partial=169 free_heap=136200
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=170 visible=170/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=170 free_heap=137984
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=171 visible=171/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=171 free_heap=137984
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=172 visible=172/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=172 free_heap=137804
+CUSTOM_LUT_POWER_ON : 92010
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=173 visible=173/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=173 free_heap=141688
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 1208014
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=1210 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=1357 ready_busy=0
+STOCK_REPLAY_FRAME step=174 visible=174/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1408 ready_busy=0 sleep_busy=0 full=1 partial=174 free_heap=135844
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=175 visible=175/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=175 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=176 visible=176/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=176 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92003
+LONG_LUT_CUSTOM_PARTIAL : 823002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=973 ready_busy=0
+STOCK_REPLAY_FRAME step=177 visible=177/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=177 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=178 visible=178/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1022 ready_busy=0 sleep_busy=0 full=1 partial=178 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=179 visible=179/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=179 free_heap=141360
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=180 visible=180/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=180 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=181 visible=181/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=181 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=182 visible=182/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=182 free_heap=141416
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=183 visible=183/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=183 free_heap=141364
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=184 visible=184/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=184 free_heap=138656
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822005
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=185 visible=185/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=185 free_heap=141400
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=186 visible=186/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=186 free_heap=141412
+CUSTOM_LUT_POWER_ON : 2143014
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=3023 ready_busy=0
+STOCK_REPLAY_FRAME step=187 visible=187/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=3074 ready_busy=0 sleep_busy=0 full=1 partial=187 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91997
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=188 visible=188/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=188 free_heap=141264
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=189 visible=189/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=189 free_heap=141416
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 2434015
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=2436 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=2583 ready_busy=0
+STOCK_REPLAY_FRAME step=190 visible=190/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=2634 ready_busy=0 sleep_busy=0 full=1 partial=190 free_heap=137736
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=191 visible=191/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=191 free_heap=141404
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=192 visible=192/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=192 free_heap=141408
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=193 visible=193/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=193 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=194 visible=194/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=194 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=195 visible=195/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=195 free_heap=141364
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=196 visible=196/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=196 free_heap=141340
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=197 visible=197/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=197 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 821998
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=198 visible=198/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=198 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=199 visible=199/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=199 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=200 visible=200/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=200 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822015
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=201 visible=201/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=201 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=202 visible=202/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=202 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=203 visible=203/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=203 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=204 visible=204/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=204 free_heap=141416
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=205 visible=205/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=205 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=206 visible=206/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=206 free_heap=141416
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=207 visible=207/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=207 free_heap=141372
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=208 visible=208/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=208 free_heap=141424
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=209 visible=209/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=209 free_heap=141428
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=210 visible=210/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=210 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=211 visible=211/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=211 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=212 visible=212/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=212 free_heap=141428
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=213 visible=213/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=213 free_heap=141428
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=214 visible=214/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=214 free_heap=141376
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=215 visible=215/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=215 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=216 visible=216/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=216 free_heap=141376
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=217 visible=217/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=217 free_heap=141420
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=218 visible=218/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=218 free_heap=141368
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=219 visible=219/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=219 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 821998
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=220 visible=220/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=220 free_heap=141408
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822000
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=221 visible=221/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=221 free_heap=141368
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=222 visible=222/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=222 free_heap=141368
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=223 visible=223/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=223 free_heap=141416
+CUSTOM_LUT_POWER_ON : 92002
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=224 visible=224/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=224 free_heap=141420
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=225 visible=225/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=225 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=226 visible=226/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=226 free_heap=141364
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=227 visible=227/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=227 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822002
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=228 visible=228/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=228 free_heap=141420
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=229 visible=229/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=229 free_heap=141412
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=230 visible=230/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=230 free_heap=141364
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 821997
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=231 visible=231/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=231 free_heap=141420
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=232 visible=232/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=232 free_heap=141416
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=233 visible=233/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=233 free_heap=141368
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=234 visible=234/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=234 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=235 visible=235/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=235 free_heap=141420
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=236 visible=236/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=236 free_heap=141424
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=237 visible=237/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=237 free_heap=141376
+CUSTOM_LUT_POWER_ON : 93000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=238 visible=238/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=238 free_heap=141416
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=823 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=239 visible=239/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=239 free_heap=141412
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 823001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=825 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=972 ready_busy=0
+STOCK_REPLAY_FRAME step=240 visible=240/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1024 ready_busy=0 sleep_busy=0 full=1 partial=240 free_heap=141400
+CUSTOM_LUT_POWER_ON : 92000
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=241 visible=241/242 header=87570599
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=241 free_heap=141352
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=0 y=40 w=400 h=260 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=stock elapsed_ms=971 ready_busy=0
+STOCK_REPLAY_FRAME step=242 visible=242/242 header=87570599
+WATCH_PAUSED frames=242 history_replay_complete
+DISPLAY_DONE kind=partial elapsed_ms=1023 ready_busy=0 sleep_busy=0 full=1 partial=242 free_heap=141400
+STOCK_FETCH ok=1 points=242 free_heap=169540

@@ -1,0 +1,5 @@
+{
+  "source": "red-map11-live-20261109/before-config.json",
+  "capturedAt": "before third trial; device now in sleeping third-trial firmware",
+  "reason": "experiment firmware has no NVS write path"
+}

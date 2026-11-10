@@ -1,0 +1,23 @@
+{
+  "version": "epaper-dashboard-0.3.0",
+  "allFiveViewsPassed": [
+    "month_weather",
+    "almanac",
+    "minimal_clock",
+    "overview",
+    "big_calendar"
+  ],
+  "fixedModeHeldBeyondConfiguredInterval": true,
+  "fixedNextRejected": true,
+  "automaticRotationAt60SecondsObserved": true,
+  "finalDefaultSeconds": 600,
+  "finalMode": "rotate",
+  "tradingPriority": "preserved, native boundary tests; no live trading at night",
+  "settingsPreserved": true,
+  "serialMonitorClosedThroughoutRuntimeTest": true,
+  "physicalScreenConfirmation": "pending",
+  "fullRefreshCount": 9,
+  "partialRefreshCount": 7,
+  "weatherError": "",
+  "stockError": ""
+}

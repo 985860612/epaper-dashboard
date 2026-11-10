@@ -1,0 +1,22 @@
+{
+  "version": "epaper-dashboard-0.3.2",
+  "time": "2026-11-09 09:13:00",
+  "displayedView": "big_calendar",
+  "displayError": "",
+  "weatherError": "",
+  "stockError": "",
+  "fullRefreshCount": 1,
+  "lastFrameKind": "partial",
+  "lastFrameElapsedMs": 932,
+  "configUnchanged": true,
+  "loopProgress": [
+    18560,
+    20256
+  ],
+  "uptimeProgress": [
+    82545,
+    87665
+  ],
+  "physicalRestoration": "pending user confirmation",
+  "redProbeObservation": "Left residue lighter, center darker but still not red; right/background not explicitly confirmed"
+}

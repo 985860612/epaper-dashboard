@@ -1,0 +1,10 @@
+{
+  "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+  "files": {
+    "screen.cpp": "e9720519fc348ecefacbdceb35b3de540fea9de9d989b04ee4d346729507cdf0",
+    "app.h": "816672b7970fde2652504f30f947daad2602e594e3cdae6bf00eb99e311c776e",
+    "font_data.h": "aec86f59e9847ac2bb729e8483f58026cd28792d1c946229a02ea66218ea9106",
+    "generated_styles.h": "eca6821e20f1396f9ba14c1cddbab2abab36919d46fed2124842cceac235860c"
+  },
+  "built_app_binary_sha256": "ad47573c4c106fe973fdb697d5c0039e3569cfa03123745399f9cc95a295159d"
+}

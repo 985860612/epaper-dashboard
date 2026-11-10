@@ -1,0 +1,20 @@
+{
+  "version": "epaper-dashboard-0.1.9-stock-replay",
+  "fullCount": 1,
+  "partialCount": 12,
+  "visibleFinalPoints": 242,
+  "sourceDate": "20261106",
+  "quotedAsLive": false,
+  "lastFrameElapsedMs": 1024,
+  "initialFullElapsedMs": 20765,
+  "observedPartialElapsedMs": [
+    1023,
+    1025
+  ],
+  "headerHash": "90511492",
+  "headerInvariantGuardPassed": true,
+  "continuedWithSerialClosed": true,
+  "pausedAfter12": true,
+  "displayError": "",
+  "physicalCurveQuality": "Awaiting user confirmation"
+}

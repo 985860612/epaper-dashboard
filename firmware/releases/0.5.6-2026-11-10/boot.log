@@ -1,0 +1,18 @@
+START epaper-dashboard-0.5.6
+{"event":"status","version":"epaper-dashboard-0.5.6","ip":"","clockReady":true,"lastNtpSync":0,"phase":"trading","ap":false,"freeHeap":177340,"cpuMHz":80,"wifiPowerSave":2,"idlePollMs":20,"sleepCount":0,"sleepTotalMs":0,"configSeconds":600,"powerError":"","weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":0,"displayError":""}
+STOCK_FETCH ok=1 points=63 free_heap=176912
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+DISPLAY_DONE kind=full view=stock elapsed_ms=20931 full=1 partial=0 BUSY=0
+STOCK_FETCH ok=1 points=63 free_heap=145932
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_DONE kind=color_partial view=stock elapsed_ms=17632 full=1 partial=1 BUSY=0
+STOCK_FETCH ok=1 points=64 free_heap=145876
+DISPLAY_DONE kind=partial view=stock elapsed_ms=2020 full=1 partial=3 BUSY=0
+         ^^^^^^^^^^^^^^^
+    ready, _, _ = select.select([self.fd, self.pipe_abort_read_r], [], [], timeout.time_left())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

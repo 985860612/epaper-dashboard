@@ -1,0 +1,123 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:14",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20764,
+    "partialStatus": "pending",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:17",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20764,
+    "partialStatus": "pending",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:20",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20764,
+    "partialStatus": "pending",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:23",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20764,
+    "partialStatus": "pending",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:27",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 1,
+    "lastFrameElapsedMs": 945,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": false
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:30",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 2,
+    "lastFrameElapsedMs": 932,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:33",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 3,
+    "lastFrameElapsedMs": 931,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:36",
+    "rendering": true,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 3,
+    "lastFrameElapsedMs": 931,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:39",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 4,
+    "lastFrameElapsedMs": 932,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:42",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 5,
+    "lastFrameElapsedMs": 933,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lowbias",
+    "time": "2026-11-08 19:59:45",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 6,
+    "lastFrameElapsedMs": 932,
+    "partialStatus": "custom_lut_busy_passed_visual_pending",
+    "serialObserverClosed": true
+  }
+]

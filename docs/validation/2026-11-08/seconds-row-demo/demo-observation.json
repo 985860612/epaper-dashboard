@@ -1,0 +1,57 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-seconds-demo",
+    "time": "2026-11-08 18:53:19",
+    "rendering": true,
+    "displayError": "",
+    "partialStatus": "slow_window_visual_pending",
+    "lastFrameKind": "partial",
+    "lastFrameElapsedMs": 20449,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 2
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-seconds-demo",
+    "time": "2026-11-08 18:53:22",
+    "rendering": true,
+    "displayError": "",
+    "partialStatus": "slow_window_visual_pending",
+    "lastFrameKind": "partial",
+    "lastFrameElapsedMs": 20449,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 2
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-seconds-demo",
+    "time": "2026-11-08 18:53:25",
+    "rendering": true,
+    "displayError": "",
+    "partialStatus": "slow_window_visual_pending",
+    "lastFrameKind": "partial",
+    "lastFrameElapsedMs": 20449,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 2
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-seconds-demo",
+    "time": "2026-11-08 18:53:28",
+    "rendering": true,
+    "displayError": "",
+    "partialStatus": "slow_window_visual_pending",
+    "lastFrameKind": "partial",
+    "lastFrameElapsedMs": 20449,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 2
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-seconds-demo",
+    "time": "2026-11-08 18:53:32",
+    "rendering": false,
+    "displayError": "",
+    "partialStatus": "slow_window_visual_pending",
+    "lastFrameKind": "partial",
+    "lastFrameElapsedMs": 20447,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 3
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "version": "epaper-dashboard-0.1.9-lut227",
+  "ip": "192.168.31.196",
+  "time": "2026-11-08 20:14:02",
+  "lastNtpSync": "2026-11-08 20:13:17",
+  "ntpIntervalSeconds": 3600,
+  "phase": "closed",
+  "rendering": false,
+  "weatherError": "",
+  "stockError": "",
+  "displayError": "",
+  "freeHeap": 176424,
+  "lastFrameKind": "full",
+  "lastFrameElapsedMs": 20765,
+  "partialStatus": "pending",
+  "fullRefreshCount": 1,
+  "partialRefreshCount": 0,
+  "weather": {
+    "valid": true,
+    "text": "多云",
+    "temp": 4,
+    "observedAt": "2026-11-08T19:48+08:00",
+    "receivedAt": 1794140001
+  },
+  "stock": {
+    "valid": false,
+    "symbol": "",
+    "name": "",
+    "price": 0,
+    "previous": 0,
+    "stamp": "",
+    "minuteDate": "",
+    "receivedAt": 0,
+    "points": []
+  }
+}

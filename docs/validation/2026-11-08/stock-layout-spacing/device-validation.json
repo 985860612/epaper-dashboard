@@ -1,0 +1,13 @@
+{
+  "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+  "time": "2026-11-08 21:28:01",
+  "fullRefreshCount": 1,
+  "partialRefreshCount": 58,
+  "partialStatus": "custom_lut_busy_passed_visual_pending",
+  "displayError": "",
+  "lastFrameElapsedMs": 1024,
+  "serial_closed_partial_count_before": 55,
+  "serial_closed_partial_count_after": 58,
+  "upload_verified": true,
+  "physical_screen_confirmation": "待用户确认"
+}

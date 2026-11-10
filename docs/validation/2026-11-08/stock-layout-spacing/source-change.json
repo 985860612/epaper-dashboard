@@ -1,0 +1,12 @@
+[
+  {
+    "target": "/Users/wangxiaojie/xj-studio/projects/epaper-dashboard/firmware/epaper_dashboard/screen.cpp",
+    "before_sha256": "dea8a311058fae5a9ca18b7f8783c4a0c4d1cbd5c2d68c965fc0d6e52de93621",
+    "after_sha256": "eeaa86754c6ba6fd593b8250c581247f81b7b24a77c252d177d2eb9e1046362c"
+  },
+  {
+    "target": "/Users/wangxiaojie/xj-studio/.worktrees/epaper-stock-replay/projects/epaper-dashboard/firmware/epaper_dashboard/screen.cpp",
+    "before_sha256": "ed8a7c5f4353cbdfb8da847e8625110a8ad01c12f2e169aba120c55aff298f3e",
+    "after_sha256": "e9720519fc348ecefacbdceb35b3de540fea9de9d989b04ee4d346729507cdf0"
+  }
+]

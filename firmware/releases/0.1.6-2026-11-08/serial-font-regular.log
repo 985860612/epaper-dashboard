@@ -1,0 +1,4 @@
+Captured tool output before USB disconnection; later serial read failed with Device not configured.
+DISPLAY_BUSY elapsed_ms=15005 BUSY=1
+DISPLAY_BUSY elapsed_ms=20007 BUSY=1
+DISPLAY_DONE kind=full elapsed_ms=20648 ready_busy=0 sleep_busy=1 full=1 partial=0 free_heap=148624

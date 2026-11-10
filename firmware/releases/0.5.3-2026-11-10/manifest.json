@@ -1,0 +1,33 @@
+{
+  "version": "epaper-dashboard-0.5.3",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "stockMinutePartialMs": 953,
+  "applicationProgramBytes": 1309885,
+  "applicationBinaryBytes": 1310128,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "52ec8bf5e50a601d5d8d6f9d33805ed5ea5dfb40280d8445d56370ff4ae4d3e3",
+    "boot.log": "91d542b638aa15f0d8ed82a6e8bbfaeb723dbd6e5b162488ab107bab961526fe",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "567da2c1c9eaed60fd096c77bfbe02f4f4d5c0e57760f467900050fd2389c94b",
+    "device-check.log": "ce6acf4067b847ec570165ba4e021cbc98182548bb1028007aa00c9dca5d700b",
+    "epaper_dashboard.ino.bin": "4a7344fbb4d8243a099c74618569b0e103257b59b296fc0bc8a343f0bf14077a",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "f1496d7e60204c19fe394e8b31a31eb1b5dbaf12b4cbdfaa3671a79761f6cfdc",
+    "layout-check.json": "ab9d1eb38749248ff6c18e138ce3d37d9f379b7ed1f8706050f4c256fd3be48e",
+    "layout-preview.png": "b7b053621211288f6ed3ee4cb5353f5b4e0ef7afa0cc1b649d272cb3550c0bd2",
+    "market-tests.log": "8d44264d2f405736cfbfe5857157e454228b18f9c80896ba4a76b35c617f5b9d",
+    "source.zip": "157a050dcecfb8ebb7f0cf2476f99f386a5e6f8e5a6723442714c64ac88ea393",
+    "stock-preview.png": "b4fd10d5df1ae51929bf06afc8947b7c5e011df653bde4a110c357ecfaa3afb9",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "8610afc90945aa9cffd270a9421cc237fb8fa64dac5a89d6ae6233eb62d746e4",
+    "verification.json": "25338a04e725dbcf45e1a57fcd25a24714411fa1a2273a0291192a02d2c3d618",
+    "web-tests.log": "b7879ae5853c5d7583fb5f2ec44590fd212f6325c7049a29a7652dd0884ba236"
+  }
+}

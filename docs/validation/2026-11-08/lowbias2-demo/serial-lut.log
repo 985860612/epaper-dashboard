@@ -1,0 +1,40 @@
+DISPLAY_BUSY elapsed_ms=45018 BUSY=1
+DISPLAY_BUSY elapsed_ms=50020 BUSY=1
+DISPLAY_BUSY elapsed_ms=55022 BUSY=1
+DISPLAY_BUSY elapsed_ms=60023 BUSY=1
+DISPLAY_BUSY elapsed_ms=65025 BUSY=1
+DISPLAY_BUSY elapsed_ms=70027 BUSY=1
+DISPLAY_BUSY elapsed_ms=75029 BUSY=1
+DISPLAY_BUSY elapsed_ms=80031 BUSY=1
+DISPLAY_BUSY elapsed_ms=85033 BUSY=1
+DISPLAY_BUSY elapsed_ms=90035 BUSY=1
+Busy Timeout!
+_Update_Full : 90001086
+DISPLAY_DONE kind=full elapsed_ms=90238 ready_busy=1 sleep_busy=1 full=0 partial=0 free_heap=145196
+{"event":"status","version":"epaper-dashboard-0.1.9-lowbias2","ip":"192.168.31.196","clockReady":true,"lastNtpSync":0,"phase":"closed","ap":false,"freeHeap":174892,"weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":94123,"displayError":"全刷BUSY未就绪"}
+{"event":"partial_probe_queued"}
+NTP_SYNC_OK interval_ms=3600000
+WEATHER_FETCH ok=0 free_heap=173008
+WATCH_START seconds_only=1 x=272 y=80 width=96 height=72 frames=6 lut=gdey042z98_227
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+DISPLAY_BUSY elapsed_ms=25010 BUSY=1
+DISPLAY_BUSY elapsed_ms=30012 BUSY=1
+DISPLAY_BUSY elapsed_ms=35014 BUSY=1
+DISPLAY_BUSY elapsed_ms=40016 BUSY=1
+DISPLAY_BUSY elapsed_ms=45018 BUSY=1
+DISPLAY_BUSY elapsed_ms=50020 BUSY=1
+DISPLAY_BUSY elapsed_ms=55022 BUSY=1
+DISPLAY_BUSY elapsed_ms=60024 BUSY=1
+DISPLAY_BUSY elapsed_ms=65026 BUSY=1
+DISPLAY_BUSY elapsed_ms=70028 BUSY=1
+DISPLAY_BUSY elapsed_ms=75030 BUSY=1
+DISPLAY_BUSY elapsed_ms=80032 BUSY=1
+DISPLAY_BUSY elapsed_ms=85034 BUSY=1
+DISPLAY_BUSY elapsed_ms=90036 BUSY=1
+Busy Timeout!
+_Update_Full : 90002085
+DISPLAY_DONE kind=full elapsed_ms=90129 ready_busy=1 sleep_busy=1 full=0 partial=0 free_heap=146428
+WEATHER_FETCH ok=1 free_heap=177032

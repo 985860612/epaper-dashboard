@@ -1,0 +1,14 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-point-replay",
+    "time": "2026-11-08 20:55:42",
+    "rendering": false,
+    "displayError": "",
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "lastFrameElapsedMs": 20763,
+    "partialStatus": "history_replay_ready",
+    "pointCount": 242,
+    "sourceDate": "20261106"
+  }
+]

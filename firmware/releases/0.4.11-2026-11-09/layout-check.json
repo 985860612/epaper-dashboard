@@ -1,0 +1,90 @@
+{
+  "fontPx": 24,
+  "rows": 5,
+  "fonts": [
+    "TestArial24",
+    "TestDIN24",
+    "TestHelvetica24",
+    "TestAvenir24",
+    "TestSFMono24"
+  ],
+  "selectedChinese": "FangZhengJingXiHei-1.ttf",
+  "sampleGlyphsCovered": true,
+  "sampleBoundsInsidePanel": true,
+  "sampleColumnsSeparated": true,
+  "previewTime": "12:34 placeholder",
+  "digitAdvancePixels": {
+    "TestArial24": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "TestDIN24": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "TestHelvetica24": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "TestAvenir24": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "TestSFMono24": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ]
+  },
+  "userFontMissing": {
+    "FangZhengJingHei-1.metadata": [
+      "顺",
+      "义"
+    ],
+    "FangZhengJingXiHei-1.metadata": [],
+    "GenJyuuGothic-Medium-2.metadata": [
+      "顺",
+      "义"
+    ],
+    "NotoSansCJK-Regular-1.metadata": []
+  }
+}

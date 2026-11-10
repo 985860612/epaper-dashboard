@@ -1,0 +1,31 @@
+{
+  "version": "epaper-dashboard-0.5.9",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "minutePartialMs": 955,
+  "applicationProgramBytes": 1310453,
+  "applicationBinaryBytes": 1310704,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "b1f183126bf6d44fdc3f6bc0cfbfd964922681d2a53362e258a87eb83478cd8d",
+    "boot.log": "be956cc28f3e33fb0148dbc27260379c187b03dbb66c16a8959347a34996f9ef",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "9e0c3b51c38eca915073ff5810f0bf3eb4944bf4b1b6e7e7741dc6bf740a3179",
+    "device-check.log": "cc17e10515470307416c370643308781ad6d3163a96de2fbe03c4ea6974540b1",
+    "epaper_dashboard.ino.bin": "ef36aecc2af438ef86a90df409f5195ed7b5a9530dbcac576cdf31906fb71ea0",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "41d8c27b402b280f2ae0e7def062854c35a06ec73ec81d1b54d37d9ed2d328e7",
+    "layout-check.json": "f386c209cd3cfc9cf4da874e960514a4d7f49caa5bfc6161df82dae2ab640a8e",
+    "regression-tests.log": "70a13058e1fceabb1c1394ec9d534699dd12e2b72fc958e2c5d015d040a7084f",
+    "source.zip": "a3f0cf13375b9c3bd9fc917faea4b9aa0a9c229aed7432fd5f13064b33e1048f",
+    "stock-preview.png": "a97e02d5c6857bd71110ed2c378c7af5e21c51d5136908d6085666f68b4466e5",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "343813ec9cf0456e41049c853f0029de4eab5fe660ba88a5764b841e94284c3a",
+    "verification.json": "9a9808ea6c331358ba15f5be18db6618e25a8fc2586e1f50dddea41b74d4aa27"
+  }
+}

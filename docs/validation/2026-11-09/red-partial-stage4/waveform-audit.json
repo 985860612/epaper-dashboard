@@ -1,0 +1,143 @@
+{
+  "native": {
+    "groups": [
+      {
+        "group": 0,
+        "repeat": 1,
+        "commonFrames": 232,
+        "redVSH2Frames": 0,
+        "redBytes": "01 0e 3d 9d 8c 02 02"
+      },
+      {
+        "group": 1,
+        "repeat": 1,
+        "commonFrames": 88,
+        "redVSH2Frames": 0,
+        "redBytes": "01 43 83 54 94 08 01"
+      },
+      {
+        "group": 2,
+        "repeat": 1,
+        "commonFrames": 88,
+        "redVSH2Frames": 0,
+        "redBytes": "01 43 83 54 94 08 01"
+      },
+      {
+        "group": 3,
+        "repeat": 1,
+        "commonFrames": 88,
+        "redVSH2Frames": 0,
+        "redBytes": "01 43 83 54 94 08 01"
+      },
+      {
+        "group": 4,
+        "repeat": 3,
+        "commonFrames": 174,
+        "redVSH2Frames": 102,
+        "redBytes": "03 05 84 0f e2 01 01"
+      },
+      {
+        "group": 5,
+        "repeat": 4,
+        "commonFrames": 188,
+        "redVSH2Frames": 136,
+        "redBytes": "04 05 06 82 e2 01 01"
+      },
+      {
+        "group": 6,
+        "repeat": 3,
+        "commonFrames": 132,
+        "redVSH2Frames": 102,
+        "redBytes": "03 05 84 01 e2 01 01"
+      },
+      {
+        "group": 7,
+        "repeat": 1,
+        "commonFrames": 4,
+        "redVSH2Frames": 0,
+        "redBytes": "01 04 00 00 00 01 01"
+      }
+    ],
+    "totalFrames": 994,
+    "redVSH2Frames": 340
+  },
+  "candidate": {
+    "groups": [
+      {
+        "group": 0,
+        "repeat": 1,
+        "commonFrames": 58,
+        "redVSH2Frames": 34,
+        "redBytes": "01 05 84 0f e2 01 01"
+      },
+      {
+        "group": 1,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      },
+      {
+        "group": 2,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      },
+      {
+        "group": 3,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      },
+      {
+        "group": 4,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      },
+      {
+        "group": 5,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      },
+      {
+        "group": 6,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      },
+      {
+        "group": 7,
+        "repeat": 0,
+        "commonFrames": 0,
+        "redVSH2Frames": 0,
+        "redBytes": "00 00 00 00 00 00 00"
+      }
+    ],
+    "totalFrames": 58,
+    "redVSH2Frames": 34
+  },
+  "frameRateHz": 50,
+  "nativeNominalSeconds": 19.88,
+  "candidateNominalSeconds": 1.16,
+  "nativeRedVSH2Seconds": 6.8,
+  "candidateRedVSH2Seconds": 0.68,
+  "nativeSha256": "fb43942b7b15e4d51c56219f9056fd871cb1e209cebe6dd848d55242a62eb902",
+  "candidateSha256": "4d3d249531d450ff36ac7e3f4fe06b8445b4aa4ae41629416c15b391726fa3fd",
+  "measuredBaselineMs": 20653,
+  "measuredCandidateMs": 1392,
+  "observations": {
+    "left": "faint red residue; user accepts",
+    "center": "gray, not red",
+    "right": "not explicitly confirmed"
+  },
+  "maskCodeReview": "R/BW=10 for center; consistent with tri-color mapping and upstream color-plane inversion; no controller RAM readback collected",
+  "hypothesis": "Reduced red-specific drive and omitted conditioning/particle-separation stages; physical cause not yet isolated",
+  "futureComparison": "Native group 4 original three repeats, nominal 174 frames/3.48s with 102 VSH2 frames/2.04s. Not implemented or flashed this turn."
+}

@@ -1,0 +1,28 @@
+HOST_WATCH_TRIGGERED
+{"event":"partial_probe_queued"}
+WATCH_START seconds_visible=1 clock_band_y=64 height=96 frames=3
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+SSD1619_GATE_BAND : 20408000
+GATE_BAND_DONE y=64 h=96 elapsed_ms=20409 BUSY=0
+PARTIAL_DONE region=clock elapsed_ms=20449 ready_busy=0
+DISPLAY_DONE kind=partial elapsed_ms=20449 ready_busy=0 sleep_busy=0 full=1 partial=1 free_heap=148552
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+SSD1619_GATE_BAND : 20407997
+GATE_BAND_DONE y=64 h=96 elapsed_ms=20409 BUSY=0
+PARTIAL_DONE region=clock elapsed_ms=20449 ready_busy=0
+DISPLAY_DONE kind=partial elapsed_ms=20449 ready_busy=0 sleep_busy=0 full=1 partial=2 free_heap=148604
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+SSD1619_GATE_BAND : 20406000
+GATE_BAND_DONE y=64 h=96 elapsed_ms=20407 BUSY=0
+PARTIAL_DONE region=clock elapsed_ms=20447 ready_busy=0
+WATCH_PAUSED frames=3 waiting_for_observer_feedback
+DISPLAY_DONE kind=partial elapsed_ms=20447 ready_busy=0 sleep_busy=0 full=1 partial=3 free_heap=147568

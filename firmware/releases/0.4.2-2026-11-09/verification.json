@@ -1,0 +1,14 @@
+{
+  "version": "epaper-dashboard-0.4.2",
+  "time": "2026-11-09 14:07:48",
+  "displayedView": "stock",
+  "lastFrameKind": "color_partial",
+  "lastFrameElapsedMs": 17068,
+  "partialRefreshCount": 2,
+  "fullRefreshCount": 1,
+  "redPartialReady": true,
+  "displayError": "",
+  "mainLoopAdvancesWithoutSerial": true,
+  "configurationUnchanged": true,
+  "visualConfirmation": "pending user review of small text"
+}

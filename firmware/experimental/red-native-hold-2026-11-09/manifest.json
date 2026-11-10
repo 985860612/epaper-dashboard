@@ -1,0 +1,25 @@
+{
+  "version": "red-native-complete-hold",
+  "stage": "experimental single-frame physically accepted; not production stock integration",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "applicationSha256": "5757dccfd9bd6e27e7b4ed69a5c3376821f1d0332c4b0915aa8fe30eb59c7ceb",
+  "measuredUpdateMs": 20404,
+  "nominalFrames": 994,
+  "nominalHz": 50,
+  "sketchBytes": 341678,
+  "staticRamBytes": 54664,
+  "userFeedback": "完美 就是速度慢了一点点",
+  "unchanged": "native VCOM/RED/WHITE phases, all timings/repeats, end/voltage parameters, 4MB partition, NVS",
+  "changed": "17 source-level bytes in LUTB; unchanged-pixel mask uses00, erase01, red11",
+  "longTermValidated": false,
+  "stockIntegration": false,
+  "restoreVersion": "epaper-dashboard-0.3.2",
+  "productionSourcesUnmodified": true,
+  "sourceHashes": {
+    "experiments/red_native_hold/README.md": "49e1dd88e942a4f888153f04447b05232086e7382b1d737e7119747f02e89a21",
+    "experiments/red_native_hold/checks/test_native_control.cpp": "53653a9b3371acd54b9d27a8c5664e5afa5d1640c1c686b51be403c67188922f",
+    "experiments/red_native_hold/console.py": "59153434f4959b439f3939c8207bd97605efec2134c52c29f980b8ebede0e70e",
+    "experiments/red_native_hold/native_control.h": "9a470b51fc49b71a1f641898497a645d49078697ee4d577085821484a950efc1",
+    "experiments/red_native_hold/red_native_hold.ino": "e9ec2ca2008bd5ad2cf939fa907bde46c593c5c9ee0ad5b07c644fe354340d22"
+  }
+}

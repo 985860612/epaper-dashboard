@@ -1,0 +1,41 @@
+{
+  "fontBytesUnchanged": true,
+  "clockWindow": [
+    16,
+    64,
+    368,
+    96
+  ],
+  "samples": [
+    {
+      "text": "00:00:00",
+      "advance": 324,
+      "inkBounds": [
+        38,
+        87,
+        362,
+        146
+      ]
+    },
+    {
+      "text": "23:59:59",
+      "advance": 324,
+      "inkBounds": [
+        38,
+        87,
+        362,
+        146
+      ]
+    },
+    {
+      "text": "18:55:06",
+      "advance": 324,
+      "inkBounds": [
+        38,
+        87,
+        362,
+        146
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-08",
+  "version": "epaper-dashboard-0.1.9-lut227",
+  "feedback": "可以局部刷新,但是背景有一点点的红色, 还可以优化吗",
+  "partialVisuallyConfirmed": true,
+  "remainingIssue": "背景轻微泛红，待优化"
+}

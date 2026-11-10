@@ -1,0 +1,20 @@
+{
+  "driverIdenticalToConfirmedBaseline": true,
+  "waveformIdentical": true,
+  "fontsIdentical": true,
+  "replaySteps": 12,
+  "partialRegion": [
+    0,
+    40,
+    400,
+    260
+  ],
+  "fixedHeaderRegion": [
+    0,
+    0,
+    400,
+    40
+  ],
+  "historyExplicitlyLabeled": true,
+  "nvsModeWrite": false
+}

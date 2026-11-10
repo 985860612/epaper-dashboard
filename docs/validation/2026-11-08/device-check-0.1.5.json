@@ -1,0 +1,20 @@
+{
+  "version": "epaper-dashboard-0.1.5",
+  "ip": "192.168.31.196",
+  "time": "2026-11-08 15:45:42",
+  "lastNtpSync": "2026-11-08 15:45:07",
+  "ntpIntervalSeconds": 3600,
+  "lastFrameKind": "full",
+  "lastFrameElapsedMs": 20648,
+  "fullRefreshCount": 1,
+  "partialRefreshCount": 0,
+  "rendering": false,
+  "displayError": "",
+  "freeHeap": 176716,
+  "view": "stock",
+  "refreshMode": "color_full",
+  "partialEnabled": false,
+  "stockPoints": 242,
+  "weatherValid": true,
+  "credentialsRedacted": true
+}

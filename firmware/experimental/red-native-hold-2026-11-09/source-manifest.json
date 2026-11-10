@@ -1,0 +1,7 @@
+{
+  "experiments/red_native_hold/README.md": "49e1dd88e942a4f888153f04447b05232086e7382b1d737e7119747f02e89a21",
+  "experiments/red_native_hold/checks/test_native_control.cpp": "53653a9b3371acd54b9d27a8c5664e5afa5d1640c1c686b51be403c67188922f",
+  "experiments/red_native_hold/console.py": "59153434f4959b439f3939c8207bd97605efec2134c52c29f980b8ebede0e70e",
+  "experiments/red_native_hold/native_control.h": "9a470b51fc49b71a1f641898497a645d49078697ee4d577085821484a950efc1",
+  "experiments/red_native_hold/red_native_hold.ino": "e9ec2ca2008bd5ad2cf939fa907bde46c593c5c9ee0ad5b07c644fe354340d22"
+}

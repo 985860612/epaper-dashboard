@@ -1,0 +1,4 @@
+PASS: session boundaries, lunch compression, holidays/year expiry, and volume-weighted price
+PASS: 5-card cycle, ten-minute boundary/rollover, fixed/stock priority, all 1096 lunar records, leap days and lunar year boundary
+PASS: minute/microsecond boundaries, awake-window expiry, millis rollover, cross-minute rendering
+PASS: all color transitions, static neighbors, mixed masks, two native profiles, 466 corrupted profiles rejected

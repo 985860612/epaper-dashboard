@@ -1,0 +1,8 @@
+{
+  "middle": "red confirmed by user",
+  "transitionObserved": false,
+  "leftAndRight": "not explicitly confirmed",
+  "request": "repeat same control to observe refresh process",
+  "restored": false,
+  "deviceState": "native control sleeping; image retained"
+}

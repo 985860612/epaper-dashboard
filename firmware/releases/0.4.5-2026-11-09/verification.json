@@ -1,0 +1,32 @@
+{
+  "version": "epaper-dashboard-0.4.5",
+  "cpuMHz": 80,
+  "wifiPowerSave": 2,
+  "idlePollMs": 20,
+  "mainLoopAdvancesWithoutSerial": true,
+  "networkFetchAdvances": true,
+  "refreshSeconds": 60,
+  "configurationUnchanged": true,
+  "displayError": "",
+  "after": {
+    "version": "epaper-dashboard-0.4.5",
+    "time": "2026-11-09 14:38:11",
+    "loopCount": 2721,
+    "rendering": false,
+    "stockFetchCount": 3,
+    "weatherFetchCount": 2,
+    "displayedView": "stock",
+    "lastFrameKind": "partial",
+    "lastFrameElapsedMs": 955,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 3,
+    "redPartialReady": true,
+    "displayError": "",
+    "weatherError": "",
+    "stockError": "",
+    "apiMilliseconds": 378,
+    "elapsedSeconds": 83.1
+  },
+  "currentMilliAmpsAfter": null,
+  "currentMeasurement": "pending external USB 5V whole-device reading"
+}

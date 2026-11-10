@@ -1,0 +1,7 @@
+{
+  "started": true,
+  "captured": [
+    "{\"event\":\"partial_probe_queued\"}",
+    "WATCH_START seconds_only=1 x=272 y=80 width=96 height=72 frames=3"
+  ]
+}

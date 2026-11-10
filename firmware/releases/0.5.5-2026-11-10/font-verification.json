@@ -1,0 +1,21 @@
+{
+  "stockName": {
+    "role": "StockName",
+    "px": 24,
+    "glyphs": 48,
+    "compressedBytes": 940,
+    "digitAdvance": 13,
+    "weight": "Regular",
+    "chineseStrokePx": 0,
+    "chineseFamily": [
+      "PingFang SC",
+      "Regular"
+    ],
+    "chineseFontIndex": 3
+  },
+  "changedArrays": [
+    "StockNameData"
+  ],
+  "otherArraysUnchanged": 49,
+  "productionFontDataBytesDelta": 0
+}

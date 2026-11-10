@@ -1,0 +1,25 @@
+DISPLAY_DONE kind=full view=clock elapsed_ms=20645 full=1 partial=0 BUSY=1
+NTP_SYNC_OK interval_ms=3600000
+WEATHER_FETCH ok=1 free_heap=179284
+RESTORED_AUTO_SETTINGS {"view": "auto", "refreshMode": "bw_partial", "partialEnabled": true}
+WEATHER_FETCH ok=1 free_heap=178568
+DISPLAY_DONE kind=full view=clock elapsed_ms=20682 full=2 partial=0 BUSY=0
+DISPLAY_DONE kind=partial view=clock elapsed_ms=954 full=2 partial=1 BUSY=0
+SERIAL_CLOSED; OBSERVING_REAL_SCHEDULER
+{"time": "2026-11-08 21:54:18", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 1878, "screenCheckCount": 9, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:23", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 3547, "screenCheckCount": 14, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:28", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 5216, "screenCheckCount": 19, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:33", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 6883, "screenCheckCount": 24, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:38", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 8587, "screenCheckCount": 29, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:43", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 10256, "screenCheckCount": 34, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:48", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 11960, "screenCheckCount": 39, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:53", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 13630, "screenCheckCount": 44, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:54:58", "displayedAt": "2026-11-08 21:54:14", "displayedView": "clock", "loopCount": 15297, "screenCheckCount": 49, "weatherFetchCount": 3, "partialRefreshCount": 1, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:03", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 16661, "screenCheckCount": 54, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:08", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 18299, "screenCheckCount": 59, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:13", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 20027, "screenCheckCount": 64, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:18", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 21677, "screenCheckCount": 69, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:23", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 23345, "screenCheckCount": 74, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:28", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 25082, "screenCheckCount": 80, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+{"time": "2026-11-08 21:55:33", "displayedAt": "2026-11-08 21:55:00", "displayedView": "clock", "loopCount": 26750, "screenCheckCount": 85, "weatherFetchCount": 3, "partialRefreshCount": 2, "weatherError": "", "displayError": ""}
+PASS {"version": "epaper-dashboard-0.2.0", "configuredView": "auto", "displayedView": "clock", "weekdayExpected": "Sunday clock", "weatherValid": true, "weatherError": "", "displayError": "", "ntpIntervalSeconds": 3600, "loopProgress": [1878, 26890], "screenChecks": [9, 85], "partialProgress": [1, 2], "displayedTime": ["2026-11-08 21:54:14", "2026-11-08 21:55:00"], "serialClosedSeconds": 76.23064345799503, "settingsPreserved": true, "liveTradingVerified": false, "physicalScreenConfirmation": "pending"}

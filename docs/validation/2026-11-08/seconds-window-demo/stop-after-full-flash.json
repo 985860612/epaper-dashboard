@@ -1,0 +1,12 @@
+{
+  "stopped": true,
+  "captured": [
+    "DISPLAY_BUSY elapsed_ms=15006 BUSY=1",
+    "BW_SECONDS_WINDOW : 17646000",
+    "SECONDS_WINDOW_DONE x=272 y=80 w=96 h=72 elapsed_ms=17647 BUSY=0",
+    "PARTIAL_DONE region=seconds elapsed_ms=17653 ready_busy=0",
+    "DISPLAY_DONE kind=partial elapsed_ms=17659 ready_busy=0 sleep_busy=0 full=1 partial=5 free_heap=148304",
+    "{\"event\":\"partial_stop_queued\"}",
+    "WATCH_STOPPED"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "epaper-dashboard-0.1.0",
+  "date": "2026-11-08",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "core": "3.3.11",
+  "partition": "default, byte-identical to archived badge-v3",
+  "sources": {
+    "firmware/epaper_dashboard/app.h": "1187e8c0cbcc639d64a9cacc68a8a13d0b6bbb2420b853b611ddafbcb8df7a65",
+    "firmware/epaper_dashboard/epaper_dashboard.ino": "88b4cdb4d65b686d289c0dcf11d35227bc32a95a9f3dc019c5621de2720bfe14",
+    "firmware/epaper_dashboard/font_data.h": "88beb7b9f2340e1a44729a5dd9ca892699e110eadc416a23d01b55be7fc0b1af",
+    "firmware/epaper_dashboard/market_clock.h": "6929083d0a6038283ecadde5b04f025532087fd9e9d6a9a6fe1fd5e9995a4442",
+    "firmware/epaper_dashboard/native_text.h": "75d587dbed02f7927df21f5b31fd80e4a25c461d3087b1850db1066f572fc555",
+    "firmware/epaper_dashboard/net.cpp": "a8f5b40204e1d06beaa9e825166c9cb2962bc1a4e2a8c9e3eac2629d2bd03852",
+    "firmware/epaper_dashboard/screen.cpp": "64c627142229c7f96830280b510dda07f8fa887bef1fa6491deff85ec26d47f6",
+    "firmware/epaper_dashboard/settings.cpp": "3a2424e4f0b3a4b2a818b1c79dd0b06393b79e509cc8d7bb31606798d7976b37",
+    "firmware/epaper_dashboard/trust_roots.h": "63efa298b54a0f3a538d1e22da786a7d1991979fc46b1bb8fae2f90045f82c86",
+    "firmware/epaper_dashboard/web.cpp": "dfad04d2c3782e3d6ac689fbc16c5747c9180af97d3282825747dddd963b563a",
+    "firmware/epaper_dashboard/web_gzip.h": "7d88d4b75d9fb49a15a0ffea8ff002541ec6ee9b50d7d44ae2e7eec0c2d19d71",
+    "firmware/epaper_dashboard/web_page.h": "a6a205cb9143a23fd536dd156d20a185325954b88ecc37746a09d4fe62f0c8fa"
+  },
+  "binaries": {
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "epaper_dashboard.ino.bin": "ae3367bf58fc7648c2d1e35aa241f0f6fe357f2835f9b84f5da4f3417a52cfe9",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+  },
+  "credentials": "No embedded keys or Wi-Fi credentials; provision into device NVS via physical USB",
+  "verification": "Upload hash verified; runtime checks recorded in docs/validation.md"
+}

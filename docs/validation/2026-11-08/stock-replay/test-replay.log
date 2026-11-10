@@ -1,0 +1,14 @@
+STEP 0 visible=1/242
+STEP 1 visible=22/242
+STEP 2 visible=42/242
+STEP 3 visible=62/242
+STEP 4 visible=82/242
+STEP 5 visible=102/242
+STEP 6 visible=122/242
+STEP 7 visible=142/242
+STEP 8 visible=162/242
+STEP 9 visible=182/242
+STEP 10 visible=202/242
+STEP 11 visible=222/242
+STEP 12 visible=242/242
+PASS: all replay sizes monotonic, full final coverage, valid source session; points=242 first=29.35 last=29.91 lastAvg=29.7075

@@ -1,0 +1,4 @@
+{
+  "feedback": "天气没动，但是日期整行刷新的，我需要只有秒刷新",
+  "conclusion": "Requested clock band does not isolate seconds on actual screen. Do not mark as verified partial refresh."
+}

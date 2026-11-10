@@ -1,0 +1,39 @@
+{
+  "status": {
+    "version": "epaper-dashboard-0.1.6",
+    "time": "2026-11-08 17:12:45",
+    "lastNtpSync": "2026-11-08 17:12:33",
+    "ntpIntervalSeconds": 3600,
+    "rendering": false,
+    "displayError": "",
+    "lastFrameElapsedMs": 20648,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 0,
+    "weatherError": "",
+    "stockError": "",
+    "partialStatus": "pending",
+    "weather": {
+      "valid": true,
+      "temp": 8,
+      "text": "阴",
+      "observedAt": "2026-11-08T16:48+08:00"
+    },
+    "stock": {
+      "valid": true,
+      "name": "长江电力",
+      "symbol": "sh600900",
+      "price": 29.91,
+      "stamp": "20261106161458"
+    },
+    "pointCount": 242
+  },
+  "config": {
+    "view": "stock",
+    "stocks": [
+      "sh600900"
+    ],
+    "partialEnabled": false,
+    "refreshMode": "color_full",
+    "refreshSeconds": 120
+  }
+}

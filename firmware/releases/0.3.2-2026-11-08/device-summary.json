@@ -1,0 +1,25 @@
+{
+  "version": "epaper-dashboard-0.3.2",
+  "fixedSelectionSurvivedFlash": true,
+  "enlargedClock104PartialPassed": true,
+  "enlargedDate164Rendered": true,
+  "liveWebpageRestoreRotate": "passed",
+  "finalIntervalSeconds": 600,
+  "finalMode": "rotate",
+  "finalView": "auto",
+  "currentPage": "big_calendar",
+  "nextCardSeconds": 599,
+  "loopProgress": [
+    10990,
+    35502
+  ],
+  "partialProgress": [
+    1,
+    2
+  ],
+  "weatherError": "",
+  "stockError": "",
+  "displayError": "",
+  "browserErrors": [],
+  "physicalScreenConfirmation": "pending"
+}

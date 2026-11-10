@@ -1,0 +1,13 @@
+{
+  "version": "epaper-dashboard-0.4.1",
+  "mainLoopAdvancesWithoutSerial": true,
+  "displayError": "",
+  "configurationChanges": [
+    "refreshMode"
+  ],
+  "redPartialReady": true,
+  "fullRefreshCount": 1,
+  "partialRefreshCount": 3,
+  "colorFrameElapsedMs": 17491,
+  "visualConfirmation": "pending user review of 0.4.1"
+}

@@ -1,0 +1,7 @@
+PROBE_STATUS version=red-native-hold-clean armed=1 attempted=0 failed=0 busy=0 uptime_ms=349348
+HOST_SEND TRY
+CANDIDATE_READBACK main_match=1 native_tail_match=1
+PROBE_START mode=1 update=C7 waveform=current_native_white_only_cleanup trial_local_isolation=1 red_code=11
+PROBE_RESULT elapsed_ms=14862 busy=0 sawBusy=1 valid=1 visual=UNCONFIRMED
+PROBE_STOPPED no_automatic_repeat; production_restore_required
+HOST_DONE electrical_timing_only; visual_red_and_isolation_UNCONFIRMED

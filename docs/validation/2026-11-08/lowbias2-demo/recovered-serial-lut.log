@@ -1,0 +1,13 @@
+{"event":"status","version":"epaper-dashboard-0.1.9-lut227","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794139997,"phase":"closed","ap":false,"freeHeap":178120,"weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":30190,"displayError":""}
+{"event":"partial_probe_queued"}
+WATCH_START seconds_only=1 x=272 y=80 width=96 height=72 frames=6 lut=gdey042z98_227
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=272 y=80 w=96 h=72 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=seconds elapsed_ms=926 ready_busy=0
+DISPLAY_DONE kind=partial elapsed_ms=932 ready_busy=0 sleep_busy=0 full=1 partial=1 free_heap=148052
+CUSTOM_LUT_POWER_ON : 91999
+LONG_LUT_CUSTOM_PARTIAL : 821999
+LUT_WINDOW_DONE x=272 y=80 w=96 h=72 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=seconds elapsed_ms=926 ready_busy=0
+DISPLAY_DONE kind=partial elapsed_ms=932 ready_busy=0 sleep_busy=0 full=1 partial=2 free_heap=147796

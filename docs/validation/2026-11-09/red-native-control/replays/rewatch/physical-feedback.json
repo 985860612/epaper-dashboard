@@ -1,0 +1,8 @@
+{
+  "transition": "user observed full-screen refresh",
+  "middleRed": "confirmed in preceding same-binary replay",
+  "waveform": "unaltered native full control",
+  "countsAsPartialRefresh": false,
+  "nextHypothesis": "retain complete native red/white/VCOM phases; hold unchanged pixels via zero-source LUTB; duration unchanged",
+  "restoredBeforeNextExperiment": false
+}

@@ -1,0 +1,12 @@
+{
+  "nativeMatchesTrial1": true,
+  "changedOffsets": [
+    0,
+    56,
+    112,
+    168
+  ],
+  "onlyChange": "RP 1 -> native RP 3",
+  "nominalFrames": 174,
+  "nominalMs": 3480
+}

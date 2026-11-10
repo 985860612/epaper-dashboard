@@ -1,0 +1,24 @@
+{
+  "version": "epaper-dashboard-0.1.9-chartfill-gap1s-clean10m",
+  "source": "/Users/wangxiaojie/xj-studio/.worktrees/epaper-stock-replay/projects/epaper-dashboard/firmware/epaper_dashboard",
+  "frozen_source": "/Users/wangxiaojie/xj-studio/.worktrees/epaper-stock-replay/projects/epaper-dashboard/build/manual-flash-latest/source/epaper_dashboard",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+  "port": "/dev/cu.usbmodem2101",
+  "source_files": {
+    "screen.cpp": "236e286950014bae6fe6490b9e2faea7e1ae6a515787e71b3ec97e7fb3930e1d",
+    "font_data.h": "aec86f59e9847ac2bb729e8483f58026cd28792d1c946229a02ea66218ea9106",
+    "native_text.h": "195739da4e05adaa113a13b74bcf158bda3d69da321451fcfa320420f1ed562d",
+    "web.cpp": "c6ca984db6356ccb02fff1e1bcb774432a45cf2ace29c5b36799a0957b4e8a9f",
+    "app.h": "e95d759e362cdda4e7820134b9ec254fc104152a21e813b216bf9d71dc415c89",
+    "net.cpp": "a8f5b40204e1d06beaa9e825166c9cb2962bc1a4e2a8c9e3eac2629d2bd03852",
+    "web_page.h": "6d73a5218e99631c82214564ab2db2804fc5897a9f282f443889964b91f677f8",
+    "epaper_dashboard.ino": "78c4593803e3ccdc0c4ff4f0290528ddf42ee6002cf8c283e127b9ab87ae4b3c",
+    "styled_text.h": "b6221b955176aa48b6ba85edce509d8fb2d39806865b46485ddf9e8c1d1864df",
+    "web_gzip.h": "9395b98cd493a02ab33090d824aaf9b6a9219b13090cae80a26646950b3235e2",
+    "trust_roots.h": "63efa298b54a0f3a538d1e22da786a7d1991979fc46b1bb8fae2f90045f82c86",
+    "market_clock.h": "6929083d0a6038283ecadde5b04f025532087fd9e9d6a9a6fe1fd5e9995a4442",
+    "frame_canvas.h": "599c7676510bad1bc5ca8d286dd25cc5ceeb21d5db8b3e3d53fb7951903619be",
+    "generated_styles.h": "eca6821e20f1396f9ba14c1cddbab2abab36919d46fed2124842cceac235860c",
+    "settings.cpp": "baf7ec3f94b7dabd616247e6e00e3e791d8854babdee4eedc97c984764a8f204"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "baselineReportedByUser": {
+    "inputVolts": 5,
+    "wholeDeviceMilliAmps": 50,
+    "approximateInputWatts": 0.25
+  },
+  "hardwareCurrentAfterOptimization": null,
+  "before": [
+    {
+      "version": "epaper-dashboard-0.4.4",
+      "time": "2026-11-09 14:33:39",
+      "loopCount": 25986,
+      "stockFetchCount": 2,
+      "rendering": false,
+      "displayError": "",
+      "weatherError": "",
+      "stockError": "",
+      "lastFrameKind": "partial",
+      "lastFrameElapsedMs": 940,
+      "apiMilliseconds": 50
+    },
+    {
+      "version": "epaper-dashboard-0.4.4",
+      "time": "2026-11-09 14:33:41",
+      "loopCount": 26568,
+      "stockFetchCount": 3,
+      "rendering": true,
+      "displayError": "",
+      "weatherError": "",
+      "stockError": "",
+      "lastFrameKind": "partial",
+      "lastFrameElapsedMs": 940,
+      "apiMilliseconds": 390
+    },
+    {
+      "version": "epaper-dashboard-0.4.4",
+      "time": "2026-11-09 14:33:44",
+      "loopCount": 26568,
+      "stockFetchCount": 3,
+      "rendering": true,
+      "displayError": "",
+      "weatherError": "",
+      "stockError": "",
+      "lastFrameKind": "partial",
+      "lastFrameElapsedMs": 940,
+      "apiMilliseconds": 60
+    },
+    {
+      "version": "epaper-dashboard-0.4.4",
+      "time": "2026-11-09 14:33:46",
+      "loopCount": 26568,
+      "stockFetchCount": 3,
+      "rendering": true,
+      "displayError": "",
+      "weatherError": "",
+      "stockError": "",
+      "lastFrameKind": "partial",
+      "lastFrameElapsedMs": 940,
+      "apiMilliseconds": 152
+    }
+  ]
+}

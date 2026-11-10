@@ -1,0 +1,12 @@
+{
+  "version": "epaper-dashboard-0.1.9-point-gap1s-layout-clean10m",
+  "initialFullMs": 20764,
+  "verifiedFirstFrames": 6,
+  "partialAfterMonitorClosed": 12,
+  "independentProgress": true,
+  "fullCount": 1,
+  "displayError": "",
+  "periodicFullIntervalMs": 600000,
+  "tenMinuteHardwareTriggerObserved": false,
+  "stockReplayStillRunning": true
+}

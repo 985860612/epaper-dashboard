@@ -1,0 +1,12 @@
+START epaper-dashboard-0.4.4
+{"event":"status","version":"epaper-dashboard-0.4.4","ip":"","clockReady":true,"lastNtpSync":0,"phase":"trading","ap":false,"freeHeap":180220,"weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":0,"displayError":""}
+WIFI_CONNECTED ip=192.168.31.196
+WEATHER_FETCH ok=1 free_heap=179416
+STOCK_FETCH ok=1 points=197 free_heap=179816
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20411998
+RED_PROFILE ready=1 nominal_ms=15760 tail=A8
+DISPLAY_DONE kind=full view=stock elapsed_ms=20791 full=1 partial=0 BUSY=0

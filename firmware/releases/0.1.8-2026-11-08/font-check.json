@@ -1,0 +1,157 @@
+{
+  "glyphs": 4533,
+  "asciiAndLargeFontsUnchanged": true,
+  "noNewEmptyGlyphs": true,
+  "onePixelCounterWalls": [
+    {
+      "kind": "body",
+      "char": "日",
+      "before": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1.0,
+          "bottom": 1.0
+        },
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "after": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1.0,
+          "bottom": 1.0
+        },
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "closedCounters": 2
+    },
+    {
+      "kind": "body",
+      "char": "口",
+      "before": [
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "after": [
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "closedCounters": 1
+    },
+    {
+      "kind": "body",
+      "char": "和",
+      "before": [
+        {
+          "left": 2.0,
+          "right": 2.0,
+          "top": 1,
+          "bottom": 1
+        }
+      ],
+      "after": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "closedCounters": 1
+    },
+    {
+      "kind": "body",
+      "char": "周",
+      "before": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "after": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1.0,
+          "bottom": 1.0
+        }
+      ],
+      "closedCounters": 1
+    },
+    {
+      "kind": "Header18",
+      "char": "日",
+      "before": [
+        {
+          "left": 1,
+          "right": 2,
+          "top": 1.0,
+          "bottom": 2.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "top": 2.0,
+          "bottom": 1.0
+        }
+      ],
+      "after": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1,
+          "bottom": 1
+        },
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 1
+        }
+      ],
+      "closedCounters": 2
+    },
+    {
+      "kind": "Header18",
+      "char": "周",
+      "before": [
+        {
+          "left": 2.0,
+          "right": 1.0,
+          "top": 1,
+          "bottom": 1
+        }
+      ],
+      "after": [
+        {
+          "left": 1.0,
+          "right": 1.0,
+          "top": 1,
+          "bottom": 1
+        }
+      ],
+      "closedCounters": 1
+    }
+  ]
+}

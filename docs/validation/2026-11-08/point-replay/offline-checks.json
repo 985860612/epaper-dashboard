@@ -1,0 +1,13 @@
+{
+  "pointsPerFrame": 1,
+  "initialVisiblePoints": 0,
+  "extraDelayMs": 0,
+  "advanceAfterBusyAndRamSync": true,
+  "networkFetchDeferredDuringPlayback": true,
+  "rotationDeferredDuringPlayback": true,
+  "headerFrozen": true,
+  "sameDriverAndWaveform": true,
+  "sameFonts": true,
+  "sameMarketParser": true,
+  "nvsWrite": false
+}

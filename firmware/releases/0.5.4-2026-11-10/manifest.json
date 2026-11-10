@@ -1,0 +1,31 @@
+{
+  "version": "epaper-dashboard-0.5.4",
+  "date": "2026-11-10",
+  "hardwareVerificationFile": "verification.json",
+  "configurationUnchanged": true,
+  "stockMinutePartialMs": 954,
+  "applicationProgramBytes": 1309781,
+  "applicationBinaryBytes": 1310032,
+  "applicationPartitionBytes": 1310720,
+  "staticRamBytes": 88928,
+  "files": {
+    "README.md": "6f08f4e4da95d43e98af3c3c0fba13dd18b68a5cf3d76ade041b38ca642d3b4d",
+    "boot.log": "3ed363347d6e29dbb562974f9002f5aa1e80a2b40969a3a8b250cb62da557bc2",
+    "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+    "build.options.json": "70e088578fc3835f488bbee35250fe2cea6b6f10a1001536050ea39ef542ecdf",
+    "compile.log": "18e95376104f85a41d93e78186b93beebdbcfb270a218435db2cf5ea3146a528",
+    "device-check.log": "1a0a3aa8041dd424a448fef9feaf1465016c72eb3b932d8654458ed642c2bc9e",
+    "epaper_dashboard.ino.bin": "66000e4b0dd3ca4e6d32730b18f88dc9836dc7bc7555307c8d9d03141f2f601b",
+    "epaper_dashboard.ino.bootloader.bin": "5f95cbc8b40b7a373f9cb85b534cb7a570cdad30ca27c7021775d830ca03276b",
+    "epaper_dashboard.ino.partitions.bin": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+    "flash_args": "93c7166c0d9dcdc514df5a69dea258b8fbe654a02df8bf9f590039dd6d7655ca",
+    "font-audit.json": "b48cc2f0501f718eb6cb623c51c99778324cc3bf08819cfd3bbbd4e7bc92ffcc",
+    "layout-check.json": "4bcaf62454e8213d636e531acd86049d0c2df2b780fe45dc6affc938429c9a81",
+    "regression-tests.log": "e50966afb6e04db72b3183a528d3fe69f9696e445f088909e92091b937c56c48",
+    "source.zip": "524646c34a93e2876d6aa935c25762110c036a25f1cbb3c1f22c1712bfb6c73b",
+    "stock-preview.png": "a709c4fddf4babdf65e966763576d292274e56dd0550585fccc12f5839790476",
+    "typography-tests.log": "52f9b5c414e7a658ddd1e3914debc53dc7710b29e0d55c6eba7cb7a2fde3a5ac",
+    "upload.log": "6453e06aeafee225b2d008ab218bd11016ba93e8c41320861afd06400e536cb9",
+    "verification.json": "b6297ccbb9e740118e06822638ca9fb735a03751c8d1f1d164306d280840141d"
+  }
+}

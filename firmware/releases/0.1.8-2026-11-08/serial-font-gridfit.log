@@ -1,0 +1,5 @@
+DISPLAY_BUSY elapsed_ms=10003 BUSY=1
+DISPLAY_BUSY elapsed_ms=15004 BUSY=1
+DISPLAY_BUSY elapsed_ms=20006 BUSY=1
+_Update_Full : 20412998
+DISPLAY_DONE kind=full elapsed_ms=20651 ready_busy=0 sleep_busy=1 full=1 partial=0 free_heap=148684

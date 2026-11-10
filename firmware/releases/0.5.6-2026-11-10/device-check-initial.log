@@ -1,0 +1,36 @@
+SOURCE_PARTITIONS_CONFIG_VERIFIED
+================>  ]  95.4% 671744/703975 bytes... 
+
+Writing at 0x00149d2e [============================> ]  97.7% 688128/703975 bytes... 
+
+Writing at 0x00150000 [==============================] 100.0% 703975/703975 bytes... 
+Wrote 1011712 bytes (703975 compressed) at 0x00059000 in 5.5 seconds (1471.2 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...
+New upload port: /dev/cu.usbmodem11101 (serial)
+
+START epaper-dashboard-0.5.6
+{"event":"status","version":"epaper-dashboard-0.5.6","ip":"","clockReady":true,"lastNtpSync":0,"phase":"trading","ap":false,"freeHeap":177340,"cpuMHz":80,"wifiPowerSave":2,"idlePollMs":20,"sleepCount":0,"sleepTotalMs":0,"configSeconds":600,"powerError":"","weatherValid":true,"weatherError":"","stockValid":false,"stockError":"","stockPoints":0,"quoteStamp":"","lastRefreshMs":0,"displayError":""}
+STOCK_FETCH ok=1 points=63 free_heap=176912
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+DISPLAY_DONE kind=full view=stock elapsed_ms=20931 full=1 partial=0 BUSY=0
+STOCK_FETCH ok=1 points=63 free_heap=145932
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_DONE kind=color_partial view=stock elapsed_ms=17632 full=1 partial=1 BUSY=0
+STOCK_FETCH ok=1 points=64 free_heap=145876
+DISPLAY_DONE kind=partial view=stock elapsed_ms=2020 full=1 partial=3 BUSY=0
+Traceback (most recent call last):
+  File "/Users/wangxiaojie/xj-studio/projects/epaper-dashboard/build/stock-056-device-check.py", line 27, in <module>
+    line=conn.readline().decode(errors='replace').strip()
+         ^^^^^^^^^^^^^^^
+  File "/Users/wangxiaojie/.cache/uv/archive-v0/kLnX9YxE8v9Ra2Dwuo0j7/lib/python3.12/site-packages/serial/serialposix.py", line 565, in read
+    ready, _, _ = select.select([self.fd, self.pipe_abort_read_r], [], [], timeout.time_left())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

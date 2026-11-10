@@ -1,0 +1,30 @@
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":178896,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":34683,"displayError":"局刷未通过，已停用并准备全刷恢复"}
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10004 BUSY=1
+DISPLAY_BUSY elapsed_ms=15006 BUSY=1
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20407999
+DISPLAY_DONE kind=full elapsed_ms=20525 ready_busy=1 full=2 partial=0 free_heap=148460
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":178212,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":178212,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":178172,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+WEATHER_FETCH ok=1 free_heap=176624
+STOCK_FETCH ok=1 points=242 free_heap=177036
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":177812,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":177844,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":177796,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+{"event":"status","version":"epaper-dashboard-0.1.4","ip":"192.168.31.196","clockReady":true,"lastNtpSync":1794123432,"phase":"closed","ap":false,"freeHeap":178104,"weatherValid":true,"weatherError":"","stockValid":true,"stockError":"","stockPoints":242,"quoteStamp":"20261106161458","lastRefreshMs":65292,"displayError":""}
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE
+DISPLAY_WAITING_FOR_READY_AFTER_PARTIAL_FAILURE

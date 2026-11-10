@@ -1,0 +1,42 @@
+[
+  {
+    "version": "epaper-dashboard-0.1.9-lut227",
+    "time": "2026-11-08 19:51:25",
+    "rendering": false,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 10,
+    "lastFrameElapsedMs": 933,
+    "displayError": "",
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lut227",
+    "time": "2026-11-08 19:51:28",
+    "rendering": false,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 11,
+    "lastFrameElapsedMs": 933,
+    "displayError": "",
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lut227",
+    "time": "2026-11-08 19:51:31",
+    "rendering": true,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 11,
+    "lastFrameElapsedMs": 933,
+    "displayError": "",
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  },
+  {
+    "version": "epaper-dashboard-0.1.9-lut227",
+    "time": "2026-11-08 19:51:35",
+    "rendering": false,
+    "fullRefreshCount": 1,
+    "partialRefreshCount": 12,
+    "lastFrameElapsedMs": 934,
+    "displayError": "",
+    "partialStatus": "custom_lut_busy_passed_visual_pending"
+  }
+]

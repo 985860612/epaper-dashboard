@@ -1,0 +1,18 @@
+{
+  "view": "auto",
+  "cardMode": "rotate",
+  "fixedCard": "big_calendar",
+  "cardRotationSeconds": 600,
+  "city": "北京顺义",
+  "location": "101010400",
+  "stocks": [
+    "sh600900"
+  ],
+  "refreshMode": "bw_partial",
+  "partialEnabled": true,
+  "refreshSeconds": 120,
+  "rotationSeconds": 300,
+  "calendarYear": 2026,
+  "apiKeyConfigured": true,
+  "wifiPasswordConfigured": true
+}

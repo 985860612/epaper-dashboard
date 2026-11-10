@@ -1,0 +1,13 @@
+{
+  "version": "epaper-dashboard-0.1.9-point-gap1s",
+  "pointsPerFrame": 1,
+  "waitAfterBusyAndPreviousRamSyncMs": 1000,
+  "networkFetchDeferredDuringReplay": true,
+  "driverAndWaveformSameAsPrevious": true,
+  "canonicalStable018SourcesUnchanged": true,
+  "partitionUnchanged": true,
+  "nvsWritten": false,
+  "sketchBytes": 1288585,
+  "staticRamBytes": 91392,
+  "applicationBinarySha256": "57b9d8e5c8b16f9e3b129847baba750924c3f9599053642d81479d937b9bafc8"
+}

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "unauthenticated_blocked": true,
+    "configuration_page": true,
+    "credentials_redacted": true,
+    "invalid_stock_rejected": true,
+    "invalid_location_rejected": true,
+    "too_fast_refresh_rejected": true,
+    "blank_password_retains_credentials": true,
+    "aliyun_ntp_hourly": true,
+    "qweather_device_fetch": true,
+    "sunday_clock_mode": true,
+    "stock_mode_save": true,
+    "real_minute_data": true
+  },
+  "stock_points": 242,
+  "quote_stamp": "20261106161458",
+  "weather_observed_at": "2026-11-08T14:25+08:00",
+  "ntp_sync": "2026-11-08 14:44:45",
+  "ntp_interval_seconds": 3600,
+  "free_heap": 174212,
+  "errors": {
+    "stock": "",
+    "weather": "",
+    "display": ""
+  }
+}

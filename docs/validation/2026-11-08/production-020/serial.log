@@ -1,0 +1,17 @@
+DISPLAY_BUSY elapsed_ms=20008 BUSY=1
+_Update_Full : 20408001
+DISPLAY_DONE kind=full view=clock elapsed_ms=20645 full=1 partial=0 BUSY=1
+NTP_SYNC_OK interval_ms=3600000
+WEATHER_FETCH ok=1 free_heap=179284
+WEATHER_FETCH ok=1 free_heap=178568
+DISPLAY_BUSY elapsed_ms=5002 BUSY=1
+DISPLAY_BUSY elapsed_ms=10003 BUSY=1
+DISPLAY_BUSY elapsed_ms=15005 BUSY=1
+DISPLAY_BUSY elapsed_ms=20007 BUSY=1
+_Update_Full : 20409001
+DISPLAY_DONE kind=full view=clock elapsed_ms=20682 full=2 partial=0 BUSY=0
+CUSTOM_LUT_POWER_ON : 92001
+LONG_LUT_CUSTOM_PARTIAL : 822001
+LUT_WINDOW_DONE x=40 y=64 w=320 h=96 bytes=227 update=CF elapsed_ms=824 BUSY=0
+PARTIAL_DONE region=clock elapsed_ms=937
+DISPLAY_DONE kind=partial view=clock elapsed_ms=954 full=2 partial=1 BUSY=0

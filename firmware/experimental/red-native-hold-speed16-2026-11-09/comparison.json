@@ -1,0 +1,17 @@
+{
+  "nativeMatchesSuccessBaseline": true,
+  "changedOffsetsAgainstSuccess": [
+    14,
+    21,
+    70,
+    77,
+    126,
+    133,
+    182,
+    189
+  ],
+  "change": "skip prep2/3; no pulse amplitudes or lengths changed",
+  "nominalFrames": 818,
+  "nominalMs": 16360,
+  "redVSH2FramesUnchanged": 340
+}
