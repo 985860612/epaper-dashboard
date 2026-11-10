@@ -125,7 +125,7 @@ bool fetchStock(const String& symbol, String& error) {
       if (next.count >= MAX_POINTS) break;
       int hhmm; float price; double volume, amount;
       const char* row = v.as<const char*>();
-      if (!row || sscanf(row, "%d %f %lf %lf", &hhmm, &price, &volume, &amount) != 4) continue;
+      if (!parseMinuteRow(row, hhmm, price, volume, amount)) continue;
       int offset = minuteOffset(hhmm);
       if (offset < 0 || offset < lastOffset || !(price > 0) || !isfinite(price)) continue;
       float average = volumeWeightedPrice(amount, volume);

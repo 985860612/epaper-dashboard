@@ -41,3 +41,14 @@
 - [新字模版式](../assets/generated-layout/stock-color-400x300.png)已检查文字边界与重叠；当前生成字模的实屏审美效果仍待用户确认。
 - 新项目已登记独立Git根目录和无远程事实；全量仓库清单reconcile仍被既有`huan`仓库的凭据地址检查阻止，本次只定向新增本项目，未修改其他仓库配置。
 - 持续观察到第二次定时全刷：`2026-11-08 15:47:28`报告`fullRefreshCount=2`、耗时20567ms、显示错误为空，确认休眠后仍可继续按周期更新。见[定时刷新检查](validation/2026-11-08/periodic-refresh-check.json)。
+
+## 2026-11-10 v0.5.12 电压与电池图标
+
+- 用户要求显示电压与电池图标，大于 4.5V 时显示充电图标，不显示百分比。GPIO3 使用板载 VBUS 的 100kΩ/100kΩ 分压，读值乘 2；电池供电时位于二极管之后，不补造固定压降。
+- 六组主机测试通过：电压阈值与未知状态、行情解析兼容与交易边界、卡片、分钟休眠、红色转换、4567 字形及七页边界/重叠/局刷范围。绘图夹具是示例数据，不是实拍。
+- FQBN `esp32:esp32:esp32s3:CDCOnBoot=cdc`，ESP32 Core 3.3.11；沿用 `-Os`、C++/链接 LTO、原分区及 NVS。应用二进制 1,309,440 字节，分区上限 1,310,720 字节，剩余 1,280 字节。
+- 应用 SHA-256：`b5fafb8145a8385239d0f29d3d9d87cf7d5bf11f86cbbbccc389faa7df0e3b5e`。
+- 初次上传未收到串口数据，第二次详细诊断期间 USB 设备掉线，均未开始写入。提示 BOOT/RESET 操作后，用户要求继续；重新识别 `/dev/cu.usbmodem11101` 并使用 Arduino CLI `upload --verify`，全部写入哈希验证通过。没有整片擦除或重新导入凭据。
+- 设备串口报告 `epaper-dashboard-0.5.12`、CPU 80MHz、Wi-Fi 省电模式 2、天气与行情有效、分时 242 点；全刷 20,929ms，BUSY=0，随后黑白局刷约 944ms。捕获期间没有 ADC 初始化/读取错误，`displayError` 和 `powerError` 为空。
+- 关闭串口监视器后，三次认证 API 状态：uptime 69,117→79,245→89,392ms，loopCount 1,493→1,905→2,363，screenCheckCount 38→48→58；版本保持 0.5.12、无显示/电源错误，证明主循环继续推进。
+- 本机证据已保留到主工作树被忽略的 `build/battery-0.5.12/`：`runtime-serial.log`、`status-initial.json`、`status-monitor-closed.json` 及构建产物，预览在 `build/battery-preview-0.5.12/`，清理功能 worktree 不会删除这些证据。电压绝对准确度、实际图标观感与拔插 USB 切换待用户实物确认，不把上传校验或 API 成功当作视觉验收。

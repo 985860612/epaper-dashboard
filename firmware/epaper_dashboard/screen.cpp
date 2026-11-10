@@ -7,6 +7,7 @@
 #include "frame_canvas.h"
 #include "red_waveform.h"
 #include "red_transition.h"
+#include "battery_draw.h"
 
 // Adapted from HalfSweetStudio/EPaperDrive (AGPL-3.0):
 // WAVEFORM_SETTING_LUT.h, LUTDefault_part_GDEY042Z98.
@@ -163,7 +164,7 @@ void initScreen() {
 static bool partialFailed=false, baselineValid=false, fullFailed=false;
 static String previousTag, previousLayout;
 static uint32_t previousRevision=0,lastFull=0;
-static uint32_t oldRegionHash[3]={},oldRedHash=0;
+static uint32_t oldRegionHash[MAX_REFRESH_REGIONS]={},oldRedHash=0;
 static FrameCanvas* previousFrame=nullptr;
 
 static bool partialRegion(FrameCanvas& frame,int x,int y,int w,int h,const char* kind,bool holdRed=false) {
@@ -187,6 +188,7 @@ static bool partialRegion(FrameCanvas& frame,int x,int y,int w,int h,const char*
 }
 
 void refreshScreen() {
+  serviceBattery();
   if(fullFailed)return;
   if(partialFailed && !baselineValid && digitalRead(4)==HIGH)return;
   time_t epoch=time(nullptr);tm now{};localtime_r(&epoch,&now);
@@ -209,6 +211,7 @@ void refreshScreen() {
     for(size_t j=0;j<sizeof(Point);++j)pointHash=(pointHash^bytes[j])*16777619u;
   }
   String tag=String(clock)+String(settingsRevision)+weatherKey+layout+String(stock.price,4)+String(stock.previous,4)+String(stock.open,4)+String(pointHash)+stock.stamp.substring(0,8)+stockError+phaseCode(phase);
+  tag+="|"+String(battery.displayKey());
   bool full=!baselineValid || maintenanceFull || layout!=previousLayout || settingsRevision!=previousRevision;
   if(!full && tag==previousTag) { needRefresh=false;return; }
   if(!full && !useBw && millis()-lastFull<120000UL)return;
@@ -224,9 +227,10 @@ void refreshScreen() {
     drawStock(now,stock,weather,cfg.city,phase,activeStock,!stockError.isEmpty() || (stock.valid && epoch-stock.receivedAt>cfg.refreshSeconds*2));
   } else if(valid) { drawCard(card,now); }
   else drawClock(now,valid,weather,cfg.city,phase);
+  drawBatteryStatus(frame,battery);
   if(cardDrawingFailed || styleDrawingFailed) { displayError="字模解压失败"; painter=&display;needRefresh=true;return; }
-  RefreshRegion regions[3]{};int count=layoutRegions(regions,fontTestActive,stocks,valid,card);
-  uint32_t hashes[3]={};bool changed[3]={};bool anyChanged=false;
+  RefreshRegion regions[MAX_REFRESH_REGIONS]{};int count=layoutRegions(regions,fontTestActive,stocks,valid,card);
+  uint32_t hashes[MAX_REFRESH_REGIONS]={};bool changed[MAX_REFRESH_REGIONS]={};bool anyChanged=false;
   for(int i=0;i<count;++i) { auto r=regions[i];hashes[i]=frame.hash(frame.black,r.x,r.y,r.w,r.h);changed[i]=hashes[i]!=oldRegionHash[i];anyChanged|=changed[i];if(changed[i] && frame.hasRed(r.x,r.y,r.w,r.h) && !canRed)full=true; }
   const uint32_t redHash=frame.hash(frame.red,0,0,400,300);
   const bool redChanged=redHash!=oldRedHash;
