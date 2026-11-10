@@ -3,13 +3,51 @@
 #include <WiFi.h>
 #include <esp_sleep.h>
 #include <driver/gpio.h>
+#include "battery.h"
+#include <esp_adc/adc_oneshot.h>
+#include <esp_adc/adc_cali.h>
+#include <esp_adc/adc_cali_scheme.h>
+
+BatteryReading battery;
+static adc_oneshot_unit_handle_t batteryAdc=nullptr;
+static adc_cali_handle_t batteryCalibration=nullptr;
+static bool batteryAdcReady=false;
+static void initBattery() {
+  adc_oneshot_unit_init_cfg_t unit{};unit.unit_id=ADC_UNIT_1;
+  adc_oneshot_chan_cfg_t channel{};channel.atten=ADC_ATTEN_DB_12;channel.bitwidth=ADC_BITWIDTH_12;
+  adc_cali_curve_fitting_config_t calibration{};
+  calibration.unit_id=ADC_UNIT_1;calibration.chan=ADC_CHANNEL_2;
+  calibration.atten=channel.atten;calibration.bitwidth=channel.bitwidth;
+  esp_err_t error=adc_oneshot_new_unit(&unit,&batteryAdc);
+  if(error==ESP_OK)error=adc_oneshot_config_channel(batteryAdc,ADC_CHANNEL_2,&channel);
+  if(error==ESP_OK)error=adc_cali_create_scheme_curve_fitting(&calibration,&batteryCalibration);
+  batteryAdcReady=error==ESP_OK;
+  if(!batteryAdcReady)Serial.printf("POWER_ADC_INIT error=%d\n",error);
+}
+void serviceBattery() {
+  static uint32_t lastSample=0;
+  if(!batteryAdcReady || (lastSample && millis()-lastSample<10000))return;
+  lastSample=millis();
+  // Calibrated ADC mV, 16-sample trimmed mean. GPIO3 stays an analog input.
+  uint32_t sum=0,low=UINT32_MAX,high=0;
+  for(int i=0;i<16;++i) {
+    int raw=0,mv=0;esp_err_t error=adc_oneshot_read(batteryAdc,ADC_CHANNEL_2,&raw);
+    if(error==ESP_OK)error=adc_cali_raw_to_voltage(batteryCalibration,raw,&mv);
+    if(error!=ESP_OK) {battery={};Serial.printf("POWER_ADC_READ error=%d\n",error);return;}
+    sum+=mv;low=min(low,uint32_t(mv));high=max(high,uint32_t(mv));
+  }
+  battery=batteryFromAdc((sum-low-high+7)/14);
+}
 
 uint32_t sleepCount=0,sleepTotalMs=0,lastSleepMs=0;
 String powerError;
 static uint32_t configStarted=0,configDuration=90000;
 static bool buttonWasLow=false,sleepFault=false;
 
-void initPowerManager() { pinMode(0,INPUT_PULLUP);configStarted=millis(); }
+void initPowerManager() {
+  pinMode(0,INPUT_PULLUP);configStarted=millis();
+  initBattery();serviceBattery();
+}
 uint32_t configRemainingSeconds() { return (remainingMs(millis(),configStarted,configDuration)+999)/1000; }
 void keepPowerAwake() { configStarted=millis();configDuration=600000; }
 void closePowerWindow() { configStarted=millis();configDuration=1500; }

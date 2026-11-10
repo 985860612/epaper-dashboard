@@ -3,6 +3,7 @@
 #include "../firmware/epaper_dashboard/typography.h"
 #include "../firmware/epaper_dashboard/frame_canvas.h"
 #include "../firmware/epaper_dashboard/layout_regions.h"
+#include "../firmware/epaper_dashboard/battery_draw.h"
 #include <cassert>
 #include <vector>
 #include <fstream>
@@ -10,6 +11,7 @@
 #include <filesystem>
 Settings cfg;Weather weather;Stock stock;String weatherError,stockError;bool rendering=false;
 static Adafruit_GFX* painter=nullptr;static bool renderBw=false;static tm currentTm{};static Phase fakePhase=Phase::Trading;static bool fakeClock=true;
+static BatteryReading previewBattery{3820};
 bool clockReady() {return fakeClock;}Phase currentPhase() {return fakePhase;}
 String dateCompact() {char b[16];strftime(b,sizeof(b),"%Y%m%d",&currentTm);return b;}
 struct Trace {String text;TextRole role;TextBox box;};static std::vector<Trace> texts;static bool exactRoles=true;
@@ -25,6 +27,10 @@ static void save(const Canvas& c,const std::string& name) {
 static Image render(int page,const tm& now,const std::string& output="") {
   currentTm=now;Canvas c;painter=&c;texts.clear();styleDrawingFailed=false;
   if(page==5)drawStock(now,stock,weather,cfg.city,fakePhase,0,false);else if(page==6)drawFontTest(now);else drawCard(static_cast<CardId>(page),now);
+  for(int y=0;y<12;++y)for(int x=320;x<384;++x) {
+    int i=y*50+x/8,bit=128>>(x%8);assert((c.black[i]&bit) && (c.red[i]&bit));
+  }
+  drawBatteryStatus(c,previewBattery);
   if(c.clipped) {std::cerr<<"clipped page "<<page<<" pixels="<<c.clipped<<"\n";for(auto& t:texts)std::cerr<<t.text.c_str()<<" ("<<t.box.x<<","<<t.box.y<<","<<t.box.w<<","<<t.box.h<<")\n";}
   assert(!c.clipped && !styleDrawingFailed);
   for(auto& t:texts) {if(exactRoles && textFace(t.text,t.role).size!=roleFont(t.role).size) {std::cerr<<"unexpected fallback "<<t.text.c_str()<<std::endl;assert(false);}auto b=t.box;if(b.x<0 || b.y<0 || b.x+b.w>400 || b.y+b.h>300)std::cerr<<"bad box "<<t.text.c_str()<<"\n";assert(b.x>=0 && b.y>=0 && b.x+b.w<=400 && b.y+b.h<=300);}
@@ -44,7 +50,7 @@ static void within(const Image& a,const Image& b,const RefreshRegion* r,int n,co
   }assert(changed>0);
 }
 static void checkTimeInk(const Image& image,int page) {
-  RefreshRegion regions[3];int n=layoutRegions(regions,page==6,page==5,true,page<5?static_cast<CardId>(page):CardId::MinimalClock);
+  RefreshRegion regions[MAX_REFRESH_REGIONS];int n=layoutRegions(regions,page==6,page==5,true,page<5?static_cast<CardId>(page):CardId::MinimalClock);
   for(int k=0;k<n;++k)if(std::strcmp(regions[k].name,"time")==0 || std::strcmp(regions[k].name,"font_time")==0 || std::strcmp(regions[k].name,"header")==0) {
     auto r=regions[k];for(int y=r.y;y<r.y+r.h;++y)for(int x=r.x;x<r.x+r.w;++x)assert(image.red[y*50+x/8]&(128>>(x%8)));
   }
@@ -75,12 +81,28 @@ int main(int argc,char** argv) {
     for(int i=0;i<f.count;++i) {auto code=fontCode(f,i);assert(fontIndex(f,code)==i);TextGlyph g{};assert(textGlyph(f,code,g) && g.width && g.height);if(code>='0' && code<='9') {if(advance<0)advance=g.advance;assert(advance==g.advance);}++glyphs;}
   }assert(!styleDrawingFailed);
   tm base=date(2026,11,9);assert(cardMonth(base)=="2026 年  11 月");
-  for(int p=0;p<7;++p) {auto a=render(p,base,out+"/page-"+std::to_string(p)+".ppm");checkTimeInk(a,p);auto later=base;later.tm_hour=13;later.tm_min=0;auto b=render(p,later);RefreshRegion r[3];int n=layoutRegions(r,p==6,p==5,true,p<5?static_cast<CardId>(p):CardId::MinimalClock);for(int k=0;k<n;++k)assert(r[k].x%8==0 && r[k].w%8==0 && r[k].x>=0 && r[k].x+r[k].w<=400 && r[k].y>=0 && r[k].y+r[k].h<=300);within(a,b,r,n,p==5?"header":p==6?"font_time":"time");}
+  for(int p=0;p<7;++p) {
+    auto a=render(p,base,out+"/page-"+std::to_string(p)+".ppm");checkTimeInk(a,p);
+    auto later=base;later.tm_hour=13;later.tm_min=0;auto b=render(p,later);
+    RefreshRegion r[MAX_REFRESH_REGIONS];int n=layoutRegions(r,p==6,p==5,true,p<5?static_cast<CardId>(p):CardId::MinimalClock);
+    assert(n<=MAX_REFRESH_REGIONS);
+    for(int k=0;k<n;++k)assert(r[k].x%8==0 && r[k].w%8==0 && r[k].x>=0 && r[k].x+r[k].w<=400 && r[k].y>=0 && r[k].y+r[k].h<=300);
+    within(a,b,r,n,p==5?"header":p==6?"font_time":"time");
+    for(uint16_t mv:{4500,4502,5000,0}) {
+      previewBattery={mv};
+      auto power=render(p,base,p==3?out+"/power-"+std::to_string(mv)+".ppm":"");
+      within(a,power,r,n);assert(a.red==power.red);
+      for(int y=0;y<300;++y)for(int x=0;x<400;++x)if(y>=12 || x<320 || x>=384) {
+        int i=y*50+x/8,bit=128>>(x%8);assert(!((a.black[i]^power.black[i])&bit));
+      }
+    }
+    previewBattery={3820};
+  }
   exactRoles=false;
   for(int year=2026;year<=2028;++year)for(int month=1;month<=12;++month) {auto t=date(year,month,1);render(1,t);t=date(year,month,calendarMonthDays(year,month));render(1,t);}
   for(const char* city:{"黑龙江省哈尔滨市","内蒙古自治区呼和浩特市","新疆维吾尔自治区乌鲁木齐市"}) {cfg.city=city;weather.text="大暴雨转强浓雾";weather.temp=-120;weather.low=-120;weather.high=120;weatherError="weather unavailable";for(int p=0;p<7;++p)render(p,base);}
   cfg.city="北京顺义";weather.text="阴";weather.temp=9;weather.low=-2;weather.high=12;weatherError="";
-  auto a=render(3,base);weather.temp=-20;weather.text="雨夹雪";auto b=render(3,base);RefreshRegion r[3];int n=layoutRegions(r,false,false,true,CardId::MinimalClock);within(a,b,r,n,"weather");
+  auto a=render(3,base);weather.temp=-20;weather.text="雨夹雪";auto b=render(3,base);RefreshRegion r[MAX_REFRESH_REGIONS];int n=layoutRegions(r,false,false,true,CardId::MinimalClock);within(a,b,r,n,"weather");
   {Canvas c;painter=&c;texts.clear();int width=textWidth(stockRate(-.27f));stockRow(112,"-0.09",-.30f,width);stockRow(156,"29.84",.03f,width);assert(texts.size()==8 && texts[0].role==TextRole::Body && texts[4].role==TextRole::Body && textFace(texts[4].text,texts[4].role).size==20);
    for(int i:{0,4})assert(texts[i].box.x+texts[i].box.w>=364-width && texts[i].box.x+texts[i].box.w<=366-width);
    for(int i:{3,7})assert(texts[i].box.x+texts[i].box.w>=394 && texts[i].box.x+texts[i].box.w<=396);
@@ -93,7 +115,7 @@ int main(int argc,char** argv) {
   float savedPrevious=stock.previous;stock.previous=29.65;auto mixed=render(5,base);int mixedRed=0,mixedBlack=0;
   for(int y=132;y<=252;++y)for(int x=20;x<=396;++x) {int i=y*50+x/8,mask=128>>(x%8);if(!(mixed.red[i]&mask))++mixedRed;if(!(mixed.black[i]&mask))++mixedBlack;}
   assert(mixedRed>50 && mixedBlack>50);stock.previous=savedPrevious;
-  auto stockA=render(5,base);stock.price+=.2f;stock.points[stock.count-1].price+=.1f;auto stockB=render(5,base);RefreshRegion sr[3];int sn=layoutRegions(sr,false,true,true,CardId::MinimalClock);within(stockA,stockB,sr,sn,"stock");stock.price-=.2f;stock.points[stock.count-1].price-=.1f;
+  auto stockA=render(5,base);stock.price+=.2f;stock.points[stock.count-1].price+=.1f;auto stockB=render(5,base);RefreshRegion sr[MAX_REFRESH_REGIONS];int sn=layoutRegions(sr,false,true,true,CardId::MinimalClock);within(stockA,stockB,sr,sn,"stock");stock.price-=.2f;stock.points[stock.count-1].price-=.1f;
   stock.price=10000.00;stock.previous=10001.11;stock.name="贵州茅台测试股份有限公司";render(5,base);stock.valid=false;stock.count=0;stockError="网络请求失败，请稍后重试";render(5,base);render(4,base);
   stock.valid=true;stock.count=0;stock.name="长江电力";render(5,date(2026,11,10));
   for(auto role:{TextRole::Dense,TextRole::Body,TextRole::Title})for(int width=30;width<=230;width+=10) {auto s=fitText("新疆维吾尔自治区乌鲁木齐市XYZ",width,role);assert(textWidth(s,role)<=width);}
