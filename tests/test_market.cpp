@@ -40,5 +40,14 @@ int main() {
   assert(fabs(volumeWeightedPrice(106672575.0,36345.0)-29.35)<0.0001);
   assert(std::isnan(volumeWeightedPrice(100,0)));
   assert(std::isnan(volumeWeightedPrice(NAN,100)));
+  for(const char* row:{"0930 29.35 36345 106672575", " 1500\t31.25 1e6 3.125e9 extra", "1130 0 0 0", "1300 -1 -2 -3"}) {
+    int hhmm=0,expectedClock=0;float price=0,expectedPrice=0;double volume=0,amount=0,expectedVolume=0,expectedAmount=0;
+    assert(std::sscanf(row,"%d %f %lf %lf",&expectedClock,&expectedPrice,&expectedVolume,&expectedAmount)==4);
+    assert(parseMinuteRow(row,hhmm,price,volume,amount));
+    assert(hhmm==expectedClock && price==expectedPrice && volume==expectedVolume && amount==expectedAmount);
+  }
+  for(const char* row:{static_cast<const char*>(nullptr),"","0930","0930 29.35","0930 29.35 100","oops 29.35 100 100","0930 nope 100 100","0930 29.35 nope 100","0930 29.35 100 nope","99999999999999999999 1 2 3"}) {
+    int hhmm=0;float price=0;double volume=0,amount=0;assert(!parseMinuteRow(row,hhmm,price,volume,amount));
+  }
   std::cout << "PASS: session boundaries, lunch compression, holidays/year expiry, and volume-weighted price\n";
 }

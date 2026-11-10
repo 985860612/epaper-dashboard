@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdio>
 #include <cstring>
+#include <cstdlib>
 
 enum class Phase { Closed, Auction, Opening, Trading, Closing, Unknown };
 
@@ -36,6 +37,17 @@ inline int minuteOffset(int hhmm) {
 inline float volumeWeightedPrice(double amount, double volumeHands) {
   if (!(amount > 0) || !(volumeHands > 0) || !std::isfinite(amount) || !std::isfinite(volumeHands)) return NAN;
   return amount / (volumeHands * 100.0); // Tencent A-share cumulative volume uses lots of 100 shares.
+}
+
+// Avoid pulling the general floating-point scanf engine into the small app
+// partition. Preserve the four Tencent fields and their float/double precision.
+inline bool parseMinuteRow(const char* row,int& hhmm,float& price,double& volume,double& amount) {
+  if(!row)return false;
+  char* end=nullptr;long clock=std::strtol(row,&end,10);
+  if(end==row || clock<0 || clock>2359)return false;
+  hhmm=static_cast<int>(clock);row=end;price=std::strtof(row,&end);if(end==row)return false;
+  row=end;volume=std::strtod(row,&end);if(end==row)return false;
+  row=end;amount=std::strtod(row,&end);return end!=row;
 }
 
 inline bool stockPage(Phase phase) {
