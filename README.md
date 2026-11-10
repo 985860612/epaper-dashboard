@@ -1,88 +1,181 @@
-# 横屏墨水屏数据展示
+# epaper-dashboard · 横屏墨水屏看板
 
-- 状态：active
-- 创建日期：2026-11-08
+ESP32-S3 + 4.2 寸黑白红墨水屏，通过 Wi-Fi 独立显示时间、和风天气、日历和 A 股分时行情。交易时段自动看股票，其余时间轮播生活卡片，也可以在网页上固定页面。
 
-当前固件为 **0.5.11**（2026-11-10）：六个正式页面默认使用方正晶细黑（汉字）与Arial（英数，默认Regular；股票现价用Bold），按16/18/20/24/48/80/112/164px语义档位生成原生字模。年月标题统一为“2026 年  11 月”；主时间112px、大字日期164px；股票名称为24px苹方简体Regular、现价48px Bold，右上角保留20px涨额/涨幅单行；上下刻度仅显示18px Regular价格，不显示百分比或斜线；分时图改为376×120，上方价格刻度移至昨收虚线下方并避让曲线，下方刻度留在底部，去均价线，价格折线按昨收价分为上方红色、下方或相等黑色。局刷窗口随布局更新，原配置、波形和省电逻辑保留。[字体与字号规格](docs/typography.md) · [固件归档](firmware/releases/0.5.11-2026-11-10/README.md)。
+当前版本：**[v0.5.11](https://github.com/985860612/epaper-dashboard/releases/tag/v0.5.11)** · [固件与校验记录](firmware/releases/0.5.11-2026-11-10/) · [字体与版式](docs/typography.md)
 
-0.4.9新增字体对照页，0.4.10扩展为[七组字体对照](docs/font-comparison.md)，包含当前字体、两组Arial＋苹方方案，以及用户提供的源柔黑、Noto Sans CJK Regular、方正晶黑和方正晶细黑。测试页不参与轮播，网页可返回正常显示，重启也会退出；原持久配置保留。
+## 界面预览
 
-0.4.11按用户选择确定汉字为方正晶细黑（原F），临时页改为五种24px英数候选：Arial Bold、DIN Alternate Bold、Helvetica Neue Medium、Avenir Next Demi Bold、SF Mono Medium。标题汉字使用晶细黑；英数选定后统一应用到正式页面。原七组中文对照保留在0.4.10归档。
+下面的图片由固件使用的页面代码和字模生成，展示的是**示例数据**，不是设备实拍或实时行情。
 
-0.4.12按“并非所有位置都适合加粗”的反馈，临时页比较Arial Regular与Bold的18/24px文字及40px数字。中文继续确定为晶细黑，正式页面的混合字重方案待确认；屏幕驱动和原配置保留。
+<table>
+<tr><th>股票分时</th><th>极简时钟与天气</th></tr>
+<tr><td><img src="docs/images/stock.png" alt="股票页：分时线按昨收分为红黑两色，上下刻度仅显示价格" width="480"></td><td><img src="docs/images/clock.png" alt="时钟页：大号时间、日期、星期和北京顺义天气" width="480"></td></tr>
+</table>
 
-0.4.6改为每分钟手动轻睡眠，保留前帧与局刷状态；平时网页离线，短按BOOT开启10分钟配置，启动提供90秒窗口。网页可保持配置或立即省电。自动唤醒、联网、局刷与原配置已核验；新电流待外部读表。USB串口在本次Mac会话睡眠后未恢复，后续USB烧录建议先RESET进入启动窗口。[操作与构建](docs/minute-sleep.md)。
+股票页保留大号现价、涨跌金额与涨跌幅。价格线高于昨收画红色，低于或等于昨收画黑色；穿越昨收时在交点分段。刻度只留价格数字，去掉均价线，减少干扰。
 
-0.4.5加入在线省电：CPU 80MHz、Wi-Fi最大调制解调器省电模式、20ms空闲轮询；保留网页、每分钟行情及现有屏幕波形。用户原报告USB／5V整机待机约50mA，用户随后反馈同口径约40mA，较原约50mA下降约20%；这是用户外部表读数，不根据软件状态推算电流。[省电实现与测量方法](docs/power-optimization.md)。
+<details>
+<summary>查看六套页面：五张日常卡片 + 股票分时</summary>
 
-ESP32-S3 通过 Wi-Fi 独立运行，驱动 HINK-E042A13 4.2 寸 400×300 黑白红墨水屏。非交易时间展示大字时间和北京顺义天气；交易日09:15起展示长江电力，正式开盘后显示当天按昨收价分色的价格分时线与黑色昨收参考线。网页支持修改股票列表、天气位置、网络和显示参数。
+![大字日历、月历天气、黄历、极简时钟、今日总览和股票分时](docs/images/cards.png)
 
-五套卡片自`0.3.2`接入并继续保留：大字日历、月历天气、黄历、极简时钟、今日总览，默认每10分钟轮换；交易时段优先股票，其余时间轮播。网页“卡片显示”可选择固定某张卡片并保存，固定模式保持该页；下一张按钮便于浏览。时间按分钟局刷，切换卡片约20秒全刷。大字日期164px、极简时钟112px，按原生字号生成字模，修复实屏中央字偏小的问题。已有股票分时图、字体、局刷驱动及股票页10分钟维护全刷保留。[固件与源码](firmware/releases/0.3.2-2026-11-08/README.md)、[功能与字号验证](docs/validation/2026-11-08/cards-032/README.md)已归档。
+</details>
 
-黄历使用lunar-python 1.4.9离线生成的2026—2028年数据，显示农历及宜忌节选，标明民俗参考，超出范围提示更新；不再使用预览中的示例宜忌。天气和行情使用现有真实数据，历史行情明确标记。实际设备已验证五页、固定不轮播、自动轮换及重启后配置保留；最终恢复auto/rotate/600秒，Wi-Fi、和风Key、城市、股票和分区保留。夜间未宣称已实测开市行情。运行不依赖串口或电脑常驻。
+## 能做什么
 
-[原五种主题设计预览](assets/page-themes/index.html)仅为设计参考，里面的时间、温度和宜忌仍是示例；实际设备以当前固件和真实数据为准。主项目编译入口已同步最新源码；0.2.0、0.1.8与早期回放实验均保留归档，未自动提交或推送。
+- **自动切换**：交易日从 09:15 集合竞价开始显示股票；正式分时线从 09:30 绘制，午休压缩为连续时间轴。非交易时间默认每 10 分钟轮换卡片。
+- **五张日常卡片**：大字日历、月历天气、黄历、极简时钟、今日总览。网页支持固定卡片和手动切换。
+- **自选股**：支持最多 8 只沪深股票，默认长江电力 `sh600900`；显示当前价、涨跌和当日价格分时线。
+- **和风天气**：可配置 API Host、Key 与城市/区县位置，默认北京顺义；天气按 30 分钟调度更新。
+- **独立校时**：使用阿里云 NTP，联网后首次同步，此后每小时校准，北京时间运行。
+- **网页配置**：管理 Wi-Fi、城市、股票、交易日历、轮播和刷新模式；密码与 Key 不通过配置查询接口回显。
+- **按需联网与局刷**：轻睡眠保留前帧，每分钟唤醒；平时网页离线，短按 BOOT 开启 10 分钟配置窗口。
 
-## 入口
+## 硬件与接线
 
-| 内容 | 位置 |
+已验证组合：**ESP32-S3 Mini + HINK-E042A13 4.2 寸 400×300 黑白红屏**。
+
+| 墨水屏驱动板 | ESP32-S3 |
 | --- | --- |
-| Arduino 固件 | [epaper_dashboard](firmware/epaper_dashboard/epaper_dashboard.ino) |
-| 网页配置源码 | [web_page.h](firmware/epaper_dashboard/web_page.h) |
-| 配网与旧和风凭据导入 | [provision.py](tools/provision.py) |
-| 时间、交易日历与数据规则 | [设计说明](docs/design.md) |
-| 编译、联网与屏幕验证状态 | [验证记录](docs/validation.md) |
-| 当前固件与源码快照 | [0.5.11 发布目录](firmware/releases/0.5.11-2026-11-10/README.md) |
-| 已确认的两种版式 | [预览](assets/layout/preview.html) |
-| 当前生成字模版式 | [三色股票页](assets/generated-layout/stock-color-400x300.png) · [黑白研究预览](assets/generated-layout/stock-fast-400x300.png) |
-| 股票排版调整 | [去除均价图例行、日期间距与前后对比](docs/validation/2026-11-08/stock-layout-spacing/README.md) |
-| 红色局刷研究 | [股票两步更新](docs/validation/2026-11-09/stock-red-041/README.md) · [增强擦除实验基线](firmware/experimental/red-native-hold-clean-2026-11-09/README.md) · [首次20秒实验](docs/validation/2026-11-09/red-native-hold/README.md) |
-| 早期轮廓字模加粗实验 | [历史对比图](assets/font-contrast/comparison-800x300.png) |
+| GND | GND |
+| 3V3 | 3V3 |
+| SCK | GPIO12 |
+| SDA / DIN / MOSI | GPIO11 |
+| CS | GPIO10 |
+| DC | GPIO13 |
+| RST | GPIO7 |
+| BUSY | GPIO4 |
+| CS2 | 不接 |
 
-旧电子工牌 Demo 独立保留在工作台 `archive/epaper-lab/`，本项目只复用已验证驱动参数。
+SPI 4MHz，BUSY 高电平表示忙，等待上限 90 秒。供电和逻辑电平使用 3.3V。
 
-## 硬件与编译
+固件沿用 `GxEPD2_420c_GDEY042Z98` 兼容驱动及本项目验证过的波形；这不等于确认了实物的控制器型号。其他面板、尺寸或黑白版本不能直接套用本项目三色波形。
 
-接线：GND/3V3，SCK→12，MOSI→11，CS→10，DC→13，RST→7，BUSY→4；CS2不用。BUSY高忙，4MHz SPI，90秒等待上限。兼容驱动为`GxEPD2_420c_GDEY042Z98`；不据此推断实际控制器型号。正式固件完整刷新约20秒，黑白窗口局刷约1秒；背景和残影观感仍以实屏为准。
+## 刷新与省电
 
-已安装依赖：ESP32 Arduino Core 3.3.11、GxEPD2 1.6.9、ArduinoJson 7.4.3、Adafruit GFX 1.13.0、Adafruit BusIO 1.17.4。PSRAM关闭，保留默认4MB分区。
+| 项目 | 当前行为 |
+| --- | --- |
+| 卡片轮换 | 非交易时间每 600 秒，支持固定页面 |
+| 时间 | 按分钟更新，局刷窗口独立于天气区 |
+| 行情 | 网页可配置；已验证的设备配置为每 60 秒抓取 |
+| 天气 | 每 30 分钟调度更新 |
+| 校时 | 阿里云 NTP，每小时校准 |
+| 维护全刷 | 股票页每 10 分钟，其他页面约 15 分钟 |
+| 配置窗口 | 启动 90 秒；短按 BOOT 开启 10 分钟 |
+
+本块面板的黑白窗口局刷约 1 秒，部分股票黑白更新约 2 秒；红色局刷约 18–19 秒，整屏刷新约 21 秒。**三色局刷不等于快速 LCD 刷新**，耗时和残影需以实屏确认。
+
+首次使用默认采用保守的整屏刷新，间隔 120 秒；若使用本项目已验证的同一屏幕，可在网页中启用局刷、选择刷新模式并将行情间隔设为 60 秒。已有 NVS 配置不会因更新固件而重置。
+
+当前采用 CPU 80MHz、Wi-Fi 最大调制解调器省电及每分钟手动 Light-sleep。整机电流受开发板、稳压器、指示灯和驱动板影响；仓库没有将软件休眠计数换算成电池续航承诺。详见[省电与 BOOT 配置窗口](docs/minute-sleep.md)。
+
+## 编译与烧录
+
+### 1. 准备环境
+
+需要 Arduino CLI、`uv` 和数据线。已验证依赖：
+
+| 依赖 | 版本 |
+| --- | --- |
+| ESP32 Arduino Core | 3.3.11 |
+| GxEPD2 | 1.6.9 |
+| ArduinoJson | 7.4.3 |
+| Adafruit GFX Library | 1.13.0 |
+| Adafruit BusIO | 1.17.4 |
+
+```sh
+git clone https://github.com/985860612/epaper-dashboard.git
+cd epaper-dashboard
+
+arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+arduino-cli core install esp32:esp32@3.3.11 --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+arduino-cli lib install "GxEPD2@1.6.9" "ArduinoJson@7.4.3" "Adafruit GFX Library@1.13.0" "Adafruit BusIO@1.17.4"
+```
+
+### 2. 编译
 
 ```sh
 uv run tools/build_firmware.py --build-path "$PWD/build/release"
 ```
 
-字模与网页gzip头已生成。使用`uv run tools/build_fonts.py`重建，唯一规格为`tools/typography.json`，需要本机`local/fonts/FangZhengJingXiHei-1.ttf`、Arial Regular、Arial Bold及规格中指定的系统苹方TTC；原字体不随源码ZIP分发。已有字模可直接编译。`uv run tools/check_typography.py`生成实际页面代码的预览并检查字号、字形、边界与局刷窗口。
+构建器使用 `esp32:esp32:esp32s3:CDCOnBoot=cdc`，仅对 C++ 与链接启用 LTO，PSRAM 关闭，保留默认 4MB Flash 分区。已生成的字模和网页 gzip 头包含在源码中，**直接编译不需要安装原始字体**。
 
-18px基础字库覆盖GB2312一级汉字及界面用字，20/24px为界面子集。自定义名称有大字号未打包字符时整段使用同字体18px；长文本按像素省略，未收录字显示问号，不偷偷换回旧字体。完整策略和容量边界见[规格](docs/typography.md)。
+v0.5.11 程序段为 1,310,233 字节，应用二进制为 1,310,480 字节，原应用分区上限为 1,310,720 字节；修改后应重新检查容量。[版本验证与 SHA-256](firmware/releases/0.5.11-2026-11-10/README.md)。
 
-本块黑白红面板的原生灰度尚未验证。[同名HINK黑白版本的驱动讨论](https://github.com/ZinggJM/GxEPD2/discussions/107)附带4/16灰度波形，不能直接视为适用于三色版；当前固件只使用黑、白、红。网点可模拟照片灰阶，不代表真实灰度，也不会提高文字的实际分辨率。
+### 3. 上传并校验
 
-历史字体实验、局刷研究和恢复二进制继续在`firmware/releases/`独立保留；当前默认字体为晶细黑与Arial Regular，股票名称单独用苹方简体Regular；仅股票现价按用户要求使用Bold。
-
-## 初次设置与使用
-
-确认硬件端口，使用Arduino CLI上传上述构建并校验；不要整片擦除。串口115200，无需保持串口连接。固件不内置Wi-Fi、和风Key或管理密码。
-
-可通过物理USB导入已有和风`.env`与本机私有Wi-Fi配置：
+先用 `arduino-cli board list` 确认当前端口，再替换示例端口：
 
 ```sh
-uv run tools/provision.py --port /dev/cu.usbmodemXXXX \
-  --source /path/to/existing/qweather/.env --wifi "$PWD/local/wifi.json"
+arduino-cli upload \
+  --fqbn esp32:esp32:esp32s3:CDCOnBoot=cdc \
+  --port /dev/cu.usbmodemXXXX \
+  --build-path "$PWD/build/release" \
+  --verify \
+  firmware/epaper_dashboard
 ```
 
-`local/wifi.json`格式为`{"ssid":"网络名称","wifiPassword":"网络密码"}`，权限设为0600；`local/`已忽略，不提交。导入脚本只通过USB发送配置，Key不进入固件二进制，不输出密钥。现有和风项目保持不变。
+Windows 可使用对应的 `COM` 端口。保留现有分区与 NVS，更新时不要整片擦除。串口波特率 115200，正常运行不需要电脑或串口监视器常驻。
 
-联网成功后打开设备IP，用户`admin`，管理密码在脚本生成的`local/device-access.json`中。无法联网30秒后设备开启受密码保护的`EPaper-...`热点，热点与网页管理密码显示在设置画面；连接后访问`http://192.168.4.1/`。首次配置保存前，未预配设备的随机密码在重启时可能变化。
+也可以从 [GitHub Releases](https://github.com/985860612/epaper-dashboard/releases) 下载已验证的固件包，具体偏移以包内 `flash_args` 为准，不要只凭文件名猜写入地址。
 
-网页可搜索区县并选择和风LocationID，或直接输入名称与位置ID；默认北京顺义`101010400`。股票最多8只，使用`sh600900`、`sz000001`等带市场前缀代码，默认长江电力。管理页面不返回已存密码或Key，留空保留旧值。保存Wi-Fi配置会重新联网；管理密码修改后重新登录。
+## 配网与网页管理
 
-## 校时、刷新与故障
+首次未配网或无法联网时，设备会显示设置页并开启 `EPaper-...` 热点；连接信息和临时管理密码在屏幕上显示。连接后访问 `http://192.168.4.1/`，用户名为 `admin`。
 
-- 阿里云`ntp1.aliyun.com`、`ntp2.aliyun.com`、`ntp3.aliyun.com`：联网后首次校时，SNTP每3600000毫秒再校准，时区`CST-8`（北京时间）。网页显示最近一次成功校时。无需电脑常驻。
-- 0.2.0历史参数曾为auto/bw_partial/局刷开启：行情抓取120秒、轮播300秒、天气30分钟，时钟按分钟更新。内容未变化时跳过刷新；股票10分钟、时钟15分钟维护全刷。网页可调整抓取和轮播间隔。
-- 已验证的227字节黑白局刷已用于正式循环；早期OTP及短表实验仅作历史记录。出现异常时停用局刷并尝试全刷恢复，避免继续驱动。详见[历史局刷记录](docs/partial-refresh.md)及当前版本验收。
-- 未校时不向HTTPS接口发送请求；网络失败保留有效天气缓存并标记。行情日期与当天不一致时标为历史行情，抓取失败或数据陈旧标为延迟；不把旧行情伪装为实时。
-- 自动模式按北京时间和交易日历切换；日历仅预置2026年，跨年须在网页更新。未更新时自动模式显示时间天气并提示日历，不用工作日近似交易日。
-- 网页配置保存在新的`epaperdash` NVS命名空间，保留其他项目的NVS与分区。
+配置自己的 Wi-Fi、和风专属 API Host/Key 和天气位置后，设备连接局域网。短按 BOOT 开启配置窗口，再访问设备 IP，即可修改股票列表、城市、刷新模式及卡片。网页有“保持配置 10 分钟”和“立即省电”；休眠期间无法访问网页属于正常行为。
 
-重启只需重新给板子上电。当前没有远程Git仓库，未自动提交或推送。
+股票使用 `sh600900`、`sz000001` 这样的市场前缀代码。和风天气位置采用区县 LocationID，支持网页搜索。密码与 Key 留空表示保留原值，不会清空。
+
+如已有本机私有配置，也可通过 USB 导入：
+
+```sh
+uv run tools/provision.py \
+  --port /dev/cu.usbmodemXXXX \
+  --source /path/to/private/qweather.env \
+  --wifi "$PWD/local/wifi.json"
+```
+
+`local/wifi.json` 使用 `ssid`、`wifiPassword` 两个字段；`qweather.env` 使用 `QWEATHER_API_HOST`、`QWEATHER_API_KEY`。导入脚本生成的登录资料存放于 `local/device-access.json`，权限为 0600。`local/` 与 `build/` 已忽略，固件不内置个人网络、和风 Key 或固定管理密码。
+
+## 字体与二次开发
+
+- 中文默认方正晶细黑；当前股票名称“长江电力”使用苹方简体 Regular 24px。
+- 英文/数字默认 Arial Regular，主现价使用 Arial Bold 48px；价格刻度为原生 18px Regular。
+- 文字按原生字号生成 1-bit 字模，不拉伸、不用网点模拟文字灰阶。未验证本面板原生灰度。
+- 名称子集未包含的汉字会整段回退到已有的 18px 基础字库；长文本按像素省略。添加新的股票名称时，可按需扩充子集。
+
+唯一字体规格为 [`tools/typography.json`](tools/typography.json)。重建字模需自行准备规格中对应的本机字体：
+
+```sh
+uv run tools/build_fonts.py
+uv run tools/check_typography.py
+```
+
+`check_typography.py` 从实际 C++ 页面头与字模渲染预览，检查字形、间距、重叠、边界和局刷覆盖。预览图输出到被忽略的 `build/`。
+
+字体文件及其授权相互独立：仓库中的开放字体附有对应许可证，系统字体与本地专有原字体不随源码 ZIP 分发。详见[字体说明](assets/fonts/README.md)、[字体来源元数据](assets/fonts/)和[字体规划](docs/typography.md)。
+
+## 数据与已知边界
+
+- 行情来自现有网络接口，可能延迟或不可用；历史/过期数据会标记状态，不作为交易依据。
+- 交易日历仅预置 **2026 年**；跨年须在网页更新，未更新时自动模式显示时间天气并提示，不用工作日近似交易日。
+- 黄历数据覆盖 **2026–2028 年**，离线生成，宜忌仅作民俗参考。
+- 红色局刷速度、残影和驱动兼容性仍是实验结果，不代表同型号所有批次均有相同表现。
+- 管理网页面向可信局域网，没有提供公网部署方案。
+
+## 项目目录与记录
+
+| 位置 | 内容 |
+| --- | --- |
+| [`firmware/epaper_dashboard/`](firmware/epaper_dashboard/) | 当前 Arduino 固件与嵌入式管理网页 |
+| [`firmware/releases/`](firmware/releases/) | 已烧录版本、源码快照、校验和与验证记录 |
+| [`tools/`](tools/) | 编译、字模生成、预览检查、配网与黄历数据工具 |
+| [`tests/`](tests/) | 交易时间、卡片、功耗调度、字形与分色检查 |
+| [`docs/validation/`](docs/validation/) | 实验与设备验证记录 |
+| [`docs/images/`](docs/images/) | 本页的当前界面配图 |
+| [`experiments/`](experiments/) | 历史研究与实验脚本 |
+| [`licenses/`](licenses/) | EPaperDrive、黄历数据工具等第三方许可证 |
+
+更多资料：[设计与数据规则](docs/design.md) · [局刷研究](docs/partial-refresh.md) · [GitHub 发布前开发记录](docs/development-history.md)。
