@@ -78,14 +78,10 @@ static void drawStock(const tm& now,const Stock& s,const Weather& w,const String
       int x0=left+s.points[i-1].offset*(right-left)/240,x1=left+s.points[i].offset*(right-left)/240;
       stockSegment(x0,py(s.points[i-1].price),s.points[i-1].price,x1,py(s.points[i].price),s.points[i].price,s.previous,py(s.previous));
     }
-    int upperY=min(274,py(s.previous)+22);
-    for(int i=1;i<s.count && upperY<274;++i) {
-      int x1=left+s.points[i].offset*(right-left)/240;
-      int y0=py(s.points[i-1].price),y1=py(s.points[i].price);
-      if(x1>=306 && min(y0,y1)<=upperY+1 && max(y0,y1)>=upperY-16) {upperY=min(274,max(y0,y1)+18);i=0;}
-    }
-    type(396,upperY,axisNumber(hi,90),TextRole::Dense,GxEPD_BLACK,TextAlign::Right);
-    type(396,296,axisNumber(lo,90),TextRole::Dense,GxEPD_BLACK,TextAlign::Right);
+    // Range labels belong to the plot bounds, not the previous-close line.
+    // Keep glyphs above/below the curve so they never chase it to the bottom.
+    type(right,top,axisNumber(hi,90),TextRole::Dense,GxEPD_BLACK,TextAlign::Right);
+    type(right,bottom+22,axisNumber(lo,90),TextRole::Dense,GxEPD_BLACK,TextAlign::Right);
   } else {type(30,184,fitText(auction?"集合竞价·等待正式开盘":"等待有效分时数据",340));type(30,215,fitText(stockError.length()?stockError:"分时线从09:30开始绘制",340),TextRole::Dense);}
 }
 

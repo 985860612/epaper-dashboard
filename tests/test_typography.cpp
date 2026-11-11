@@ -11,7 +11,7 @@
 #include <filesystem>
 Settings cfg;Weather weather;Stock stock;String weatherError,stockError;bool rendering=false;
 static Adafruit_GFX* painter=nullptr;static bool renderBw=false;static tm currentTm{};static Phase fakePhase=Phase::Trading;static bool fakeClock=true;
-static BatteryReading previewBattery{3820};
+static BatteryReading previewBattery{3500};
 bool clockReady() {return fakeClock;}Phase currentPhase() {return fakePhase;}
 String dateCompact() {char b[16];strftime(b,sizeof(b),"%Y%m%d",&currentTm);return b;}
 struct Trace {String text;TextRole role;TextBox box;};static std::vector<Trace> texts;static bool exactRoles=true;
@@ -38,7 +38,12 @@ static Image render(int page,const tm& now,const std::string& output="") {
     auto a=texts[i].box,b=texts[j].box;if(a.w && b.w && a.x<b.x+b.w && b.x<a.x+a.w && a.y<b.y+b.h && b.y<a.y+a.h) {std::cerr<<"text overlap page "<<page<<": "<<texts[i].text.c_str()<<" / "<<texts[j].text.c_str()<<"\n";assert(false);}
   }
   if(page==5 && stock.valid)assert(!texts.empty() && texts[2].role==TextRole::StockName);
-  if(page==5) {int rows=0;for(auto& t:texts)if(t.text=="/") {assert((t.role==TextRole::Body || t.role==TextRole::Dense) && t.box.x>=284 && t.box.x<=342);++rows;}bool chart=stock.valid && stock.count>0 && stock.previous>0 && (fakePhase==Phase::Trading || fakePhase==Phase::Unknown);assert(rows==1);if(chart) {for(size_t i=texts.size()-2;i<texts.size();++i)assert(texts[i].role==TextRole::Dense && std::string(texts[i].text.c_str()).find_first_of("/%")==std::string::npos);}}
+  if(page==5) {int rows=0;for(auto& t:texts)if(t.text=="/") {assert((t.role==TextRole::Body || t.role==TextRole::Dense) && t.box.x>=284 && t.box.x<=342);++rows;}bool chart=stock.valid && stock.count>0 && stock.previous>0 && (fakePhase==Phase::Trading || fakePhase==Phase::Unknown);assert(rows==1);if(chart) {
+    for(size_t i=texts.size()-2;i<texts.size();++i)assert(texts[i].role==TextRole::Dense && std::string(texts[i].text.c_str()).find_first_of("/%")==std::string::npos);
+    const auto upper=texts[texts.size()-2].box,lower=texts.back().box;
+    assert(upper.y>=112 && upper.y+upper.h<=132 && lower.y>=256 && lower.y+lower.h<=274);
+    for(auto box:{upper,lower})assert(box.x+box.w>=394 && box.x+box.w<=396);
+  }}
   if(!output.empty())save(c,output);
   return {std::vector<uint8_t>(c.black,c.black+FrameCanvas::BYTES),std::vector<uint8_t>(c.red,c.red+FrameCanvas::BYTES)};
 }
@@ -96,7 +101,7 @@ int main(int argc,char** argv) {
         int i=y*50+x/8,bit=128>>(x%8);assert(!((a.black[i]^power.black[i])&bit));
       }
     }
-    previewBattery={3820};
+    previewBattery={3500};
   }
   exactRoles=false;
   for(int year=2026;year<=2028;++year)for(int month=1;month<=12;++month) {auto t=date(year,month,1);render(1,t);t=date(year,month,calendarMonthDays(year,month));render(1,t);}
@@ -107,7 +112,21 @@ int main(int argc,char** argv) {
    for(int i:{0,4})assert(texts[i].box.x+texts[i].box.w>=364-width && texts[i].box.x+texts[i].box.w<=366-width);
    for(int i:{3,7})assert(texts[i].box.x+texts[i].box.w>=394 && texts[i].box.x+texts[i].box.w<=396);
    assert(texts[1].box.x==texts[5].box.x);assert(abs((texts[1].box.x-(texts[0].box.x+texts[0].box.w))-(texts[2].box.x-(texts[1].box.x+texts[1].box.w)))<=2);}
-  {Stock saved=stock;stock.previous=30;stock.count=3;stock.points[0]={0,27,0};stock.points[1]={120,33,0};stock.points[2]={240,27,0};render(5,base);auto upper=texts[texts.size()-2].box;assert(upper.y>192 && upper.y+upper.h<=274);stock=saved;}
+  {Stock saved=stock;stock.previous=30;stock.count=3;stock.points[0]={0,27,0};stock.points[1]={120,33,0};stock.points[2]={240,27,0};render(5,base);auto upper=texts[texts.size()-2].box;assert(upper.y+upper.h<=132);stock=saved;}
+  { // Reconstruct the screenshot's price range, not its actual market samples.
+    Stock saved=stock;float savedTemp=weather.temp;auto savedBattery=previewBattery;
+    weather.temp=6;previewBattery={4820};
+    const float prices[]={29.71f,29.83f,29.67f,29.81f,29.66f,29.85f,29.70f,29.74f,29.72f,29.75f,29.73f,29.78f};
+    stock.count=12;stock.price=29.78f;stock.stamp="20261111104100";stock.minuteDate="20261111";
+    for(int i=0;i<stock.count;++i)stock.points[i]={i*71/11,prices[i],0};
+    for(float previous:{29.67f,29.75f,29.84f}) {
+      stock.previous=previous;render(5,date(2026,11,11,10,41),previous==29.67f?out+"/stock-axis-photo-case.ppm":"");
+      assert(texts[texts.size()-2].text=="29.86" && texts.back().text=="29.65");
+    }
+    // Full-session strokes at the right edge must not move or cover either label.
+    stock.count=3;stock.points[0]={0,29.66f,0};stock.points[1]={239,29.85f,0};stock.points[2]={240,29.66f,0};
+    render(5,date(2026,11,11,15,0),out+"/stock-axis-right-edge.ppm");stock=saved;weather.temp=savedTemp;previewBattery=savedBattery;
+  }
   auto noMeanA=render(5,base);for(int i=0;i<stock.count;++i)stock.points[i].average=10000+i;auto noMeanB=render(5,base);assert(noMeanA.black==noMeanB.black && noMeanA.red==noMeanB.red);
   int redCurve=0;for(int y=132;y<=252;++y)for(int x=20;x<=396;++x)if(!(noMeanA.red[y*50+x/8]&(128>>(x%8))))++redCurve;assert(redCurve==0);
   float savedOpen=stock.open;stock.open=0;auto noOpen=render(5,base);stock.open=10000;auto differentOpen=render(5,base);stock.open=savedOpen;
