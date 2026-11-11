@@ -11,7 +11,7 @@
 #include <filesystem>
 Settings cfg;Weather weather;Stock stock;String weatherError,stockError;bool rendering=false;
 static Adafruit_GFX* painter=nullptr;static bool renderBw=false;static tm currentTm{};static Phase fakePhase=Phase::Trading;static bool fakeClock=true;
-static BatteryReading previewBattery{3820};
+static BatteryReading previewBattery{3500};
 bool clockReady() {return fakeClock;}Phase currentPhase() {return fakePhase;}
 String dateCompact() {char b[16];strftime(b,sizeof(b),"%Y%m%d",&currentTm);return b;}
 struct Trace {String text;TextRole role;TextBox box;};static std::vector<Trace> texts;static bool exactRoles=true;
@@ -96,7 +96,7 @@ int main(int argc,char** argv) {
         int i=y*50+x/8,bit=128>>(x%8);assert(!((a.black[i]^power.black[i])&bit));
       }
     }
-    previewBattery={3820};
+    previewBattery={3500};
   }
   exactRoles=false;
   for(int year=2026;year<=2028;++year)for(int month=1;month<=12;++month) {auto t=date(year,month,1);render(1,t);t=date(year,month,calendarMonthDays(year,month));render(1,t);}

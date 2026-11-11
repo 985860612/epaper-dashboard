@@ -6,7 +6,7 @@
 #include "market_clock.h"
 #include "card_schedule.h"
 
-constexpr const char* VERSION = "epaper-dashboard-0.5.12";
+constexpr const char* VERSION = "epaper-dashboard-0.5.13";
 constexpr int MAX_STOCKS = 8, MAX_POINTS = 245;
 constexpr uint32_t STOCK_FULL_REFRESH_INTERVAL_MS = 10UL*60UL*1000UL;
 constexpr bool stockFullRefreshDue(uint32_t nowMs,uint32_t lastFullMs) {
