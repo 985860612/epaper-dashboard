@@ -74,10 +74,32 @@ static void checkStockSegmentColors() {
   {Canvas c;painter=&c;stockSegment(20,30,28,20,10,32,30,20);assert(ink(c,20,25)==GxEPD_BLACK && ink(c,20,15)==GxEPD_RED);}
   renderBw=true;{Canvas c;painter=&c;stockSegment(10,30,28,30,10,32,30,20);assert(ink(c,25,15)==GxEPD_BLACK);}renderBw=false;
 }
+static void checkBatteryBars(const std::string& out) {
+  struct Case {uint16_t raw;uint8_t bars;};
+  for(const auto& item:{Case{0,0},Case{1998,0},Case{2000,1},Case{3000,1},Case{3098,1},Case{3100,2},Case{3200,2},Case{3298,2},Case{3300,3},Case{3400,3},Case{3498,3},Case{3500,4},Case{3600,4},Case{4500,4},Case{4502,0},Case{5000,0},Case{6002,0}}) {
+    BatteryReading value{item.raw};assert(value.bars()==item.bars);
+    Canvas c;drawBatteryStatus(c,value);assert(!c.clipped && !c.hasRed(320,0,64,12));
+    auto black=[&](int x,int y) {return !(c.black[y*50+x/8]&(128>>(x%8)));};
+    if(!value.charging()) {
+      for(int i=0;i<4;++i)for(int y=2;y<9;++y)for(int x=325+i*3;x<327+i*3;++x)assert(black(x,y)==(i<item.bars));
+    } else {assert(black(332,2) && !black(325,4) && !black(335,4));}
+    if(item.raw==0 || item.raw==3000 || item.raw==3200 || item.raw==3400 || item.raw==3600 || item.raw==5000)
+      save(c,out+"/battery-bars-"+std::to_string(item.raw)+".ppm");
+  }
+  // Same two-decimal voltage, different bar count: the screen must repaint.
+  for(uint16_t raw:{3100,3300,3500}) {
+    const BatteryReading before{uint16_t(raw-2)},after{raw};
+    assert(before.centivolts()==after.centivolts());assert(before.bars()+1==after.bars());assert(before.displayKey()!=after.displayKey());
+  }
+  assert(BatteryReading{4500}.centivolts()==BatteryReading{5000}.centivolts());
+  assert(BatteryReading{4500}.displayKey()!=BatteryReading{5000}.displayKey());
+  std::cout<<"PASS: 1-4 battery bars, exact slot pixels, voltage thresholds, USB/unknown states and same-text bar refresh\n";
+}
 int main(int argc,char** argv) {
   checkStockSegmentColors();
   assert(stockRate(0)=="0.00%" && stockRate(10)=="10.00%" && stockRate(-10)=="10.00%");
   setenv("TZ","CST-8",1);tzset();std::string out=argc>1?argv[1]:".";std::filesystem::create_directories(out);
+  checkBatteryBars(out);
   weather.valid=weather.dailyValid=true;weather.temp=9;weather.low=-2;weather.high=12;weather.text="阴";weather.receivedAt=time(nullptr);cfg.city="北京顺义";
   stock.valid=true;stock.name="长江电力";stock.symbol="sh600900";stock.price=29.78;stock.previous=29.91;stock.open=29.65;stock.change=-.13;stock.percent=-.43;stock.stamp="20261109140300";stock.minuteDate="20261109";stock.count=184;
   for(int i=0;i<stock.count;++i)stock.points[i]={i,float(29.53+i*.0012+sin(i*.11)*.025+sin(i*.7)*.005),float(29.54+i*.0007)};
@@ -93,7 +115,7 @@ int main(int argc,char** argv) {
     assert(n<=MAX_REFRESH_REGIONS);
     for(int k=0;k<n;++k)assert(r[k].x%8==0 && r[k].w%8==0 && r[k].x>=0 && r[k].x+r[k].w<=400 && r[k].y>=0 && r[k].y+r[k].h<=300);
     within(a,b,r,n,p==5?"header":p==6?"font_time":"time");
-    for(uint16_t mv:{4500,4502,5000,0}) {
+    for(uint16_t mv:{3098,3100,3298,3300,3498,4500,4502,5000,0}) {
       previewBattery={mv};
       auto power=render(p,base,p==3?out+"/power-"+std::to_string(mv)+".ppm":"");
       within(a,power,r,n);assert(a.red==power.red);
