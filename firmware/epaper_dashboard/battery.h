@@ -13,7 +13,13 @@ struct BatteryReading {
     return busMillivolts+(valid() && !charging()?BATTERY_DIODE_DROP_MV:0);
   }
   uint16_t centivolts() const { return (displayMillivolts()+5)/10; }
-  uint16_t displayKey() const { return valid()?centivolts()*2+charging():0; }
+  uint8_t bars() const {
+    if(!valid() || charging())return 0;
+    const uint16_t mv=displayMillivolts();
+    return 1+(mv>=3600)+(mv>=3800)+(mv>=4000);
+  }
+  // Include bars separately: a threshold can change before rounded volts do.
+  uint16_t displayKey() const { return valid()?centivolts()*16+(charging()?8:bars()):0; }
 };
 inline BatteryReading batteryFromAdc(uint32_t pinMillivolts) {
   return {static_cast<uint16_t>(pinMillivolts<=3000?pinMillivolts*2:0)};
