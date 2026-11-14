@@ -19,12 +19,10 @@ static void drawStock(const tm& now,const Stock& s,const Weather& w,const String
 #include "cards_draw.h"
 #include "font_test_draw.h"
 
-static void drawClock(const tm& now,bool valid,const Weather&,const String&,Phase phase) {
+static void drawClock(const tm& now,bool valid,const Weather&,const String&,Phase) {
   cardHeader(valid?cardDate(now):"等待阿里云校时",valid?String(CARD_WEEKDAYS[now.tm_wday]):String(""));
-  type(200,177,valid?cardTime(now):String("--:--"),TextRole::Clock,GxEPD_BLACK,TextAlign::Center);cardRule(208);
-  cardCloud(20,232);type(82,274,weather.valid?String(weather.temp,0):String("--"),TextRole::Value);
-  type(380,243,fitText(weatherDescription(),160),TextRole::Body,GxEPD_BLACK,TextAlign::Right);type(380,277,fitText(cfg.city,180),TextRole::Body,GxEPD_BLACK,TextAlign::Right);
-  if(valid && phase==Phase::Unknown)type(20,76,"请更新交易日历",TextRole::Dense,GxEPD_RED);
+  type(200,148,valid?cardTime(now):String("--:--"),TextRole::Clock,GxEPD_BLACK,TextAlign::Center);
+  clockEnvironment();
 }
 static constexpr TextRole STOCK_AXIS_TEXT=TextRole::Body;
 static String axisNumber(float value,int width) {
@@ -49,15 +47,15 @@ static void stockSegment(int x0,int y0,float p0,int x1,int y1,float p1,float ref
   painter->drawLine(cross,referenceY,x1,y1,c1);
   painter->drawPixel(cross,referenceY,GxEPD_BLACK);
 }
-static void drawStock(const tm& now,const Stock& s,const Weather& w,const String& city,Phase phase,int index,bool stale) {
-  char date[24];snprintf(date,sizeof(date),"%02d.%02d  %02d:%02d",now.tm_mon+1,now.tm_mday,now.tm_hour,now.tm_min);
-  type(20,29,date);String temp=w.valid?String(w.temp,0)+"°C":"--";
-  type(380,29,fitText(city,148-textWidth(temp))+" "+temp,TextRole::Body,GxEPD_BLACK,TextAlign::Right);cardRule(42);
+static void drawStock(const tm& now,const Stock& s,const Weather&,const String&,Phase phase,int index,bool stale) {
+  type(20,38,cardDate(now));
+  type(380,38,cardTime(now),TextRole::Title,GxEPD_BLACK,TextAlign::Right);
+  cardRule(51);
   bool historical=s.valid && s.stamp.substring(0,8)!=dateCompact();
-  String name=fitText(s.valid?s.name:cfg.stocks[index],historical?188:250,TextRole::StockName);type(20,77,name,TextRole::StockName);
-  if(historical && s.minuteDate.length()==8)type(28+textWidth(name,TextRole::StockName),77,s.minuteDate.substring(4,6)+"."+s.minuteDate.substring(6,8),TextRole::Dense);
+  String name=fitText(s.valid?s.name:cfg.stocks[index],historical?188:250,TextRole::StockName);type(20,84,name,TextRole::StockName);
+  if(historical && s.minuteDate.length()==8)type(28+textWidth(name,TextRole::StockName),84,s.minuteDate.substring(4,6)+"."+s.minuteDate.substring(6,8),TextRole::Dense);
   String state=historical?"历史行情":stale?"数据延迟":phaseLabel(phase);
-  type(380,73,state,TextRole::Body,GxEPD_BLACK,TextAlign::Right);
+  type(380,82,state,TextRole::Body,GxEPD_BLACK,TextAlign::Right);
   float change=s.price-s.previous,percent=s.previous>0?change/s.previous*100:0;uint16_t ink=!renderBw && change>0?GxEPD_RED:GxEPD_BLACK;
   String quote=s.valid?String(s.price,2):String("--.--");
   type(20,124,quote,TextRole::Price,renderBw?GxEPD_BLACK:GxEPD_RED);

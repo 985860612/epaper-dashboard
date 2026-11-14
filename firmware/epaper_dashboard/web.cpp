@@ -58,6 +58,7 @@ void setupWeb() {
   server.on("/api/status", HTTP_GET, [] {
     if (!auth()) return;
     JsonDocument d;
+    environmentJson(d);
     d["version"] = VERSION;d["stockPreviewSeconds"]=stockPreviewSeconds();d["fontTestActive"]=fontTestActive;
     d["configSeconds"]=configRemainingSeconds();d["sleepCount"]=sleepCount;d["sleepTotalMs"]=sleepTotalMs;d["lastSleepMs"]=lastSleepMs;d["powerError"]=powerError;
     d["cardMode"]=cfg.cardMode;d["cardCode"]=CARD_CHOICES[static_cast<int>(selectedCard())].code;

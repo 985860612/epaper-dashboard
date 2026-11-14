@@ -4,6 +4,7 @@
 #include "../firmware/epaper_dashboard/frame_canvas.h"
 #include "../firmware/epaper_dashboard/layout_regions.h"
 #include "../firmware/epaper_dashboard/battery_draw.h"
+#include "../firmware/epaper_dashboard/environment.h"
 #include <cassert>
 #include <vector>
 #include <fstream>
@@ -12,6 +13,8 @@
 Settings cfg;Weather weather;Stock stock;String weatherError,stockError;bool rendering=false;
 static Adafruit_GFX* painter=nullptr;static bool renderBw=false;static tm currentTm{};static Phase fakePhase=Phase::Trading;static bool fakeClock=true;
 static BatteryReading previewBattery{3500};
+EnvironmentReading environment{true,true,25.6f,48.f,1013.2f};
+static EnvironmentReading& previewEnvironment=environment;
 bool clockReady() {return fakeClock;}Phase currentPhase() {return fakePhase;}
 String dateCompact() {char b[16];strftime(b,sizeof(b),"%Y%m%d",&currentTm);return b;}
 struct Trace {String text;TextRole role;TextBox box;};static std::vector<Trace> texts;static bool exactRoles=true;
@@ -27,17 +30,29 @@ static void save(const Canvas& c,const std::string& name) {
 static Image render(int page,const tm& now,const std::string& output="") {
   currentTm=now;Canvas c;painter=&c;texts.clear();styleDrawingFailed=false;
   if(page==5)drawStock(now,stock,weather,cfg.city,fakePhase,0,false);else if(page==6)drawFontTest(now);else drawCard(static_cast<CardId>(page),now);
-  for(int y=0;y<12;++y)for(int x=320;x<384;++x) {
+  for(int y=0;y<12;++y)for(int x=16;x<384;++x) {
     int i=y*50+x/8,bit=128>>(x%8);assert((c.black[i]&bit) && (c.red[i]&bit));
   }
-  drawBatteryStatus(c,previewBattery);
+  if(page!=5)drawBatteryStatus(c,previewBattery);
   if(c.clipped) {std::cerr<<"clipped page "<<page<<" pixels="<<c.clipped<<"\n";for(auto& t:texts)std::cerr<<t.text.c_str()<<" ("<<t.box.x<<","<<t.box.y<<","<<t.box.w<<","<<t.box.h<<")\n";}
   assert(!c.clipped && !styleDrawingFailed);
   for(auto& t:texts) {if(exactRoles && textFace(t.text,t.role).size!=roleFont(t.role).size) {std::cerr<<"unexpected fallback "<<t.text.c_str()<<std::endl;assert(false);}auto b=t.box;if(b.x<0 || b.y<0 || b.x+b.w>400 || b.y+b.h>300)std::cerr<<"bad box "<<t.text.c_str()<<"\n";assert(b.x>=0 && b.y>=0 && b.x+b.w<=400 && b.y+b.h<=300);}
   for(size_t i=0;i<texts.size();++i)for(size_t j=i+1;j<texts.size();++j) {
     auto a=texts[i].box,b=texts[j].box;if(a.w && b.w && a.x<b.x+b.w && b.x<a.x+a.w && a.y<b.y+b.h && b.y<a.y+a.h) {std::cerr<<"text overlap page "<<page<<": "<<texts[i].text.c_str()<<" / "<<texts[j].text.c_str()<<"\n";assert(false);}
   }
-  if(page==5 && stock.valid)assert(!texts.empty() && texts[2].role==TextRole::StockName);
+  if(page>=0 && page<5 && page!=3) {
+    const int top=page==4?176:248;
+    for(const auto icon:{TextBox{20,top+7,15,15},TextBox{156,top+7,15,15},TextBox{258,top+7,15,15},TextBox{20,top+30,15,15}})
+      for(const auto& t:texts) {const auto b=t.box;assert(!b.w || !b.h || b.x>=icon.x+icon.w || b.x+b.w<=icon.x || b.y>=icon.y+icon.h || b.y+b.h<=icon.y);}
+  }
+  if(page==5) {
+    int headerTexts=0;
+    for(const auto& t:texts)if(t.box.y<56 && t.box.h) {
+      assert(t.text==cardDate(now) || t.text==cardTime(now));++headerTexts;
+    }
+    assert(headerTexts==2);
+  }
+  if(page==5 && stock.valid)assert(std::count_if(texts.begin(),texts.end(),[](const Trace& t){return t.role==TextRole::StockName;})==1);
   if(page==5) {int rows=0;for(auto& t:texts)if(t.text=="/") {assert((t.role==TextRole::Body || t.role==TextRole::Dense) && t.box.x>=284 && t.box.x<=342);++rows;}bool chart=stock.valid && stock.count>0 && stock.previous>0 && (fakePhase==Phase::Trading || fakePhase==Phase::Unknown);assert(rows==1);if(chart) {
     for(size_t i=texts.size()-2;i<texts.size();++i)assert(texts[i].role==TextRole::Dense && std::string(texts[i].text.c_str()).find_first_of("/%")==std::string::npos);
     const auto upper=texts[texts.size()-2].box,lower=texts.back().box;
@@ -57,7 +72,7 @@ static void within(const Image& a,const Image& b,const RefreshRegion* r,int n,co
 static void checkTimeInk(const Image& image,int page) {
   RefreshRegion regions[MAX_REFRESH_REGIONS];int n=layoutRegions(regions,page==6,page==5,true,page<5?static_cast<CardId>(page):CardId::MinimalClock);
   for(int k=0;k<n;++k)if(std::strcmp(regions[k].name,"time")==0 || std::strcmp(regions[k].name,"font_time")==0 || std::strcmp(regions[k].name,"header")==0) {
-    auto r=regions[k];for(int y=r.y;y<r.y+r.h;++y)for(int x=r.x;x<r.x+r.w;++x)assert(image.red[y*50+x/8]&(128>>(x%8)));
+    auto r=regions[k];for(int y=r.y;y<r.y+r.h;++y)for(int x=r.x;x<r.x+r.w;++x){if(!(image.red[y*50+x/8]&(128>>(x%8))))std::cerr<<"red inside time region page="<<page<<" x="<<x<<" y="<<y<<"\n";assert(image.red[y*50+x/8]&(128>>(x%8)));}
   }
 }
 static void checkStockSegmentColors() {
@@ -100,7 +115,7 @@ int main(int argc,char** argv) {
   assert(stockRate(0)=="0.00%" && stockRate(10)=="10.00%" && stockRate(-10)=="10.00%");
   setenv("TZ","CST-8",1);tzset();std::string out=argc>1?argv[1]:".";std::filesystem::create_directories(out);
   checkBatteryBars(out);
-  weather.valid=weather.dailyValid=true;weather.temp=9;weather.low=-2;weather.high=12;weather.text="阴";weather.receivedAt=time(nullptr);cfg.city="北京顺义";
+  weather.valid=weather.dailyValid=true;weather.temp=9;weather.low=-2;weather.high=12;weather.text="阴";weather.observedAt="2026-11-09T12:30+08:00";weather.receivedAt=time(nullptr);cfg.city="北京顺义";
   stock.valid=true;stock.name="长江电力";stock.symbol="sh600900";stock.price=29.78;stock.previous=29.91;stock.open=29.65;stock.change=-.13;stock.percent=-.43;stock.stamp="20261109140300";stock.minuteDate="20261109";stock.count=184;
   for(int i=0;i<stock.count;++i)stock.points[i]={i,float(29.53+i*.0012+sin(i*.11)*.025+sin(i*.7)*.005),float(29.54+i*.0007)};
   int glyphs=0;
@@ -118,18 +133,50 @@ int main(int argc,char** argv) {
     for(uint16_t mv:{3098,3100,3298,3300,3498,4500,4502,5000,0}) {
       previewBattery={mv};
       auto power=render(p,base,p==3?out+"/power-"+std::to_string(mv)+".ppm":"");
-      within(a,power,r,n);assert(a.red==power.red);
+      if(p==5)assert(a.black==power.black && a.red==power.red);
+      else within(a,power,r,n);
+      assert(a.red==power.red);
       for(int y=0;y<300;++y)for(int x=0;x<400;++x)if(y>=12 || x<320 || x>=384) {
         int i=y*50+x/8,bit=128>>(x%8);assert(!((a.black[i]^power.black[i])&bit));
       }
     }
     previewBattery={3500};
+    const auto savedEnvironment=previewEnvironment;
+    for(const auto value:{EnvironmentReading{},EnvironmentReading{true,false,-0.1f,100.f,NAN},EnvironmentReading{false,true,NAN,NAN,300.f},EnvironmentReading{true,true,-40.f,0.f,1100.f}}) {
+      previewEnvironment=value;auto env=render(p,base);
+      if(p==5 || p==6)assert(a.black==env.black && a.red==env.red);
+      else {within(a,env,r,n,p==3?"indoor":"weather");assert(a.red==env.red);}
+    }
+    previewEnvironment=savedEnvironment;
   }
   exactRoles=false;
   for(int year=2026;year<=2028;++year)for(int month=1;month<=12;++month) {auto t=date(year,month,1);render(1,t);t=date(year,month,calendarMonthDays(year,month));render(1,t);}
   for(const char* city:{"黑龙江省哈尔滨市","内蒙古自治区呼和浩特市","新疆维吾尔自治区乌鲁木齐市"}) {cfg.city=city;weather.text="大暴雨转强浓雾";weather.temp=-120;weather.low=-120;weather.high=120;weatherError="weather unavailable";for(int p=0;p<7;++p)render(p,base);}
   cfg.city="北京顺义";weather.text="阴";weather.temp=9;weather.low=-2;weather.high=12;weatherError="";
+  {
+    auto before=render(5,base);const auto savedWeather=weather;
+    weather.valid=false;weatherError="offline";auto after=render(5,base);
+    assert(before.black==after.black && before.red==after.red);
+    weather=savedWeather;weatherError="";
+  }
   auto a=render(3,base);weather.temp=-20;weather.text="雨夹雪";auto b=render(3,base);RefreshRegion r[MAX_REFRESH_REGIONS];int n=layoutRegions(r,false,false,true,CardId::MinimalClock);within(a,b,r,n,"weather");
+  {
+    // Indoor changes never repaint the clock or outdoor column. Weather timestamps
+    // and cache state remain visible even when city/description text is long.
+    auto before=render(3,base);weather.observedAt="2026-11-09T12:40+08:00";
+    auto after=render(3,base);within(before,after,r,n,"weather");
+    weatherError="offline";
+    for(int page=0;page<5;++page) {
+      render(page,base);
+      assert(std::any_of(texts.begin(),texts.end(),[](const Trace& t){return std::strstr(t.text.c_str(),"缓存")!=nullptr;}));
+    }
+    weather.valid=false;weather.dailyValid=true;
+    assert(outdoorRange().isEmpty() && outdoorUpdate()=="天气待更新");
+    for(int page=0;page<6;++page)render(page,base);
+    weather.valid=true;weatherError="";weather.observedAt="bad timestamp";
+    assert(outdoorUpdate()=="更新 --:--");
+    weather.observedAt="2026-11-09T12:30+08:00";
+  }
   {Canvas c;painter=&c;texts.clear();int width=textWidth(stockRate(-.27f));stockRow(112,"-0.09",-.30f,width);stockRow(156,"29.84",.03f,width);assert(texts.size()==8 && texts[0].role==TextRole::Body && texts[4].role==TextRole::Body && textFace(texts[4].text,texts[4].role).size==20);
    for(int i:{0,4})assert(texts[i].box.x+texts[i].box.w>=364-width && texts[i].box.x+texts[i].box.w<=366-width);
    for(int i:{3,7})assert(texts[i].box.x+texts[i].box.w>=394 && texts[i].box.x+texts[i].box.w<=396);

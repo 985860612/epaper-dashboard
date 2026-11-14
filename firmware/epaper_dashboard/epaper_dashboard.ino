@@ -3,6 +3,7 @@
 #include <esp_sntp.h>
 #include <esp_wifi.h>
 #include "power_schedule.h"
+#include "environment.h"
 #include <sys/time.h>
 
 #if !defined(CONFIG_IDF_TARGET_ESP32S3)
@@ -114,6 +115,7 @@ static void serialCommands() {
         } else { JsonDocument response; response["event"]="provision_failed"; response["error"]=error; serializeJson(response,Serial); Serial.println(); }
       } else if(cmd=="status") {
         JsonDocument response;
+        environmentJson(response);
         response["event"]="status"; response["version"]=VERSION;
         response["ip"]=WiFi.status()==WL_CONNECTED ? WiFi.localIP().toString() : "";
         response["clockReady"]=clockReady(); response["lastNtpSync"]=lastNtpSync;
@@ -154,6 +156,7 @@ void setup() {
   setenv("TZ","CST-8",1); tzset();
   loadSettings(); loadWeatherCache();
   needReconnect=false;initPowerManager();
+  initEnvironment();serviceEnvironment();
   startWifi(); setupWeb(); initScreen();
   // Automatic clock sync is handled by the SNTP task, independently of screen refresh.
   esp_sntp_set_time_sync_notification_cb([](struct timeval*) { syncNotification=true; });
@@ -162,6 +165,7 @@ void setup() {
 void loop() {
   ++loopCount;
   serialCommands(); serviceWeb();
+  serviceEnvironment();
   if(needReconnect) {
     needReconnect=false;
     if(apActive) { WiFi.softAPdisconnect(true); apActive=false; }
