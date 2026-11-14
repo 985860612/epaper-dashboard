@@ -2,13 +2,14 @@
 #include <cstdint>
 #include <cstring>
 
-enum class CardId : uint8_t { BigCalendar, MonthWeather, Almanac, MinimalClock, Overview };
+enum class CardId : uint8_t { BigCalendar, MonthWeather, Almanac, MinimalClock, Overview, EnvironmentHistory };
 struct CardChoice { const char* code; const char* name; };
 constexpr CardChoice CARD_CHOICES[] = {
   {"big_calendar","大字日历"}, {"month_weather","月历天气"},
-  {"almanac","黄历"}, {"minimal_clock","极简时钟"}, {"overview","今日总览"}
+  {"almanac","黄历"}, {"minimal_clock","极简时钟"}, {"overview","今日总览"},
+  {"environment_history","温湿度曲线"}
 };
-constexpr int CARD_COUNT=5;
+constexpr int CARD_COUNT=sizeof(CARD_CHOICES)/sizeof(CARD_CHOICES[0]);
 inline int cardIndex(const char* code) {
   for(int i=0;i<CARD_COUNT;++i)if(std::strcmp(code,CARD_CHOICES[i].code)==0)return i;
   return -1;

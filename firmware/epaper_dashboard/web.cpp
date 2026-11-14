@@ -43,6 +43,10 @@ void setupWeb() {
     keepPowerAwake();JsonDocument d;d["ok"]=true;sendJson(200,d);
   });
   server.on("/api/config", HTTP_GET, [] { if (!auth()) return; JsonDocument d; settingsJson(d); sendJson(200,d); });
+  server.on("/api/environment/history",HTTP_GET,[] {
+    if(!auth())return;
+    JsonDocument d;environmentHistoryJson(d,true);sendJson(200,d);
+  });
   server.on("/api/config", HTTP_POST, [] {
     if (!auth()) return;
     if(rendering) { fail(409,"屏幕正在刷新，请稍后保存");return; }

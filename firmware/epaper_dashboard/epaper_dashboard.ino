@@ -4,6 +4,7 @@
 #include <esp_wifi.h>
 #include "power_schedule.h"
 #include "environment.h"
+#include "environment_history.h"
 #include <sys/time.h>
 
 #if !defined(CONFIG_IDF_TARGET_ESP32S3)
@@ -156,7 +157,7 @@ void setup() {
   setenv("TZ","CST-8",1); tzset();
   loadSettings(); loadWeatherCache();
   needReconnect=false;initPowerManager();
-  initEnvironment();serviceEnvironment();
+  initEnvironmentHistory();initEnvironment();serviceEnvironment();
   startWifi(); setupWeb(); initScreen();
   // Automatic clock sync is handled by the SNTP task, independently of screen refresh.
   esp_sntp_set_time_sync_notification_cb([](struct timeval*) { syncNotification=true; });

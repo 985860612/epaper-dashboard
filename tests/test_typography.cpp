@@ -5,6 +5,7 @@
 #include "../firmware/epaper_dashboard/layout_regions.h"
 #include "../firmware/epaper_dashboard/battery_draw.h"
 #include "../firmware/epaper_dashboard/environment.h"
+#include "../firmware/epaper_dashboard/environment_history.h"
 #include <cassert>
 #include <vector>
 #include <fstream>
@@ -14,6 +15,9 @@ Settings cfg;Weather weather;Stock stock;String weatherError,stockError;bool ren
 static Adafruit_GFX* painter=nullptr;static bool renderBw=false;static tm currentTm{};static Phase fakePhase=Phase::Trading;static bool fakeClock=true;
 static BatteryReading previewBattery{3500};
 EnvironmentReading environment{true,true,25.6f,48.f,1013.2f};
+EnvironmentHistory environmentHistory;
+const char* environmentHistoryError="";
+uint32_t environmentHistoryRevision=0;
 static EnvironmentReading& previewEnvironment=environment;
 bool clockReady() {return fakeClock;}Phase currentPhase() {return fakePhase;}
 String dateCompact() {char b[16];strftime(b,sizeof(b),"%Y%m%d",&currentTm);return b;}
@@ -29,7 +33,7 @@ static void save(const Canvas& c,const std::string& name) {
 }
 static Image render(int page,const tm& now,const std::string& output="") {
   currentTm=now;Canvas c;painter=&c;texts.clear();styleDrawingFailed=false;
-  if(page==5)drawStock(now,stock,weather,cfg.city,fakePhase,0,false);else if(page==6)drawFontTest(now);else drawCard(static_cast<CardId>(page),now);
+  if(page==5)drawStock(now,stock,weather,cfg.city,fakePhase,0,false);else if(page==6)drawFontTest(now);else drawCard(page==7?CardId::EnvironmentHistory:static_cast<CardId>(page),now);
   for(int y=0;y<12;++y)for(int x=16;x<384;++x) {
     int i=y*50+x/8,bit=128>>(x%8);assert((c.black[i]&bit) && (c.red[i]&bit));
   }
@@ -70,7 +74,7 @@ static void within(const Image& a,const Image& b,const RefreshRegion* r,int n,co
   }assert(changed>0);
 }
 static void checkTimeInk(const Image& image,int page) {
-  RefreshRegion regions[MAX_REFRESH_REGIONS];int n=layoutRegions(regions,page==6,page==5,true,page<5?static_cast<CardId>(page):CardId::MinimalClock);
+  RefreshRegion regions[MAX_REFRESH_REGIONS];int n=layoutRegions(regions,page==6,page==5,true,page==7?CardId::EnvironmentHistory:page<5?static_cast<CardId>(page):CardId::MinimalClock);
   for(int k=0;k<n;++k)if(std::strcmp(regions[k].name,"time")==0 || std::strcmp(regions[k].name,"font_time")==0 || std::strcmp(regions[k].name,"header")==0) {
     auto r=regions[k];for(int y=r.y;y<r.y+r.h;++y)for(int x=r.x;x<r.x+r.w;++x){if(!(image.red[y*50+x/8]&(128>>(x%8))))std::cerr<<"red inside time region page="<<page<<" x="<<x<<" y="<<y<<"\n";assert(image.red[y*50+x/8]&(128>>(x%8)));}
   }
@@ -109,6 +113,45 @@ static void checkBatteryBars(const std::string& out) {
   assert(BatteryReading{4500}.centivolts()==BatteryReading{5000}.centivolts());
   assert(BatteryReading{4500}.displayKey()!=BatteryReading{5000}.displayKey());
   std::cout<<"PASS: 1-4 battery bars, exact slot pixels, voltage thresholds, USB/unknown states and same-text bar refresh\n";
+}
+static void checkHistoryPage(const tm& base,const std::string& out) {
+  tm copy=base;const uint32_t epoch=uint32_t(mktime(&copy));const uint32_t end=epoch/600;
+  RefreshRegion regions[MAX_REFRESH_REGIONS];int count=layoutRegions(regions,false,false,true,CardId::EnvironmentHistory);
+  environmentHistory={};render(7,base,out+"/history-empty.ppm");
+  for(int i=0;i<144;++i) {
+    EnvironmentReading r{true,true,float(23+2*sin(i*.04)),float(50+12*cos(i*.04)),1013.f};
+    environmentHistory.record((end-143+i)*600,r);
+  }
+  auto full=render(7,base,out+"/page-7.ppm");checkTimeInk(full,7);
+  // Ordinary minute updates cannot alter the red graph or its last-record values.
+  auto later=base;later.tm_min=base.tm_min-1;
+  auto minute=render(7,later);within(full,minute,regions,count,"time");assert(full.red==minute.red);
+  environmentHistoryError="history_write_failed";
+  auto failed=render(7,base,out+"/history-save-failed.ppm");within(full,failed,regions,count,"history");
+  assert(std::any_of(texts.begin(),texts.end(),[](const Trace& t){return t.text=="数据保存失败";}));
+  environmentHistoryError="";
+  const auto saved=environmentHistory;
+  environmentHistory={};
+  // Two isolated points must not draw a segment through a missing hour.
+  EnvironmentReading r{true,true,23.f,50.f,1013.f};
+  environmentHistory.record((end-10)*600,r);environmentHistory.record(end*600,r);
+  auto gaps=render(7,base,out+"/history-gaps.ppm");
+  const int midpoint=48+138*304/143;
+  for(int y=134;y<=254;++y)assert(gaps.red[y*50+midpoint/8]&(128>>(midpoint%8)));
+  environmentHistory.record((end-1)*600,r); // Backward clock handling is covered separately.
+  for(const auto reading:{EnvironmentReading{},EnvironmentReading{true,true,-40.f,0.f,300.f},EnvironmentReading{true,true,85.f,100.f,1100.f}}) {
+    environmentHistory={};environmentHistory.record(end*600,reading);render(7,base);
+  }
+  // Changing only temperature touches red graph pixels; humidity remains black.
+  environmentHistory={};environmentHistory.record((end-1)*600,r);environmentHistory.record(end*600,r);
+  auto constant=render(7,base);
+  environmentHistory.points[end%144].temperature=235;
+  auto temp=render(7,base);assert(constant.red!=temp.red);within(constant,temp,regions,count,"history");
+  environmentHistory.points[end%144].humidity=550;
+  auto humidity=render(7,base);assert(temp.black!=humidity.black);assert(temp.red==humidity.red);
+  fakePhase=Phase::Unknown;checkTimeInk(render(7,base),7);fakePhase=Phase::Trading;
+  environmentHistory=saved;
+  std::cout<<"PASS: history graph colors, 24h fixtures, empty/constant/extreme samples, gaps, save-error notice and isolated minute refresh\n";
 }
 int main(int argc,char** argv) {
   checkStockSegmentColors();
@@ -149,6 +192,7 @@ int main(int argc,char** argv) {
     }
     previewEnvironment=savedEnvironment;
   }
+  checkHistoryPage(base,out);
   exactRoles=false;
   for(int year=2026;year<=2028;++year)for(int month=1;month<=12;++month) {auto t=date(year,month,1);render(1,t);t=date(year,month,calendarMonthDays(year,month));render(1,t);}
   for(const char* city:{"黑龙江省哈尔滨市","内蒙古自治区呼和浩特市","新疆维吾尔自治区乌鲁木齐市"}) {cfg.city=city;weather.text="大暴雨转强浓雾";weather.temp=-120;weather.low=-120;weather.high=120;weatherError="weather unavailable";for(int p=0;p<7;++p)render(p,base);}
@@ -209,5 +253,5 @@ int main(int argc,char** argv) {
   for(auto role:{TextRole::Dense,TextRole::Body,TextRole::Title})for(int width=30;width<=230;width+=10) {auto s=fitText("新疆维吾尔自治区乌鲁木齐市XYZ",width,role);assert(textWidth(s,role)<=width);}
   fakePhase=Phase::Unknown;for(int p=0;p<7;++p)checkTimeInk(render(p,base),p);fakeClock=false;Canvas waiting;painter=&waiting;texts.clear();drawClock(base,false,weather,cfg.city,fakePhase);assert(!waiting.clipped && !styleDrawingFailed);fakeClock=true;fakePhase=Phase::Trading;
   const uint8_t badCodes[]={0},badData[]={1,2,3,4,5};const uint16_t first[]={63},codeOffsets[]={0};const uint32_t blocks[]={0,5};Typeface bad={badCodes,first,codeOffsets,blocks,badData,1,18,1};TextGlyph g{};styleDrawingFailed=false;assert(!textGlyph(bad,63,g) && styleDrawingFailed);styleDrawingFailed=false;assert(textGlyph(FontDense,'A',g) && !styleDrawingFailed);
-  std::cout<<"PASS: "<<glyphs<<" glyphs, all numeric advances, seven rendered screens, no clipped/overlapping text, time/weather partial bounds, all 36 months, long cities/names, extreme values, missing-data and UTF-8 fitting\n";
+  std::cout<<"PASS: "<<glyphs<<" glyphs, all numeric advances, eight rendered screens, no clipped/overlapping text, time/weather partial bounds, all 36 months, long cities/names, extreme values, missing-data and UTF-8 fitting\n";
 }
