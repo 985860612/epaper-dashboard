@@ -49,7 +49,7 @@ static void compactEnvironment(int top) {
   type(44,top+22,fitText(indoorTemperature()+"°C",102,TextRole::Dense),TextRole::Dense);
   environmentIcon(156,top+7,EnvironmentIcon::Humidity);
   type(180,top+22,indoorHumidity(),TextRole::Dense);
-  environmentIcon(258,top+7,EnvironmentIcon::Pressure);
+  environmentIcon(380-textWidth(indoorPressure(),TextRole::Dense)-21,top+7,EnvironmentIcon::Pressure);
   type(380,top+22,indoorPressure(),TextRole::Dense,GxEPD_BLACK,TextAlign::Right);
   environmentIcon(20,top+30,EnvironmentIcon::Outdoor);
   type(44,top+45,weather.valid?String(weather.temp,0)+"°C":"--°C",TextRole::Dense);

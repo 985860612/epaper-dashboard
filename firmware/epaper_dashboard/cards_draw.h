@@ -90,6 +90,7 @@ static void drawOverview(const tm& now) {
     for(int i=1;i<stock.count;++i)painter->drawLine(153+stock.points[i-1].offset*105/240,286-(stock.points[i-1].price-lo)*24/(hi-lo),153+stock.points[i].offset*105/240,286-(stock.points[i].price-lo)*24/(hi-lo),GxEPD_BLACK);
   }
 }
+#include "environment_history_draw.h"
 static void drawCard(CardId id,const tm& now) {
-  cardDrawingFailed=false;switch(id) {case CardId::BigCalendar:drawBigCalendar(now);break;case CardId::MonthWeather:drawMonthWeather(now);break;case CardId::Almanac:drawAlmanac(now);break;case CardId::MinimalClock:drawMinimalClock(now);break;case CardId::Overview:drawOverview(now);break;}
+  cardDrawingFailed=false;switch(id) {case CardId::BigCalendar:drawBigCalendar(now);break;case CardId::MonthWeather:drawMonthWeather(now);break;case CardId::Almanac:drawAlmanac(now);break;case CardId::MinimalClock:drawMinimalClock(now);break;case CardId::Overview:drawOverview(now);break;case CardId::EnvironmentHistory:drawEnvironmentHistory(now);break;}
 }

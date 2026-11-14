@@ -10,7 +10,7 @@ static const char WEB_PAGE[] PROGMEM = R"PAGE(<!doctype html>
 <form id="config"><section class="card"><h2>卡片显示</h2>
 <div class="grid"><div><label for="cardMode">播放方式</label><select id="cardMode"><option value="rotate">每隔一段时间轮播</option><option value="fixed">固定一张卡片</option></select></div><div><label for="fixedCard">固定显示的卡片</label><select id="fixedCard"></select></div></div>
 <label for="cardRotationMinutes">卡片轮换间隔（分钟）</label><input id="cardRotationMinutes" type="number" min="1" max="1440" value="10" required>
-<button id="nextCard" type="button" class="secondary">显示下一张卡片</button><small>默认10分钟轮换：大字日历 → 月历天气 → 黄历 → 极简时钟 → 今日总览。自动模式在交易时段优先展示股票，其他时间轮播；固定卡片模式保持选定页面。切换卡片约需20秒。</small>
+<button id="nextCard" type="button" class="secondary">显示下一张卡片</button><small>默认10分钟轮换：大字日历 → 月历天气 → 黄历 → 极简时钟 → 今日总览 → 温湿度曲线。自动模式在交易时段优先展示股票，其他时间轮播；固定卡片模式保持选定页面。切换卡片约需20秒。</small>
 <p class="muted">黄历离线数据覆盖2026—2028年，宜忌显示前两项，仅作传统民俗参考；超出范围会提示更新。日历上的时间按分钟更新。</p></section><section class="card"><h2>股票与显示</h2>
 <label for="stocks">自选股票（每行一个，最多8只）</label><textarea id="stocks" rows="4" required>sh600900</textarea><small>沪市示例 sh600900，深市示例 sz000001。多只股票按轮播间隔切换。</small>
 <div class="grid"><div><label for="view">显示模式</label><select id="view"><option value="auto">自动：交易时段股票，其余轮播卡片</option><option value="cards">全天显示卡片</option><option value="clock">只显示极简时钟</option><option value="stock">股票页（休市显示历史行情）</option></select></div><div><label for="refreshSeconds">行情抓取间隔（秒）</label><input id="refreshSeconds" type="number" min="120" max="3600" required></div></div>

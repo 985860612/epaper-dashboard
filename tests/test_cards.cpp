@@ -4,11 +4,12 @@
 #include <iostream>
 
 int main() {
-  static_assert(CARD_COUNT==5);
+  static_assert(CARD_COUNT==6);
+  assert(cardIndex("environment_history")==static_cast<int>(CardId::EnvironmentHistory));
   for(int i=0;i<CARD_COUNT;++i)assert(cardIndex(CARD_CHOICES[i].code)==i);
   assert(cardIndex("unknown")==-1);
   uint8_t current=0;
-  for(int i=0;i<20;++i) { assert(current==i%5);current=nextCardIndex(current); }
+  for(int i=0;i<30;++i) { assert(current==i%CARD_COUNT);current=nextCardIndex(current); }
   for(uint32_t start:{0u,10000u,0xfffffff0u}) {
     assert(!cardRotationDue(static_cast<uint32_t>(start+599999u),start,600));
     assert(cardRotationDue(static_cast<uint32_t>(start+600000u),start,600));
@@ -36,5 +37,5 @@ int main() {
   assert(std::strcmp(ALMANAC_WORDS[ALMANAC_DAYS[today][4]],"入宅")==0);
   assert((lunarPacked(almanacIndex(2026,2,16))>>10)==41);
   assert((lunarPacked(almanacIndex(2026,2,17))>>10)==42);
-  std::cout<<"PASS: 5-card cycle, ten-minute boundary/rollover, fixed/stock priority, all 1096 lunar records, leap days and lunar year boundary\n";
+  std::cout<<"PASS: 6-card cycle, ten-minute boundary/rollover, fixed/stock priority, all 1096 lunar records, leap days and lunar year boundary\n";
 }

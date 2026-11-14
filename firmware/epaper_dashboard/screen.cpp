@@ -214,6 +214,7 @@ void refreshScreen() {
   String tag=String(clock)+String(settingsRevision)+weatherKey+layout+String(stock.price,4)+String(stock.previous,4)+String(stock.open,4)+String(pointHash)+stock.stamp.substring(0,8)+stockError+phaseCode(phase);
   tag+="|"+String(battery.displayKey());
   char indoor[48];environmentText(environment,indoor,sizeof(indoor));tag+="|"+String(indoor);
+  if(!stocks && card==CardId::EnvironmentHistory)tag+="|"+String(environmentHistoryRevision);
   bool full=!baselineValid || maintenanceFull || layout!=previousLayout || settingsRevision!=previousRevision;
   if(!full && tag==previousTag) { needRefresh=false;return; }
   if(!full && !useBw && millis()-lastFull<120000UL)return;

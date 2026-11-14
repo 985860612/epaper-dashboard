@@ -1,5 +1,6 @@
 #include "app.h"
 #include "environment.h"
+#include "environment_history.h"
 #include <Wire.h>
 
 EnvironmentReading environment;
@@ -37,10 +38,12 @@ void serviceEnvironment() {
     environment.ahtError=environment.bmpError="bus_init";
   }
   needRefresh=true;
+  recordEnvironmentHistory(clockReady()?time(nullptr):0,environment);
   char text[48];environmentText(environment,text,sizeof(text));
   Serial.printf("ENV sample=%lu %s aht=%s bmp=%s address=%02x\n",static_cast<unsigned long>(environment.attempts),text,environment.ahtError,environment.bmpError,environment.bmpAddress);
 }
 void environmentJson(JsonDocument& d) {
+  environmentHistoryJson(d);
   auto e=d["environment"].to<JsonObject>();
   e["ahtValid"]=environment.ahtValid;e["bmpValid"]=environment.bmpValid;
   e["temperature"]=nullptr;e["humidity"]=nullptr;e["pressureHpa"]=nullptr;
