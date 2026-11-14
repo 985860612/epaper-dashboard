@@ -42,7 +42,7 @@ static Image render(int page,const tm& now,const std::string& output="") {
   }
   if(page>=0 && page<5 && page!=3) {
     const int top=page==4?176:248;
-    for(const auto icon:{TextBox{20,top+7,15,15},TextBox{156,top+7,15,15},TextBox{258,top+7,15,15},TextBox{20,top+30,15,15}})
+    for(const auto icon:{TextBox{20,top+7,15,15},TextBox{156,top+7,15,15},TextBox{380-textWidth(indoorPressure(),TextRole::Dense)-21,top+7,15,15},TextBox{20,top+30,15,15}})
       for(const auto& t:texts) {const auto b=t.box;assert(!b.w || !b.h || b.x>=icon.x+icon.w || b.x+b.w<=icon.x || b.y>=icon.y+icon.h || b.y+b.h<=icon.y);}
   }
   if(page==5) {
