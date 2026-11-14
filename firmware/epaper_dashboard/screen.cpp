@@ -8,6 +8,7 @@
 #include "red_waveform.h"
 #include "red_transition.h"
 #include "battery_draw.h"
+#include "environment.h"
 
 // Adapted from HalfSweetStudio/EPaperDrive (AGPL-3.0):
 // WAVEFORM_SETTING_LUT.h, LUTDefault_part_GDEY042Z98.
@@ -212,6 +213,7 @@ void refreshScreen() {
   }
   String tag=String(clock)+String(settingsRevision)+weatherKey+layout+String(stock.price,4)+String(stock.previous,4)+String(stock.open,4)+String(pointHash)+stock.stamp.substring(0,8)+stockError+phaseCode(phase);
   tag+="|"+String(battery.displayKey());
+  char indoor[48];environmentText(environment,indoor,sizeof(indoor));tag+="|"+String(indoor);
   bool full=!baselineValid || maintenanceFull || layout!=previousLayout || settingsRevision!=previousRevision;
   if(!full && tag==previousTag) { needRefresh=false;return; }
   if(!full && !useBw && millis()-lastFull<120000UL)return;
@@ -227,7 +229,7 @@ void refreshScreen() {
     drawStock(now,stock,weather,cfg.city,phase,activeStock,!stockError.isEmpty() || (stock.valid && epoch-stock.receivedAt>cfg.refreshSeconds*2));
   } else if(valid) { drawCard(card,now); }
   else drawClock(now,valid,weather,cfg.city,phase);
-  drawBatteryStatus(frame,battery);
+  if(!(stocks && valid && !fontTestActive))drawBatteryStatus(frame,battery);
   if(cardDrawingFailed || styleDrawingFailed) { displayError="字模解压失败"; painter=&display;needRefresh=true;return; }
   RefreshRegion regions[MAX_REFRESH_REGIONS]{};int count=layoutRegions(regions,fontTestActive,stocks,valid,card);
   uint32_t hashes[MAX_REFRESH_REGIONS]={};bool changed[MAX_REFRESH_REGIONS]={};bool anyChanged=false;

@@ -25,16 +25,8 @@ static String weatherDescription() {
   if(!weather.valid)return "天气待更新";
   return weather.text+(weatherCached()?"·缓存":"");
 }
-static void cardWeatherFooter() {
-  cardRule(248);
-  if(weatherCached())type(20,280,"缓存",TextRole::Dense);else cardCloud(20,257);
-  String range=weather.dailyValid?String(weather.low,0)+"° / "+String(weather.high,0)+"°":"";
-  int space=range.isEmpty()?300:380-textWidth(range)-16-80;
-  String temp=weather.valid?String(weather.temp,0)+"°C":"待更新";
-  int citySpace=max(20,space-textWidth(temp)-8);
-  String value=fitText(cfg.city,citySpace)+" "+temp;
-  type(80,282,fitText(value,space),TextRole::Body);type(380,282,range,TextRole::Body,GxEPD_BLACK,TextAlign::Right);
-}
+#include "environment_card.h"
+static void cardWeatherFooter() {compactEnvironment(248);}
 static void drawBigCalendar(const tm& now) {
   cardHeader(cardMonth(now),"");
   type(380,38,cardTime(now),TextRole::Title,GxEPD_BLACK,TextAlign::Right);
@@ -58,7 +50,9 @@ static void drawMonthWeather(const tm& now) {
   cardWeatherFooter();
 }
 static void drawAlmanac(const tm& now) {
-  cardHeader("黄历",cardDate(now),TextRole::Title);type(20,146,cardDay(now),TextRole::CompactDate,GxEPD_RED);
+  cardHeader("黄历",cardDate(now)+" "+cardTime(now),TextRole::Title);
+  if(currentPhase()!=Phase::Unknown)type(100,38,"民俗参考",TextRole::Dense);
+  type(20,146,cardDay(now),TextRole::CompactDate,GxEPD_RED);
   int index=almanacIndex(now.tm_year+1900,now.tm_mon+1,now.tm_mday);
   if(index<0) {type(146,104,"黄历数据待更新",TextRole::Body);type(146,139,"支持2026至2028年",TextRole::Dense);}
   else {
@@ -69,25 +63,22 @@ static void drawAlmanac(const tm& now) {
     type(146,104,fitText(String("农历")+((packed&512)?"闰":"")+months[month]+"月"+days[day],234,TextRole::Title),TextRole::Title);
     type(146,139,String(gan[gz%10])+zhi[gz%12]+"年");type(380,139,CARD_WEEKDAYS[now.tm_wday],TextRole::Body,GxEPD_BLACK,TextAlign::Right);
     for(int row=0;row<2;++row) {
-      int y=201+row*43;uint16_t ink=row?GxEPD_BLACK:GxEPD_RED;painter->fillRect(20,y-22,32,31,ink);type(26,y+1,row?"忌":"宜",TextRole::Body,GxEPD_WHITE);
+      int y=190+row*36;uint16_t ink=row?GxEPD_BLACK:GxEPD_RED;painter->fillRect(20,y-22,32,31,ink);type(26,y+1,row?"忌":"宜",TextRole::Body,GxEPD_WHITE);
       int a=ALMANAC_DAYS[index][2+row*2],b=ALMANAC_DAYS[index][3+row*2];type(70,y,fitText(String(ALMANAC_WORDS[a])+(b?String(" ")+ALMANAC_WORDS[b]:""),310));
     }
   }
-  cardRule(166);cardRule(266);type(20,292,"宜忌节选·民俗参考",TextRole::Dense);type(380,292,cardTime(now),TextRole::Title,GxEPD_BLACK,TextAlign::Right);
+  cardRule(166);compactEnvironment(248);
 }
 static void drawMinimalClock(const tm& now) {
-  cardHeader(cardDate(now),CARD_WEEKDAYS[now.tm_wday]);type(200,177,cardTime(now),TextRole::Clock,GxEPD_BLACK,TextAlign::Center);
-  cardRule(208);cardCloud(20,232);String temp=weather.valid?String(weather.temp,0):"--";
-  type(82,274,temp,TextRole::Value);type(90+textWidth(temp,TextRole::Value),254,"°C",TextRole::Body);
-  type(380,243,fitText(weatherDescription(),160),TextRole::Body,GxEPD_BLACK,TextAlign::Right);
-  String range=weather.dailyValid?" "+String(weather.low,0)+"° / "+String(weather.high,0)+"°":"";
-  int cityWidth=180-textWidth(range);type(380,277,fitText(cfg.city,max(20,cityWidth))+range,TextRole::Body,GxEPD_BLACK,TextAlign::Right);
+  cardHeader(cardDate(now),CARD_WEEKDAYS[now.tm_wday]);
+  type(200,148,cardTime(now),TextRole::Clock,GxEPD_BLACK,TextAlign::Center);
+  clockEnvironment();
 }
 static void drawOverview(const tm& now) {
   cardHeader("今日总览",cardMonth(now),TextRole::Title);
   type(20,147,cardDay(now),TextRole::CompactDate,GxEPD_RED);painter->drawFastVLine(146,72,88,GxEPD_BLACK);
   type(380,121,cardTime(now),TextRole::Value,GxEPD_BLACK,TextAlign::Right);type(380,153,CARD_WEEKDAYS[now.tm_wday],TextRole::Body,GxEPD_BLACK,TextAlign::Right);
-  cardRule(176);cardCloud(20,182);type(80,211,fitText(cfg.city+" "+weatherDescription(),220));type(380,212,weather.valid?String(weather.temp,0)+"°C":"--",TextRole::Title,GxEPD_BLACK,TextAlign::Right);
+  compactEnvironment(176);
   cardRule(230);type(20,256,fitText(stock.valid?stock.name:cfg.stocks[0],195));
   String stamp=stock.valid?stock.stamp.substring(4,6)+"."+stock.stamp.substring(6,8)+" "+stock.stamp.substring(8,10)+":"+stock.stamp.substring(10,12):"行情待更新";
   if(stock.valid && stock.stamp.substring(0,8)!=dateCompact())stamp="历史行情";else if(!stockError.isEmpty())stamp="行情缓存";
