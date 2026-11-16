@@ -23,16 +23,26 @@ TOTAL=PLANE*2
 # white, black, red -- the panel's three inks
 PALETTE=[(255,255,255),(0,0,0),(255,0,0)]
 
-def convert(source:Path) -> bytes:
+def convert(source:Path,fit:bool=False,rotate:int=0) -> bytes:
     img=Image.open(source).convert('RGB')
-    # crop to 4:3 around the center, then resize
+    if rotate==90:img=img.transpose(Image.ROTATE_90)
+    elif rotate==180:img=img.transpose(Image.ROTATE_180)
+    elif rotate==270:img=img.transpose(Image.ROTATE_270)
     target=W/H
     w,h=img.size
-    if w/h>target:
-        nw=int(h*target);img=img.crop(((w-nw)//2,0,(w+nw)//2,h))
-    elif w/h<target:
-        nh=int(w/target);img=img.crop((0,(h-nh)//2,w,(h+nh)//2))
-    img=img.resize((W,H),Image.Resampling.LANCZOS)
+    if fit:
+        # letterbox on white; the whole photo stays visible
+        img.thumbnail((W,H),Image.Resampling.LANCZOS)
+        canvas=Image.new('RGB',(W,H),(255,255,255))
+        canvas.paste(img,((W-img.size[0])//2,(H-img.size[1])//2))
+        img=canvas
+    else:
+        # crop to 4:3 around the center, then resize
+        if w/h>target:
+            nw=int(h*target);img=img.crop(((w-nw)//2,0,(w+nw)//2,h))
+        elif w/h<target:
+            nh=int(w/target);img=img.crop((0,(h-nh)//2,w,(h+nh)//2))
+        img=img.resize((W,H),Image.Resampling.LANCZOS)
     pal=Image.new('P',(1,1))
     pal.putpalette([c for rgb in PALETTE for c in rgb]+[0,0,0]*(256-len(PALETTE)))
     q=img.quantize(palette=pal,dither=Image.Dither.FLOYDSTEINBERG)
@@ -77,6 +87,8 @@ class Device:
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('source',nargs='?',type=Path)
+    p.add_argument('--fit',action='store_true',help='白边适配（竖图完整显示）')
+    p.add_argument('--rotate',type=int,choices=[90,180,270],default=0,help='先逆时针旋转 90/180/270 度')
     p.add_argument('--preview',type=Path,help='write dithered preview PNG')
     p.add_argument('--output',type=Path,help='write raw 30000-byte blob')
     p.add_argument('--upload',action='store_true')
@@ -88,7 +100,7 @@ def main():
         print(d.post('/api/image-test',json.dumps({'enabled':False}).encode(),'application/json'))
         return
     if not a.source:p.error('需要图片路径（或使用 --off）')
-    blob=a.source.read_bytes() if a.source.suffix=='.bin' else convert(a.source)
+    blob=a.source.read_bytes() if a.source.suffix=='.bin' else convert(a.source,a.fit,a.rotate)
     if len(blob)!=TOTAL:p.error(f'数据长度 {len(blob)} != {TOTAL}')
     if a.preview:preview(blob,a.preview);print('预览:',a.preview)
     if a.output:a.output.write_bytes(blob);print('原始数据:',a.output)
