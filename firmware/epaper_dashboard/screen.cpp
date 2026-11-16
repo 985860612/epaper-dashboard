@@ -204,7 +204,7 @@ void refreshScreen() {
   const bool canRed=stockRed && previousFrame && previousFrame->valid() && redPartialReady;
   const bool maintenanceFull=baselineValid && (stocks ? stockFullRefreshDue(millis(),lastFull) : millis()-lastFull>=900000UL);
   char clock[24];strftime(clock,sizeof(clock),"%Y%m%d%H%M",&now);
-  String layout=String(fontTestActive)+"|"+String(stocks)+"|"+(stocks?cfg.stocks[activeStock]:String(CARD_CHOICES[static_cast<int>(card)].code))+"|"+String(online)+"|"+String(clock).substring(0,8)+"|"+String(phase==Phase::Unknown);
+  String layout=String(fontTestActive)+"|"+String(imageTestActive)+String(imageRevision)+"|"+String(stocks)+"|"+(stocks?cfg.stocks[activeStock]:String(CARD_CHOICES[static_cast<int>(card)].code))+"|"+String(online)+"|"+String(clock).substring(0,8)+"|"+String(phase==Phase::Unknown);
   String weatherKey=weather.location+weather.observedAt+String(weather.temp)+weather.text+String(weather.low)+String(weather.high)+weatherError;
   uint32_t pointHash=2166136261u;
   for(int i=0;i<stock.count;++i) {
@@ -226,13 +226,16 @@ void refreshScreen() {
     label(20,165,"热点: EPaper-"+String(static_cast<uint32_t>(ESP.getEfuseMac()),HEX));
     label(20,195,"密码: "+cfg.adminPassword);label(20,225,"网页用户: admin");full=true;
   } else if(fontTestActive && valid) { drawFontTest(now);
+  } else if(imageTestActive && imageDataValid) {
+    memcpy(frame.black,imageTestData,FrameCanvas::BYTES);
+    memcpy(frame.red,imageTestData+FrameCanvas::BYTES,FrameCanvas::BYTES);
   } else if(stocks && valid) {
     drawStock(now,stock,weather,cfg.city,phase,activeStock,!stockError.isEmpty() || (stock.valid && epoch-stock.receivedAt>cfg.refreshSeconds*2));
   } else if(valid) { drawCard(card,now); }
   else drawClock(now,valid,weather,cfg.city,phase);
-  if(!(stocks && valid && !fontTestActive))drawBatteryStatus(frame,battery);
+  if(!(stocks && valid && !fontTestActive) && !(imageTestActive && imageDataValid))drawBatteryStatus(frame,battery);
   if(cardDrawingFailed || styleDrawingFailed) { displayError="字模解压失败"; painter=&display;needRefresh=true;return; }
-  RefreshRegion regions[MAX_REFRESH_REGIONS]{};int count=layoutRegions(regions,fontTestActive,stocks,valid,card);
+  RefreshRegion regions[MAX_REFRESH_REGIONS]{};int count=layoutRegions(regions,fontTestActive || (imageTestActive && imageDataValid),stocks,valid,card);
   uint32_t hashes[MAX_REFRESH_REGIONS]={};bool changed[MAX_REFRESH_REGIONS]={};bool anyChanged=false;
   for(int i=0;i<count;++i) { auto r=regions[i];hashes[i]=frame.hash(frame.black,r.x,r.y,r.w,r.h);changed[i]=hashes[i]!=oldRegionHash[i];anyChanged|=changed[i];if(changed[i] && frame.hasRed(r.x,r.y,r.w,r.h) && !canRed)full=true; }
   const uint32_t redHash=frame.hash(frame.red,0,0,400,300);
@@ -289,7 +292,7 @@ void refreshScreen() {
     }
     baselineValid=true;previousTag=tag;previousLayout=layout;previousRevision=settingsRevision;
     for(int i=0;i<count;++i)oldRegionHash[i]=hashes[i];oldRedHash=redHash;
-    lastDisplayedEpoch=epoch;displayedView=fontTestActive?"font_test":stocks?"stock":CARD_CHOICES[static_cast<int>(card)].code;
+    lastDisplayedEpoch=epoch;displayedView=fontTestActive?"font_test":(imageTestActive&&imageDataValid)?"image_test":stocks?"stock":CARD_CHOICES[static_cast<int>(card)].code;
     if(!stocks && changedLayout)noteCardShown();
   } else baselineValid=false;
   Serial.printf("DISPLAY_DONE kind=%s view=%s elapsed_ms=%lu full=%lu partial=%lu BUSY=%d\n",lastFrameKind.c_str(),stocks?"stock":"clock",static_cast<unsigned long>(lastFrameElapsedMs),static_cast<unsigned long>(fullRefreshCount),static_cast<unsigned long>(partialRefreshCount),digitalRead(4));

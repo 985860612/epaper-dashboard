@@ -6,7 +6,7 @@
 #include "market_clock.h"
 #include "card_schedule.h"
 
-constexpr const char* VERSION = "epaper-dashboard-0.5.25";
+constexpr const char* VERSION = "epaper-dashboard-0.5.26";
 constexpr int MAX_STOCKS = 8, MAX_POINTS = 245;
 constexpr uint32_t STOCK_FULL_REFRESH_INTERVAL_MS = 10UL*60UL*1000UL;
 constexpr bool stockFullRefreshDue(uint32_t nowMs,uint32_t lastFullMs) {
@@ -96,6 +96,14 @@ extern uint32_t sleepCount,sleepTotalMs,lastSleepMs;
 extern String powerError;
 
 extern bool fontTestActive;
+
+// Photo test page: two 400x300 MSB-first planes in the frame's native
+// 1=white / 0=colored format (black plane first, then red), uploaded in
+// chunks via /api/image-test/data. RAM-only; a reboot clears the image.
+constexpr size_t IMAGE_TEST_BYTES=2*(400*300/8);
+extern bool imageTestActive,imageDataValid;
+extern uint32_t imageRevision;
+extern uint8_t imageTestData[IMAGE_TEST_BYTES];
 
 uint32_t stockPreviewSeconds();
 
