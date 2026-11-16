@@ -33,19 +33,29 @@ static void drawEnvironmentHistory(const tm& now) {
   type(360,top+6,String(hHigh,0),TextRole::Dense);
   type(360,bottom+6,String(hLow,0),TextRole::Dense);
   // Only connect adjacent recorded buckets. Missing/invalid samples remain gaps.
+  // No per-point markers: dense dots thicken the line. Mark only each line's
+  // highest and lowest point instead.
   for(bool temperatureLine:{false,true}) {
     bool previousValid=false;int px=0,py=0;
+    bool hasPoint=false;float minValue=0,maxValue=0;int minX=0,minY=0,maxX=0,maxY=0;
     if(end)for(int i=0;i<ENV_HISTORY_CAPACITY;++i) {
       const auto* p=environmentHistory.at(end-(ENV_HISTORY_CAPACITY-1-uint32_t(i)));
       const bool valid=p && p->epoch<=epoch && (temperatureLine?p->hasTemperature():p->hasHumidity());
       if(valid) {
         const int x=left+i*(right-left)/(ENV_HISTORY_CAPACITY-1);
-        const int yy=temperatureLine?y(p->temperature/10.0f,tLow,tHigh):y(p->humidity/10.0f,hLow,hHigh);
-        const uint16_t ink=temperatureLine?GxEPD_RED:GxEPD_BLACK;
-        if(previousValid)painter->drawLine(px,py,x,yy,ink);
-        painter->fillRect(x-1,yy-1,3,3,ink);px=x;py=yy;
+        const float value=temperatureLine?p->temperature/10.0f:p->humidity/10.0f;
+        const int yy=temperatureLine?y(value,tLow,tHigh):y(value,hLow,hHigh);
+        if(previousValid)painter->drawLine(px,py,x,yy,temperatureLine?GxEPD_RED:GxEPD_BLACK);
+        if(!hasPoint||value<minValue){minValue=value;minX=x;minY=yy;}
+        if(!hasPoint||value>maxValue){maxValue=value;maxX=x;maxY=yy;}
+        hasPoint=true;px=x;py=yy;
       }
       previousValid=valid;
+    }
+    if(hasPoint) {
+      const uint16_t ink=temperatureLine?GxEPD_RED:GxEPD_BLACK;
+      painter->fillRect(maxX-1,maxY-1,3,3,ink);
+      if(minX!=maxX||minY!=maxY)painter->fillRect(minX-1,minY-1,3,3,ink);
     }
   }
   if(!hasT && !hasH)type(200,200,"等待数据",TextRole::Body,GxEPD_BLACK,TextAlign::Center);
