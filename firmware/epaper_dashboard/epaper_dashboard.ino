@@ -16,6 +16,9 @@ bool needRefresh=true, needFetch=true, needReconnect=false;
 bool apActive=false, rendering=false;
 bool redPartialReady=false;
 bool fontTestActive=false;
+bool imageTestActive=false,imageDataValid=false;
+uint32_t imageRevision=0;
+uint8_t imageTestData[IMAGE_TEST_BYTES];
 uint32_t loopCount=0, screenCheckCount=0, weatherFetchCount=0, stockFetchCount=0;
 time_t lastDisplayedEpoch=0;
 String displayedView="pending";
@@ -61,7 +64,7 @@ uint32_t stockPreviewSeconds() {
   if(left<=0) {stockPreviewUntil=0;return 0;}return (static_cast<uint32_t>(left)+999)/1000;
 }
 bool showingStock() {
-  if(fontTestActive)return false;
+  if(fontTestActive || (imageTestActive && imageDataValid))return false;
   if(cfg.view=="auto" && cfg.cardMode=="rotate" && stockPreviewSeconds())return true;
   return stockTakesPriority(cfg.view=="stock",cfg.view=="auto",cfg.cardMode=="fixed",stockPage(currentPhase()));
 }

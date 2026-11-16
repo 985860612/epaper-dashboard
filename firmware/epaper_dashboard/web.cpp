@@ -42,6 +42,40 @@ void setupWeb() {
     fontTestActive=body["enabled"].as<bool>();++settingsRevision;needRefresh=true;
     keepPowerAwake();JsonDocument d;d["ok"]=true;sendJson(200,d);
   });
+  server.on("/api/image-test",HTTP_POST,[] {
+    if(!auth())return;
+    if(rendering) {fail(409,"屏幕正在刷新，请稍后切换");return;}
+    if(!server.header("Content-Type").startsWith("application/json")) {fail(415,"需要JSON请求");return;}
+    JsonDocument body;
+    if(deserializeJson(body,server.arg("plain")) || !body["enabled"].is<bool>()) {fail(400,"需要enabled开关");return;}
+    imageTestActive=body["enabled"].as<bool>();++settingsRevision;needRefresh=true;
+    keepPowerAwake();JsonDocument d;d["ok"]=true;sendJson(200,d);
+  });
+  // Binary image upload as one multipart/form-data request. The upload
+  // handler streams the file part straight into the image planes; the
+  // complete handler validates the total size before marking it usable.
+  static uint32_t imageUploadReceived=0;static bool imageUploadOk=false;
+  server.on("/api/image-test/data", HTTP_POST, [] {
+    if(!auth())return;
+    JsonDocument d;d["ok"]=imageUploadOk;d["received"]=imageUploadReceived;
+    if(imageUploadOk && !rendering && imageUploadReceived==IMAGE_TEST_BYTES) {
+      imageDataValid=true;++imageRevision;needRefresh=true;
+      uint32_t h=2166136261u;
+      for(size_t i=0;i<IMAGE_TEST_BYTES;++i)h=(h^imageTestData[i])*16777619u;
+      d["fnv1a"]=String(h,HEX);
+    }
+    keepPowerAwake();sendJson(imageUploadOk?200:400,d);
+  }, [] {
+    HTTPUpload& up=server.upload();
+    if(up.status==UPLOAD_FILE_START) {imageUploadReceived=0;imageUploadOk=true;}
+    else if(up.status==UPLOAD_FILE_WRITE && imageUploadOk) {
+      if(imageUploadReceived+up.currentSize<=IMAGE_TEST_BYTES) {
+        memcpy(imageTestData+imageUploadReceived,up.buf,up.currentSize);
+        imageUploadReceived+=up.currentSize;
+      } else imageUploadOk=false;
+    }
+    else if(up.status==UPLOAD_FILE_END) imageUploadOk=imageUploadOk && imageUploadReceived==up.totalSize;
+  });
   server.on("/api/config", HTTP_GET, [] { if (!auth()) return; JsonDocument d; settingsJson(d); sendJson(200,d); });
   server.on("/api/environment/history",HTTP_GET,[] {
     if(!auth())return;
