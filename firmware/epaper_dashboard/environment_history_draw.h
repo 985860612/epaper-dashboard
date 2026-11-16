@@ -52,10 +52,25 @@ static void drawEnvironmentHistory(const tm& now) {
       }
       previousValid=valid;
     }
-    if(hasPoint) {
+    if(hasPoint&&maxValue>minValue) {
       const uint16_t ink=temperatureLine?GxEPD_RED:GxEPD_BLACK;
       painter->fillRect(maxX-1,maxY-1,3,3,ink);
-      if(minX!=maxX||minY!=maxY)painter->fillRect(minX-1,minY-1,3,3,ink);
+      // Dense 18px: baseline sits ~14px below the text top. Max label above the
+      // marker, min label below; flip sides when the marker hugs the plot edge.
+      auto label=[&](int cx,int cy,const String& text,bool above) {
+        const int half=textWidth(text,TextRole::Dense)/2;
+        cx=max(left+half,min(right-half,cx));
+        int baseline=above?cy-5:cy+18;
+        if(above&&baseline-14<top)baseline=cy+18;
+        if(!above&&baseline>bottom+12)baseline=cy-5;
+        type(cx,baseline,text,TextRole::Dense,ink,TextAlign::Center);
+      };
+      const bool decimals=temperatureLine;
+      label(maxX,maxY,String(maxValue,decimals?1:0),true);
+      if(minX!=maxX||minY!=maxY) {
+        painter->fillRect(minX-1,minY-1,3,3,ink);
+        label(minX,minY,String(minValue,decimals?1:0),false);
+      }
     }
   }
   if(!hasT && !hasH)type(200,200,"等待数据",TextRole::Body,GxEPD_BLACK,TextAlign::Center);
