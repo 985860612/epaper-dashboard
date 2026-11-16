@@ -97,7 +97,7 @@ void setupWeb() {
     if (!auth()) return;
     JsonDocument d;
     environmentJson(d);
-    d["version"] = VERSION;d["stockPreviewSeconds"]=stockPreviewSeconds();d["fontTestActive"]=fontTestActive;
+    d["version"] = VERSION;d["stockPreviewSeconds"]=stockPreviewSeconds();d["fontTestActive"]=fontTestActive;d["imageTestActive"]=imageTestActive && imageDataValid;
     d["configSeconds"]=configRemainingSeconds();d["sleepCount"]=sleepCount;d["sleepTotalMs"]=sleepTotalMs;d["lastSleepMs"]=lastSleepMs;d["powerError"]=powerError;
     d["cardMode"]=cfg.cardMode;d["cardCode"]=CARD_CHOICES[static_cast<int>(selectedCard())].code;
     d["cardName"]=CARD_CHOICES[static_cast<int>(selectedCard())].name;d["nextCardSeconds"]=nextCardSeconds();
