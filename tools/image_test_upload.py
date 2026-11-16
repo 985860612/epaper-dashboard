@@ -14,7 +14,7 @@ Usage:
   uv run tools/image_test_upload.py --off --device-json local/device-access.json
 """
 from pathlib import Path
-import argparse,base64,json,sys,urllib.request
+import argparse,base64,http.client,json,sys,time,urllib.request
 from PIL import Image
 
 W,H=400,300
@@ -109,7 +109,15 @@ def main():
         boundary='----epaper7f3a1b'
         body=(f'--{boundary}\r\nContent-Disposition: form-data; name="data"; filename="image.bin"\r\n'
               f'Content-Type: application/octet-stream\r\n\r\n').encode()+blob+f'\r\n--{boundary}--\r\n'.encode()
-        r=d.post('/api/image-test/data',body,f'multipart/form-data; boundary={boundary}')
+        r=None
+        for attempt in range(10):
+            try:
+                r=d.post('/api/image-test/data',body,f'multipart/form-data; boundary={boundary}')
+                break
+            except (http.client.RemoteDisconnected,TimeoutError,ConnectionError) as e:
+                print(f'连接中断（设备可能在全刷），第 {attempt+1} 次重试…')
+                time.sleep(8)
+        if r is None:sys.exit('上传重试 10 次仍失败')
         print('上传 ->',r)
         if not r.get('ok') or r.get('received')!=TOTAL:sys.exit('上传不完整')
         local=format(fnv1a(blob),'x')
